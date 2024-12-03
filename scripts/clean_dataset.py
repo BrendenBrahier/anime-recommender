@@ -1,5 +1,6 @@
 import json
 from datetime import datetime
+import pandas as pd
 
 def load_dataset(file_path):
     # load json dataset from file.
@@ -55,7 +56,38 @@ def standardize_fields(data):
         anime['genres'] = [genre.lower() for genre in anime.get('genres', []) if genre]
 
     return data
+def parse_aired_dates(aired):
+    # Parse the 'aired' field into 'start_date' and 'end_date'
+    if not aired or pd.isna(aired):
+        return None, None  # Return None for missing values
+    
+    try:
+        dates = aired.split(' to ')
+        start_date = (
+            pd.to_datetime(dates[0].strip(), errors='coerce') 
+            if dates[0].strip() and dates[0].strip() != '?' 
+            else None
+        )
+        end_date = (
+            pd.to_datetime(dates[1].strip(), errors='coerce') 
+            if len(dates) > 1 and dates[1].strip() and dates[1].strip() != '?' 
+            else None
+        )
+        return (
+            start_date.strftime('%Y-%m-%d') if start_date else None,
+            end_date.strftime('%Y-%m-%d') if end_date else None
+        )
+    except Exception as e:
+        print(f"Error parsing dates: {aired} -> {e}")
+        return None, None
 
+def split_aired_dates(data):
+    for anime in data:
+        aired = anime.get('aired', None)
+        start_date, end_date = parse_aired_dates(aired)
+        anime['start_date'] = start_date
+        anime['end_date'] = end_date
+    return data
 def validate_data_ranges(data):
     # validate numerical ranges for the dataset.
     for anime in data:
@@ -119,6 +151,9 @@ if __name__ == "__main__":
 
     print("Standardizing fields...")
     dataset = standardize_fields(dataset)
+
+    print("Splitting aired dates...")
+    dataset = split_aired_dates(dataset)
 
     print("Validating data ranges...")
     dataset = validate_data_ranges(dataset)
