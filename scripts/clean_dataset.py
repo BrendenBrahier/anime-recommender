@@ -29,7 +29,7 @@ def handle_missing_fields(data):
         name_english = anime.get('name_english')
         name = anime.get('name')
         anime['name_english'] = (name_english or name or "Unknown").strip() if isinstance(name_english or name, str) else "Unknown"
-
+        anime['studios'] = anime.get('studios', "").replace('add some', 'Unknown') if isinstance(anime.get('studios', str), str) else "Unknown"
         # Safely handle score
         score = anime.get('score')
         try:
