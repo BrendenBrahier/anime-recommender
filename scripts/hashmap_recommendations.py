@@ -1,11 +1,10 @@
-# hashmap_recommendations.py
 import pandas as pd
 
 def build_hashmap(data):
     hashmap = {}
     for i, anime in data.iterrows():
         hashmap[anime['name_english']] = {
-            'index': i  # Just store index for cosine_sim lookup
+            'index': i
         }
     return hashmap
 
