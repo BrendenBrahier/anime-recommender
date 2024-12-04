@@ -3,11 +3,14 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics.pairwise import cosine_similarity
 from scipy.sparse import hstack
+from graph_recommendations import build_graph, get_recommendations as get_graph_recommendations
+from hashmap_recommendations import build_hashmap, get_recommendations as get_hashmap_recommendations
+
 
 # load the dataset
 data = pd.read_json('data/cleaned_anime_data.json')
 
-# Load the filtered synopsis keywords
+# initialize the graph and hashmap - moved after cosine similarity calculation
 try:
     synopsis_data = pd.read_json('data/synopsis_keywords.json')
     # Ensure it only contains `name_english` and `synopsis_keywords`
@@ -56,6 +59,7 @@ data['combined_features'] = data['combined_features'].apply(lambda x: x if x.str
 
 # Optional: Remove rows with no meaningful combined features
 data = data[data['combined_features'] != "empty_feature"]
+data = data.reset_index(drop=True)  # Reset index to avoid gaps
 
 # Vectorize the combined features
 vectorizer = TfidfVectorizer(stop_words='english')
@@ -68,55 +72,85 @@ final_features = hstack([text_features, numerical_features])
 # Compute the cosine similarity
 cosine_sim = cosine_similarity(final_features)
 
-# Create a reverse lookup dictionary for the anime titles
-indices = pd.Series(data.index, index=data['name_english']).to_dict()
 
 # Create a function to get recommendations
-def get_recommendations(title, similarity_matrix, data, top_n=10):
+# Create indices dictionary for quick lookups
+indices = pd.Series(data.index, index=data['name_english']).to_dict()
+
+def get_cosine_recommendations(title, similarity_matrix, data, top_n=10):
+    """Get recommendations using cosine similarity"""
     if title not in indices:
         return f"'{title}' not found in the dataset."
     
-    # Get the index of the anime
     idx = indices[title]
-
-    # Get the similarity scores
     similarity_scores = list(enumerate(similarity_matrix[idx]))
+    similarity_scores = sorted(similarity_scores, key=lambda x: x[1], reverse=True)
+    similarity_scores = similarity_scores[1:top_n+1]
+    anime_indices = [i[0] for i in similarity_scores]
+    return data['name_english'].iloc[anime_indices].tolist()
+    
+def get_combined_recommendations(title, method='hybrid', top_n=10, cosine_sim=None):
+    if title not in indices:
+        return f"'{title}' not found in the dataset."
 
-    # Sort the scores
-    sorted_scores = sorted(similarity_scores, key=lambda x: x[1], reverse=True)
+    if method == 'cosine':
+        return get_cosine_recommendations(title, cosine_sim, data, top_n)
+    elif method == 'graph':
+        return get_graph_recommendations(graph, title, data, indices, top_n)
+    elif method == 'hashmap':
+        return get_hashmap_recommendations(hashmap, title, data, cosine_sim, top_n)
+    elif method == 'hybrid':
+        cosine_recs = set(get_cosine_recommendations(title, cosine_sim, data, top_n))
+        graph_recs = set(get_graph_recommendations(graph, title, data, indices, top_n))
+        hashmap_recs = set(get_hashmap_recommendations(hashmap, title, data, cosine_sim, top_n))
+        
+        final_recs = []
+        common_recs = cosine_recs.intersection(graph_recs, hashmap_recs)
+        final_recs.extend(list(common_recs))
+        
+        remaining = list((cosine_recs | graph_recs | hashmap_recs) - common_recs)
+        final_recs.extend(remaining[:top_n - len(final_recs)])
+        
+        return final_recs[:top_n]
+    else:
+        raise ValueError("Invalid method. Use 'cosine', 'graph', 'hashmap', or 'hybrid'")
 
-    # Get the top n recommendations excluding the anime itself
-    top_scores = sorted_scores[1:top_n+1]
+def evaluate_recommendations(recommendations, data):
+    if not recommendations:
+        return {
+            'coverage': 0,
+            'diversity': 0,
+            'relevance': 0
+        }
+    
+    coverage = len(set(recommendations)) / len(data)
+    diversity = len(set(recommendations)) / len(recommendations)
+    relevance = sum([1 for rec in recommendations if rec in data['name_english'].values]) / len(recommendations)
+    
+    return {
+        'coverage': coverage,
+        'diversity': diversity,
+        'relevance': relevance
+    }
+# Initialize the graph with the computed cosine similarity
+graph = build_graph(data, cosine_sim, threshold=0.2)
+hashmap = build_hashmap(data)
 
-    # Get the anime titles
-    # Get the anime titles and remove duplicates
-    recommended_anime = []
-    seen = set()
-    for i, _ in top_scores:
-        anime_name = data['name_english'][i]
-        if anime_name not in seen:
-            recommended_anime.append(anime_name)
-            seen.add(anime_name)
-    # Return the top n recommendations
-    return recommended_anime
-
-# Get recommendations for a given anime
-anime_title = 'Jujutsu Kaisen'
-recommendations = get_recommendations(anime_title, cosine_sim, data, top_n=10)
-print(f"Recommendations for {anime_title}: {recommendations}")
-
-anime_title = 'Naruto Shippuden'
-recommendations = get_recommendations(anime_title, cosine_sim, data, top_n=10)
-print(f"Recommendations for {anime_title}: {recommendations}")
-
-anime_title = 'Demon Slayer: Kimetsu no Yaiba'
-recommendations = get_recommendations(anime_title, cosine_sim, data, top_n=10)
-print(f"Recommendations for {anime_title}: {recommendations}")
-
-anime_title = 'Your Lie in April'
-recommendations = get_recommendations(anime_title, cosine_sim, data, top_n=10)
-print(f"Recommendations for {anime_title}: {recommendations}")
-
-anime_title = 'Mob Psycho 100'
-recommendations = get_recommendations(anime_title, cosine_sim, data, top_n=10)
-print(f"Recommendations for {anime_title}: {recommendations}")
+# Example usage
+if __name__ == "__main__":
+    test_titles = [
+        'Your Lie in April',
+    ]
+    
+    methods = ['cosine', 'graph', 'hashmap', 'hybrid']
+    
+    for title in test_titles:
+        print(f"\nRecommendations for {title}:")
+        for method in methods:
+            recommendations = get_combined_recommendations(title, method=method, cosine_sim=cosine_sim)
+            print(f"\n{method.upper()} method:")
+            for i, rec in enumerate(recommendations, 1):
+                print(f"{i}. {rec}")
+            
+            metrics = evaluate_recommendations(recommendations, data)
+            print(f"Metrics: {metrics}")
