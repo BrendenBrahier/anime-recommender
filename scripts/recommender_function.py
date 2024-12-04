@@ -107,7 +107,7 @@ hashmap = build_hashmap(data)
 # Example usage
 if __name__ == "__main__":
     test_titles = [
-        'Your Lie in April',
+        '86 Eighty-Six',
     ]
     
     methods = ['graph', 'hashmap']
