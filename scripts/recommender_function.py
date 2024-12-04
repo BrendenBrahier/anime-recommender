@@ -89,49 +89,17 @@ def get_cosine_recommendations(title, similarity_matrix, data, top_n=10):
     anime_indices = [i[0] for i in similarity_scores]
     return data['name_english'].iloc[anime_indices].tolist()
     
-def get_combined_recommendations(title, method='hybrid', top_n=10, cosine_sim=None):
+def get_combined_recommendations(title, method='graph', top_n=10, cosine_sim=None):
     if title not in indices:
-        return f"'{title}' not found in the dataset."
+        return []
 
-    if method == 'cosine':
-        return get_cosine_recommendations(title, cosine_sim, data, top_n)
-    elif method == 'graph':
+    if method == 'graph':
         return get_graph_recommendations(graph, title, data, indices, top_n)
     elif method == 'hashmap':
         return get_hashmap_recommendations(hashmap, title, data, cosine_sim, top_n)
-    elif method == 'hybrid':
-        cosine_recs = set(get_cosine_recommendations(title, cosine_sim, data, top_n))
-        graph_recs = set(get_graph_recommendations(graph, title, data, indices, top_n))
-        hashmap_recs = set(get_hashmap_recommendations(hashmap, title, data, cosine_sim, top_n))
-        
-        final_recs = []
-        common_recs = cosine_recs.intersection(graph_recs, hashmap_recs)
-        final_recs.extend(list(common_recs))
-        
-        remaining = list((cosine_recs | graph_recs | hashmap_recs) - common_recs)
-        final_recs.extend(remaining[:top_n - len(final_recs)])
-        
-        return final_recs[:top_n]
     else:
-        raise ValueError("Invalid method. Use 'cosine', 'graph', 'hashmap', or 'hybrid'")
+        return []
 
-def evaluate_recommendations(recommendations, data):
-    if not recommendations:
-        return {
-            'coverage': 0,
-            'diversity': 0,
-            'relevance': 0
-        }
-    
-    coverage = len(set(recommendations)) / len(data)
-    diversity = len(set(recommendations)) / len(recommendations)
-    relevance = sum([1 for rec in recommendations if rec in data['name_english'].values]) / len(recommendations)
-    
-    return {
-        'coverage': coverage,
-        'diversity': diversity,
-        'relevance': relevance
-    }
 # Initialize the graph with the computed cosine similarity
 graph = build_graph(data, cosine_sim, threshold=0.2)
 hashmap = build_hashmap(data)
@@ -142,15 +110,16 @@ if __name__ == "__main__":
         'Your Lie in April',
     ]
     
-    methods = ['cosine', 'graph', 'hashmap', 'hybrid']
+    methods = ['graph', 'hashmap']
     
     for title in test_titles:
         print(f"\nRecommendations for {title}:")
         for method in methods:
-            recommendations = get_combined_recommendations(title, method=method, cosine_sim=cosine_sim)
+            recommendations = get_combined_recommendations(title, method=method, top_n=10, cosine_sim=cosine_sim)
             print(f"\n{method.upper()} method:")
-            for i, rec in enumerate(recommendations, 1):
-                print(f"{i}. {rec}")
+            if recommendations:
+                for i, rec in enumerate(recommendations, 1):
+                    print(f"{i}. {rec}")
+            else:
+                print("No recommendations found.")
             
-            metrics = evaluate_recommendations(recommendations, data)
-            print(f"Metrics: {metrics}")
