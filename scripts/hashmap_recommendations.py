@@ -1,8 +1,8 @@
-import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics.pairwise import cosine_similarity
 from scipy.sparse import hstack
+import pandas as pd
 
 def build_hashmap(data):
     hashmap = {}
@@ -12,7 +12,7 @@ def build_hashmap(data):
         }
     return hashmap
 
-def get_recommendations(hashmap, anime_title, data, cosine_sim, top_n=10):
+def get_recommendations(hashmap, anime_title, data, cosine_sim, original_scores, top_n=10):
     if anime_title not in hashmap:
         return f"'{anime_title}' not found in the dataset."
     
@@ -25,7 +25,15 @@ def get_recommendations(hashmap, anime_title, data, cosine_sim, top_n=10):
     for i, _ in similarity_scores:
         anime_name = data['name_english'].iloc[i]
         if anime_name not in seen:
-            recommendations.append(anime_name)
+            original_score = original_scores[i]
+            recommended_anime = {
+                'name_english': data['name_english'].iloc[i],
+                'img_url': data['img_url'].iloc[i],
+                'genres': data['genres'].iloc[i],
+                'score': original_score,
+                'year': data['start_date'].iloc[i].year if pd.notna(data['start_date'].iloc[i]) else 'Unknown'
+            }
+            recommendations.append(recommended_anime)
             seen.add(anime_name)
     
     return recommendations[:top_n]
@@ -35,6 +43,9 @@ if __name__ == "__main__":
     # Load the dataset
     data = pd.read_json('data/cleaned_anime_data.json')
 
+    # Ensure 'start_date' is in datetime format
+    data['start_date'] = pd.to_datetime(data['start_date'], errors='coerce')
+
     # Initialize the hashmap - moved after cosine similarity calculation
     try:
         synopsis_data = pd.read_json('data/synopsis_keywords.json')
@@ -43,9 +54,13 @@ if __name__ == "__main__":
         raise FileNotFoundError("The synopsis_keywords.json file is missing.")
 
     data = data.merge(synopsis_data, on='name_english', how='left')
-    data = data[['name_english', 'score', 'ranked', 'popularity', 'members', 'genres', 'type_of', 'studios', 'start_date', 'end_date', 'synopsis_keywords']]
+    data = data[['name_english', 'score', 'ranked', 'popularity', 'members', 'genres', 'type_of', 'studios', 'start_date', 'end_date', 'synopsis_keywords', 'img_url']]
     data[['score', 'ranked', 'popularity', 'members']] = data[['score', 'ranked', 'popularity', 'members']].fillna(0)
     data['synopsis_keywords'] = data['synopsis_keywords'].fillna("")
+    
+    # Store original scores before scaling and weighting
+    original_scores = data['score'].copy()
+    
     scaler = MinMaxScaler()
     data[['score', 'ranked', 'popularity', 'members']] = scaler.fit_transform(data[['score', 'ranked', 'popularity', 'members']])
     NUMERICAL_WEIGHT = 0.5
@@ -75,10 +90,10 @@ if __name__ == "__main__":
 
     test_titles = ['86 Eighty-Six']
     for title in test_titles:
-        recommendations = get_recommendations(hashmap, title, data, cosine_sim, top_n=10)
+        recommendations = get_recommendations(hashmap, title, data, cosine_sim, original_scores, top_n=10)
         print(f"\nRecommendations for {title}:")
         if recommendations:
             for i, rec in enumerate(recommendations, 1):
-                print(f"{i}. {rec}")
+                print(f"{i}. {rec['name_english']} - {rec['img_url']} - {rec['genres']} - {rec['score']} - {rec['year']}")
         else:
             print("No recommendations found.")
