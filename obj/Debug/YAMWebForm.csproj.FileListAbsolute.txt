@@ -1,0 +1,11 @@
+C:\Users\trentford\source\repos\YAMWebForm\YAMWebForm\bin\Debug\YAMWebForm.exe.config
+C:\Users\trentford\source\repos\YAMWebForm\YAMWebForm\bin\Debug\YAMWebForm.exe
+C:\Users\trentford\source\repos\YAMWebForm\YAMWebForm\bin\Debug\YAMWebForm.pdb
+C:\Users\trentford\source\repos\YAMWebForm\YAMWebForm\obj\Debug\YAMWebForm.csproj.AssemblyReference.cache
+C:\Users\trentford\source\repos\YAMWebForm\YAMWebForm\obj\Debug\YAMWebForm.searchForm.resources
+C:\Users\trentford\source\repos\YAMWebForm\YAMWebForm\obj\Debug\YAMWebForm.Properties.Resources.resources
+C:\Users\trentford\source\repos\YAMWebForm\YAMWebForm\obj\Debug\YAMWebForm.csproj.GenerateResource.cache
+C:\Users\trentford\source\repos\YAMWebForm\YAMWebForm\obj\Debug\YAMWebForm.csproj.CoreCompileInputs.cache
+C:\Users\trentford\source\repos\YAMWebForm\YAMWebForm\obj\Debug\YAMWebForm.exe
+C:\Users\trentford\source\repos\YAMWebForm\YAMWebForm\obj\Debug\YAMWebForm.pdb
+C:\Users\trentford\source\repos\YAMWebForm\YAMWebForm\obj\Debug\YAMWebForm.SearchByCategories.resources
