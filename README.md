@@ -1,3 +1,7 @@
+## Anime recommender data refresh (2026)
+
+See [DATA.md](DATA.md) for the October 2026 catalog, local SQLite database, source attribution, rebuild commands, quality checks, and integration notes.
+
 <H1> COP3530 - Project 3 </h1>
 This is the template for Project 3 repositories. It includes all the assignment instructions and documentation to help you use GitHub.
 
