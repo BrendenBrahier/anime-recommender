@@ -1,4 +1,6 @@
 import pandas as pd
+import os
+from pathlib import Path
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics.pairwise import cosine_similarity
@@ -8,18 +10,21 @@ from hashmap_recommendations import build_hashmap, get_recommendations as get_ha
 
 
 # load the dataset
-data = pd.read_json('data/cleaned_anime_data.json')
+DATA_DIR = Path(os.environ.get('ANIME_DATA_DIR', Path(__file__).resolve().parents[1] / 'data'))
+data = pd.read_json(DATA_DIR / 'cleaned_anime_data.json')
 
 # initialize the graph and hashmap - moved after cosine similarity calculation
 try:
-    synopsis_data = pd.read_json('data/synopsis_keywords.json')
+    synopsis_data = pd.read_json(DATA_DIR / 'synopsis_keywords.json')
     # Ensure it only contains `name_english` and `synopsis_keywords`
-    synopsis_data = synopsis_data[['name_english', 'synopsis_keywords']]
+    join_key = 'anime_id' if 'anime_id' in data.columns and 'anime_id' in synopsis_data.columns else 'name_english'
+    synopsis_data = synopsis_data[[join_key, 'synopsis_keywords']]
 except FileNotFoundError:
     raise FileNotFoundError("The synopsis_keywords.json file is missing.")
 
 # Merge the synopsis keywords into the main dataset
-data = data.merge(synopsis_data, on='name_english', how='left')
+data = data.merge(synopsis_data, on=join_key, how='left',
+                  validate='one_to_one' if join_key == 'anime_id' else None)
 
 # Select relevant columns
 data = data[['name_english', 'score', 'ranked', 'popularity', 'members', 'genres', 'type_of', 'studios', 'start_date', 'end_date', 'synopsis_keywords']]
@@ -81,14 +86,14 @@ def get_cosine_recommendations(title, similarity_matrix, data, top_n=10):
     """Get recommendations using cosine similarity"""
     if title not in indices:
         return f"'{title}' not found in the dataset."
-    
+
     idx = indices[title]
     similarity_scores = list(enumerate(similarity_matrix[idx]))
     similarity_scores = sorted(similarity_scores, key=lambda x: x[1], reverse=True)
     similarity_scores = similarity_scores[1:top_n+1]
     anime_indices = [i[0] for i in similarity_scores]
     return data['name_english'].iloc[anime_indices].tolist()
-    
+
 def get_combined_recommendations(title, method='graph', top_n=10, cosine_sim=None):
     if title not in indices:
         return []
@@ -109,9 +114,9 @@ if __name__ == "__main__":
     test_titles = [
         '86 Eighty-Six',
     ]
-    
+
     methods = ['graph', 'hashmap']
-    
+
     for title in test_titles:
         print(f"\nRecommendations for {title}:")
         for method in methods:
@@ -122,4 +127,4 @@ if __name__ == "__main__":
                     print(f"{i}. {rec}")
             else:
                 print("No recommendations found.")
-            
+
