@@ -35,7 +35,7 @@ python -m venv .venv
 ./.venv/Scripts/python.exe -m pip install -r requirements-notebook.txt
 ```
 
-The notebook uses `data/current/catalog.json`, resolves paths from either the repository or notebook directory, and examines cohort missingness, source provenance, identity decisions, separate score distributions, genres, years and cover availability. It measures data quality, not recommendation accuracy. The local notebook retains executed outputs; the GitHub copy has outputs cleared to keep the review small. Full downloaded datasets remain local.
+The notebook uses `data/current/catalog.json`, resolves paths from either the repository or notebook directory, and examines cohort missingness, source provenance, identity decisions, separate score distributions, genres, years and cover availability. It measures data quality, not recommendation accuracy. Executed tables and charts are retained locally and on GitHub. Restored exploratory sections cover descriptive statistics, MAL rank and membership relationships, category combinations, demographics, studio groups, time trends, and outliers. Large tables are summarized or sampled; full downloaded datasets remain local. Saved outputs describe the documented snapshot and should be regenerated after rebuilding the catalog.
 
 ## Identity and scores
 
@@ -62,4 +62,4 @@ The old recommender defaults to original data. `ANIME_DATA_DIR=data/current` opt
 
 ## Sources and redistribution
 
-The base catalog is [cedya77/anime-offline-database](https://github.com/cedya77/anime-offline-database), descended from manami-project, under ODbL 1.0 / DbCL 1.0. Attribute both projects and retain the dataset license requirements. The chosen Kaggle dataset declares the same license family. The [MAL mirror](https://github.com/meesvandongen/anime-dataset) has no declared repository reuse license, and API availability does not grant blanket redistribution rights to text or images. Source providers retain their rights. Raw sources and generated data remain ignored by Git; confirm permissions before publicly distributing the combined database. The checked-in notebook contains analysis code with outputs cleared.
+The base catalog is [cedya77/anime-offline-database](https://github.com/cedya77/anime-offline-database), descended from manami-project, under ODbL 1.0 / DbCL 1.0. Attribute both projects and retain the dataset license requirements. The chosen Kaggle dataset declares the same license family. The [MAL mirror](https://github.com/meesvandongen/anime-dataset) has no declared repository reuse license, and API availability does not grant blanket redistribution rights to text or images. Source providers retain their rights. Raw sources and generated data remain ignored by Git; confirm permissions before publicly distributing the combined database. The checked-in notebook contains analysis code, aggregate charts, and bounded metadata samples; it does not embed the full dataset or cover artwork.
