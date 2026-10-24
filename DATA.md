@@ -1,74 +1,65 @@
-# Anime data refresh
+# Anime data pipeline (October 2026)
 
-The active data workspace is `data/current/`. Build it with Python 3.10+ and Git; no pip packages, database server, MAL credentials, or VS Code extensions are required. Original project datasets remain as historical inputs in `data/`.
+The canonical catalog, SQLite database, website export and quality report are in `data/current/`. Original project data remains in `data/`. See [DATA_AUDIT.md](DATA_AUDIT.md) for measured coverage, source selection, mapping decisions and remaining gaps.
 
-## Run on this Windows computer
+## Rebuild and inspect
 
-From the repository folder in PowerShell:
+Python 3.10+ and Git are sufficient for the importer. In PowerShell, from this repository:
 
 ```powershell
-# Rebuild using the downloaded snapshots, without network access
-./scripts/data.ps1 scripts/refresh_database.py
-# Search the SQLite database
-./scripts/data.ps1 scripts/query_database.py "Frieren"
-./scripts/data.ps1 scripts/query_database.py --year 2026 --limit 5
-# Check the import and generated database
-./scripts/data.ps1 -m unittest discover -s tests -v
-# Download sources on a new machine, or reuse an existing cache
+# Obtain the base catalog and MAL mirror on a new computer
 ./scripts/data.ps1 scripts/refresh_database.py --download
-# Explicitly update both source snapshots
-./scripts/data.ps1 scripts/refresh_database.py --download --refresh
+# Download the pinned Kaggle v1 and current seasonal/popular/MAL mapping evidence
+./scripts/data.ps1 scripts/enrich_catalog.py
+# Target recent titles still missing synopses or categories
+./scripts/data.ps1 scripts/enrich_catalog.py --gaps-only
+# Build the final database from cached sources
+./scripts/data.ps1 scripts/refresh_database.py
+# Optional: check 150 cover URLs, then rebuild to attach results
+./scripts/data.ps1 scripts/audit_images.py
+./scripts/data.ps1 scripts/refresh_database.py
+./scripts/data.ps1 scripts/query_database.py Frieren --limit 5
+./scripts/data.ps1 -m unittest discover -s tests -v
 ```
 
-The PowerShell helper uses a local `.venv` if present, otherwise the bundled Python available on this computer, otherwise `python` on PATH. On other platforms use `python scripts/refresh_database.py`. No global installations were necessary.
+The helper uses `.venv` first, the available bundled Python second, and `python` on PATH otherwise. Downloads are cached; offline rebuilds use those cached bytes. Base/mirror `--download --refresh` explicitly updates those inputs. Tenrai requests reuse cached responses, so retain their retrieval dates and archive the old `data/raw/tenrai/` directory before collecting a new snapshot. Do not run refresh/build commands concurrently. Exact reconstruction requires retaining the raw caches; a fresh online download can yield newer data.
 
-## Sources and freshness
+The [public Jikan API closed October 1, 2026](https://github.com/jikan-me/jikan-rest/issues/613). The legacy `--jikan` option now requires `JIKAN_BASE_URL` for an explicitly configured compatible instance. The working replacement used here is [Tenrai](https://api.tenrai.org/documentation), whose public API follows the Jikan schema. Requests are throttled, retried on transient errors and 429s, and stored with URLs and retrieval times. A 404 is recorded as evidence, not treated as proof that two IDs are equivalent.
 
-1. [cedya77/anime-offline-database](https://github.com/cedya77/anime-offline-database), continuation of [manami-project](https://github.com/manami-project/anime-offline-database): the downloaded base snapshot reports **2026-10-19**, schema release **2026-43**, and 38,250 entries. This supplies identity mappings, titles, aliases, tags, studios, episodes, season/year, relationships, images and aggregate scores. Its download URL is mutable; the quality report records the actual snapshot date, schema and SHA-256.
-2. [meesvandongen/anime-dataset](https://github.com/meesvandongen/anime-dataset): MAL metadata mirror pinned locally to Git revision `d48a8d9b942a76101cba99f5d7825186bb07e8cb`, committed **2026-10-22**. It adds English titles, synopses, genres, dates, MAL ranks, membership and popularity for matching MAL IDs. The source refreshes incrementally: a new repository commit does **not** mean every record was fetched that day. `mal_source_updated_at` is the upstream field, not a verified scrape timestamp.
+## Notebook
 
-The canonical `score` remains the base dataset's cross-provider arithmetic mean, with `score_source` identifying it. `mal_score` is a separate value from the mirror. Do not label the aggregate score as a MAL rating. Optional Jikan enrichment replaces the score with MAL's value and labels that source explicitly.
-
-The live [Jikan API](https://docs.api.jikan.moe/) timed out during this session, so the delivered build uses the mirror. A resumable, rate-limited optional importer is available:
+Open `notebooks/EDA.ipynb` and select `.venv/Scripts/python.exe` in VS Code. The Microsoft Jupyter extension is installed on this computer. Dependencies are in `requirements-notebook.txt`; the local environment already contains them.
 
 ```powershell
-./scripts/data.ps1 scripts/refresh_database.py --download --jikan
-# Full MAL catalog instead of the seasonal/top subset; substantially slower
-./scripts/data.ps1 scripts/refresh_database.py --download --jikan --full-mal
+python -m venv .venv
+./.venv/Scripts/python.exe -m pip install -r requirements-notebook.txt
 ```
 
-Cached API pages include URL, retrieval time and checksum. Use `--refresh` for new pages; ordinary runs resume from cache. A failed download exits without building from a silently incomplete request. Offline builds can explicitly use whatever cache is available, with coverage reported.
+The notebook uses `data/current/catalog.json`, resolves paths from either the repository or notebook directory, and examines cohort missingness, source provenance, identity decisions, separate score distributions, genres, years and cover availability. It measures data quality, not recommendation accuracy. The local notebook retains executed outputs; the GitHub copy has outputs cleared to keep the review small. Full downloaded datasets remain local.
 
-## Data contract
+## Identity and scores
 
-Validated build coverage: 38,250 catalog entries; 30,870 unambiguous MAL IDs; 25,580 mirror-enriched records; 23,295 nonempty synopses; 26,154 aggregate scores; 1,232 entries with year 2026. There are 14 ambiguous MAL mappings, 111 mirror IDs excluded because they are absent from the base, and 370 duplicate display titles. Five unit/integration tests passed, including SQLite integrity, foreign keys, ID uniqueness, export consistency and 2026 coverage. A fresh offline rebuild also completed successfully. Optional live Jikan downloads could not be validated against the service because requests timed out.
+- Join by `anime_id`, never by display title. One-to-one MAL IDs use `mal:<id>`; source-only records use a provider URL. Source-only IDs can change when upstream mappings change.
+- `data/mapping_decisions.json` records evidence-based decisions for the 14 original ambiguous groups. Eight were split into 16 MAL-specific records. No original aggregate score, broad tags or uncertain provider links are copied to those records. `supersedes_ambiguous_id` and the report preserve the old-to-new mapping. Six uncertain groups remain flagged and excluded from recommendations.
+- `aggregate_score` is the cross-provider arithmetic mean. `mal_score` is exclusively the MAL rating; each has its own source field. `score` remains a compatibility alias for `aggregate_score`, never switches meaning after enrichment, and is the legacy SQLite column. SQLite exposes `mal_score` separately. Full records live in `anime.metadata_json`.
+- Missing values remain null. Placeholder synopsis text is treated as missing. No ratings or synopses are invented. MAL vote counts are retained where available as `mal_scored_by`.
+- Canonical `genres` holds MAL categories, including themes/demographics; `tags` holds broad provider tags. The compatibility export combines them only for the old feature-vector code.
+- `field_sources` records Kaggle or live API field overrides. Mirror fields retain the mirror revision and source-updated field. A 2026 upload/commit/retrieval date does not prove every underlying field was refreshed that day.
 
-- `anime_id` is a primary key. Use it for joins; titles are not unique. For one-to-one MAL mappings it is `mal:<id>`; otherwise it is a canonical source URL prefixed with `source:`. Source-only identities can change if upstream merges or changes their provider mappings in a future snapshot.
-- Records with multiple MAL IDs are retained and marked `ambiguous_mal_mapping`, but receive no mirror enrichment. Auxiliary IDs absent from the base are counted and excluded rather than resurrected.
-- Missing scores, dates and counts remain JSON `null` / SQL `NULL`. Unknown episode counts (upstream zero) become null. Seasons are not converted to invented precise dates.
-- `genres` holds MAL categories (including themes and demographics). `tags` holds broader cross-provider tags. `cleaned_anime_data.json` combines both for compatibility with the old feature-vector code; canonical `catalog.json` keeps them separate.
-- Missing synopses are left missing. Keyword exports use deterministic lowercase tokenization, not the old spaCy lemmatizer. Existing user histories and individual user ratings are not part of these sources. This supports the project's content-based recommender, not collaborative filtering.
+## Website data
 
-## Outputs
+`frontend_data.json` includes identity, titles, synopsis, categories, type, year/season/status, episodes, studios, age rating, source material, duration, separate ratings and vote counts, MAL link, cover/thumbnail URLs, optional image variants, alternate covers, alt text, image-check status and optional trailer URL. Availability differs by title.
 
-| File | Purpose |
-| --- | --- |
-| `anime.sqlite` | Queryable catalog, indexed titles/years/tags, provider sources and build provenance |
-| `catalog.json` | Canonical records with stable IDs and source information |
-| `cleaned_anime_data.json` | Legacy field names and combined feature categories |
-| `frontend_data.json` | JSON records for UI consumption |
-| `synopsis_keywords.json` | Text features keyed by `anime_id` |
-| `alphabetized_titles.json` | Distinct display-title list; not an identity lookup |
-| `quality_report.json` | Counts, missingness, source checksums/revisions and ambiguous matches |
+All catalog entries currently have cover URL strings; this does not mean all images have been fetched or verified. `image_availability` distinguishes reachable samples, placeholder-like URLs and unverified URLs. The eventual website should serve its own generic fallback when a remote image fails, lazy-load artwork, preserve attribution, and avoid claiming blanket image reuse rights. Cover images were not downloaded or republished. Licensor names are not treated as current streaming availability.
 
-SQLite `anime.metadata_json` stores all fields; `anime` exposes indexed identity/title/year/score columns. `tags` and `sources` provide normalized many-to-one joins with foreign keys. Related provider URLs and aliases are retained in metadata JSON.
+`recommendation_eligible` excludes uncertain identity groups and upcoming titles with the status available in this snapshot; it is a basic data flag, not a recommendation score or age/content filter. The website still needs user-facing content filters.
 
-## Existing recommender integration
+## Files and existing code
 
-The old recommendation script still defaults to the original data. Set `ANIME_DATA_DIR` to `data/current` to select this refresh; its synopsis join now uses IDs when present and validates one-to-one matches. This data task does not replace its algorithms: the legacy dense pairwise similarity matrix and Python graph are expensive at 38,250 entries. Use the lightweight database query command to inspect this catalog. A later recommender update should use sparse nearest-neighbor retrieval before running the full new catalog through that algorithm.
+`anime.sqlite` has indexed anime/title/year/score fields, normalized tags and provider URLs, foreign keys and build provenance. `catalog.json` is canonical; `cleaned_anime_data.json` retains legacy field names; `synopsis_keywords.json` uses deterministic lowercase tokenization and IDs; `alphabetized_titles.json` is a distinct display list, not an ID lookup; `quality_report.json` contains counts and source hashes.
 
-## Attribution and distribution
+The old recommender defaults to original data. `ANIME_DATA_DIR=data/current` opts into the refresh and its synopsis join uses IDs. Its dense similarity matrix and graph still need scaling work before full-catalog use. This task does not claim or test recommendation accuracy.
 
-The base database is ODbL 1.0 with DbCL 1.0 contents. Attribute both cedya77 and manami-project and follow the source license for redistributed adapted databases; the original license text is saved in `data/raw/LICENSE-ODbL.txt`. Source providers retain rights to their content. The MAL mirror does not declare a reuse license in its repository; downloaded mirror content and enriched database artifacts are kept local and ignored by Git. Confirm the applicable permissions before publishing a combined data dump. Code, instructions and tests can be reviewed separately from the downloaded data.
+## Sources and redistribution
 
-To reproduce this exact local build, retain `data/raw/`, including the mirror checkout; `--download --refresh` intentionally moves to newer inputs. Git does not track the raw cache or generated database. The original raw and generated files are retained here for rollback and comparison.
+The base catalog is [cedya77/anime-offline-database](https://github.com/cedya77/anime-offline-database), descended from manami-project, under ODbL 1.0 / DbCL 1.0. Attribute both projects and retain the dataset license requirements. The chosen Kaggle dataset declares the same license family. The [MAL mirror](https://github.com/meesvandongen/anime-dataset) has no declared repository reuse license, and API availability does not grant blanket redistribution rights to text or images. Source providers retain their rights. Raw sources and generated data remain ignored by Git; confirm permissions before publicly distributing the combined database. The checked-in notebook contains analysis code with outputs cleared.

@@ -1,0 +1,20 @@
+{
+  "reviewed_on": "2026-10-23",
+  "evidence_source": "https://api.tenrai.org/v1/anime/{id}/full",
+  "decisions": [
+    {"mal_ids": [39189,45787], "action": "quarantine", "reason": "Similar transliterated titles, but ONA/TV and 54/57 episode disagreement; no decisive duplicate or separate-work evidence."},
+    {"mal_ids": [315,60451], "action": "split", "reason": "Separate films: Xiao Qian released in 1997 and Xiaoqian in 2024."},
+    {"mal_ids": [62987,64378], "action": "split", "reason": "Part 1 and Part 2, with January and July 2026 starts; Part 2 synopsis explicitly identifies a second part."},
+    {"mal_ids": [10459,11589], "action": "split", "reason": "MAL explicitly reports sequel/prequel relations and calls Shougekijou the retitled second part."},
+    {"mal_ids": [22177,38870], "action": "quarantine", "reason": "Different titles but same year and sparse summaries; insufficient evidence to identify or merge these short films."},
+    {"mal_ids": [30140,45268], "action": "quarantine", "reason": "Likely duplicate transliterations with 26 episodes each, but no authoritative redirect or duplicate confirmation."},
+    {"mal_ids": [59380,63451], "action": "split", "reason": "Jiu Wo is an ONA about a strange bottle; Save Me is an Xdinary Heroes music video."},
+    {"mal_ids": [37135,55706], "action": "split", "reason": "Different songs and artists: Islay by Otogivanashi and Music by Kuusou Iinkai."},
+    {"mal_ids": [54100,54152], "action": "split", "reason": "Different songs and artists despite shared asmi vocals: MIMiNARI's Ienai and meiyo's Nani Yatte mo Umaku Ikanai."},
+    {"mal_ids": [64901,65096], "action": "quarantine", "reason": "Identical title and missing synopses; differing dates alone do not establish different films."},
+    {"mal_ids": [65177,65180], "action": "quarantine", "reason": "65177 returned HTTP 404 while 65180 is available. A 404 alone does not prove a redirect or authorize collapsing the IDs."},
+    {"mal_ids": [59994,60524], "action": "split", "reason": "Different artists: Moonlight by Suisei Hoshimachi versus Moonlight by MOON SHARK."},
+    {"mal_ids": [57187,64071], "action": "split", "reason": "Different artists and release years: millennium parade's Veil (2019) versus Misuzu Hataya's Veil (2026)."},
+    {"mal_ids": [58039,62463], "action": "quarantine", "reason": "Same title, differing dates, and no synopsis for 62463; not enough evidence to split or merge confidently."}
+  ]
+}
