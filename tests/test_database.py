@@ -31,6 +31,20 @@ class NormalizeTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             refresh.enrich({'mal_id': 1}, {'mal_id': 2}, '2026-10-22')
 
+    def test_mal_enrichment_does_not_overwrite_aggregate(self):
+        row = refresh.normalize({'sources':['https://myanimelist.net/anime/1'],'title':'A','type':'TV','score':{'arithmeticMean':8.1}})
+        refresh.enrich(row, {'mal_id':1,'title':'A','score':7.2}, '2026-10-23')
+        self.assertEqual(row['score'],8.1)
+        self.assertEqual(row['mal_score'],7.2)
+        self.assertEqual(row['score_source'],'aod_cross_provider_mean')
+
+    def test_placeholder_synopses_are_not_real_coverage(self):
+        from enrich_catalog import present, number
+        self.assertFalse(present('No synopsis information has been added to this title.'))
+        self.assertIsNone(number('Unknown'))
+        self.assertIsNone(number('nan'))
+        self.assertIsNone(number(0))
+
 
 @unittest.skipUnless((ROOT / 'data/current/anime.sqlite').exists(), 'Build database first')
 class DatabaseTests(unittest.TestCase):
@@ -50,6 +64,25 @@ class DatabaseTests(unittest.TestCase):
         self.assertEqual({r['anime_id'] for r in catalog}, {r['anime_id'] for r in keywords})
         self.assertEqual(len(catalog), report['catalog_entries'])
         self.assertEqual(len({r['anime_id'] for r in catalog}), len(catalog))
+
+    def test_reviewed_mappings_and_score_contract(self):
+        rows = json.loads((ROOT/'data/current/catalog.json').read_text(encoding='utf-8'))
+        report = json.loads((ROOT/'data/current/quality_report.json').read_text(encoding='utf-8'))
+        splits = [r for r in rows if r.get('supersedes_ambiguous_id')]
+        applied = [d for d in report['additional_sources']['mapping_review'] if d['applied']]
+        self.assertEqual(len(splits),sum(len(d['replacements']) for d in applied))
+        self.assertTrue(all(r['aggregate_score'] is None for r in splits))
+        self.assertEqual(sum(r['ambiguous_mal_mapping'] for r in rows),report['ambiguous_mal_mappings'])
+        for r in rows:
+            self.assertEqual(r['score'],r['aggregate_score'])
+            if r['ambiguous_mal_mapping']:
+                self.assertFalse(r['recommendation_eligible'])
+            if r['mal_score'] is not None:
+                self.assertGreater(r['mal_score'],0)
+                self.assertLessEqual(r['mal_score'],10)
+        web = json.loads((ROOT/'data/current/frontend_data.json').read_text(encoding='utf-8'))
+        self.assertEqual({r['anime_id'] for r in web},{r['anime_id'] for r in rows})
+        self.assertTrue(all('image_alt' in r and 'mal_score' in r and 'aggregate_score' in r for r in web))
 
 
 if __name__ == '__main__':

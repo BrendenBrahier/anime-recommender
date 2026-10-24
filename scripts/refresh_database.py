@@ -1,5 +1,7 @@
 """Reproducible anime catalog builder. Python 3.10+, standard library only."""
 import argparse
+import os
+import sys
 from collections import Counter
 import hashlib
 import json
@@ -13,6 +15,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'scripts'))
 RAW = ROOT / 'data/raw'
 OUT = ROOT / 'data/current'
 SOURCE = 'https://github.com/cedya77/anime-offline-database/releases/download/latest/anime-offline-database-minified.json'
@@ -65,7 +68,10 @@ def sync_jikan(year, full=False, refresh=False):
         while True:
             key = re.sub(r'[^a-zA-Z0-9]', '_', endpoint)
             path = RAW / 'jikan' / f'{key}_{page:04}.json'
-            url = f'https://api.jikan.moe/v4/{endpoint}&page={page}&limit=25'
+            base_url = os.environ.get('JIKAN_BASE_URL')
+            if not base_url:
+                raise ValueError('The public Jikan API closed October 1, 2026. Set JIKAN_BASE_URL to your own compatible instance, or run scripts/enrich_catalog.py for Tenrai.')
+            url = f'{base_url.rstrip("/")}/{endpoint}&page={page}&limit=25'
             data = fetch(url, path, refresh)
             if not isinstance(data.get('data'), list) or 'pagination' not in data:
                 raise ValueError(f'Invalid API response: {url}')
@@ -97,7 +103,7 @@ def normalize(entry):
         'ranked': None, 'popularity': None, 'members': None, 'synopsis': None,
         'start_date': None, 'end_date': None, 'genres': [],
         'tags': sorted(set(entry.get('tags', []))), 'studios': ', '.join(entry.get('studios', [])),
-        'img_url': entry.get('picture'), 'sources': sorted(entry['sources']),
+        'img_url': entry.get('picture'), 'thumbnail_url': entry.get('thumbnail'), 'sources': sorted(entry['sources']),
         'related_sources': sorted(entry.get('relatedAnime', [])), 'mal_metadata_retrieved_at': None,
         'metadata_source': 'anime_offline_database', 'mal_source_updated_at': None,
         'ambiguous_mal_mapping': sum('myanimelist.net/anime/' in u for u in entry['sources']) > 1,
@@ -109,7 +115,7 @@ def enrich(row, entry, retrieved_at):
         raise ValueError('MAL identity mismatch')
     row.update(name_english=entry.get('title_english') or entry['title'],
                name=entry['title'], synopsis=entry.get('synopsis'),
-               score=entry.get('score'), score_source='myanimelist_via_jikan',
+               mal_score=entry.get('score'), mal_score_source='myanimelist_via_jikan',
                ranked=entry.get('rank'), popularity=entry.get('popularity'), members=entry.get('members'),
                genres=sorted({g['name'].lower() for key in ('genres', 'explicit_genres', 'themes', 'demographics') for g in entry.get(key, [])}),
                studios=', '.join(s['name'] for s in entry.get('studios', [])),
@@ -155,6 +161,7 @@ def build():
                        metadata_source='myanimelist_mirror', mal_source_updated_at=entry.get('updated_at'))
             # Keep the more recent base snapshot score rather than assuming all mirror rows are fresh.
             row['mal_score'] = entry.get('mean')
+            row['mal_scored_by'] = entry.get('num_scoring_users')
     inputs = []
     for path in sorted((RAW / 'jikan').glob('*.json')):
         if path.name.endswith('.provenance.json'):
@@ -171,6 +178,8 @@ def build():
             previous = rows[key]['mal_metadata_retrieved_at']
             if previous is None or provenance['retrieved_at'] > previous:
                 enrich(rows[key], entry, provenance['retrieved_at'])
+    from enrich_catalog import apply as apply_enrichment
+    enrichment_report = apply_enrichment(rows, normalize)
     catalog = sorted(rows.values(), key=lambda x: x['anime_id'])
     for row in catalog:
         if not row['name_english'] or (row['score'] is not None and not 0 <= row['score'] <= 10):
@@ -183,7 +192,8 @@ def build():
     con.executescript('''
         PRAGMA foreign_keys=ON;
         CREATE TABLE anime (anime_id TEXT PRIMARY KEY, mal_id INTEGER UNIQUE, title TEXT NOT NULL,
-          year INTEGER, score REAL CHECK(score BETWEEN 0 AND 10), metadata_json TEXT NOT NULL);
+          year INTEGER, score REAL CHECK(score BETWEEN 0 AND 10),
+          mal_score REAL CHECK(mal_score BETWEEN 0 AND 10), metadata_json TEXT NOT NULL);
         CREATE TABLE tags (anime_id TEXT REFERENCES anime, tag TEXT, kind TEXT, PRIMARY KEY(anime_id,tag,kind));
         CREATE TABLE sources (anime_id TEXT REFERENCES anime, url TEXT, PRIMARY KEY(anime_id,url));
         CREATE TABLE provenance (name TEXT PRIMARY KEY, metadata_json TEXT NOT NULL);
@@ -192,7 +202,7 @@ def build():
         CREATE INDEX tags_tag ON tags(tag);
     ''')
     for row in catalog:
-        con.execute('INSERT INTO anime VALUES (?,?,?,?,?,?)', (row['anime_id'],row['mal_id'],row['name_english'],row['year'],row['score'],json.dumps(row,ensure_ascii=False,allow_nan=False)))
+        con.execute('INSERT INTO anime VALUES (?,?,?,?,?,?,?)', (row['anime_id'],row['mal_id'],row['name_english'],row['year'],row['score'],row['mal_score'],json.dumps(row,ensure_ascii=False,allow_nan=False)))
         for kind in ('tags','genres'):
             con.executemany('INSERT INTO tags VALUES (?,?,?)', [(row['anime_id'],t,kind) for t in row[kind]])
         con.executemany('INSERT INTO sources VALUES (?,?)', [(row['anime_id'],u) for u in row['sources']])
@@ -212,6 +222,11 @@ def build():
                              for field in ('synopsis', 'score', 'members', 'genres', 'tags', 'start_date', 'img_url')},
         'duplicate_display_titles': sum(count > 1 for count in Counter(r['name_english'] for r in catalog).values()),
         'jikan_inputs': inputs,
+        'additional_sources': enrichment_report,
+        'image_availability': dict(Counter(r['image_availability'] for r in catalog)),
+        'cohorts': {label: {'count': len(group), **{field: sum(not r.get(field) for r in group) for field in ('synopsis','genres','mal_score','aggregate_score')}}
+                    for label, group in [('popular_top_1000', [r for r in catalog if r.get('priority_popular')]),
+                                         ('year_2026', [r for r in catalog if r['year'] == 2026])]},
     }
     con.execute('INSERT INTO provenance VALUES (?,?)', ('build', json.dumps(report)))
     con.commit()
@@ -223,12 +238,15 @@ def build():
     # Existing recommendation code accepts these fields. Keep broad tags distinct in canonical data.
     compat = [dict(r, genres=sorted(set(r['genres'] + r['tags']))) for r in catalog]
     write_json(OUT / 'cleaned_anime_data.json', compat)
-    write_json(OUT / 'frontend_data.json', compat)
+    web_fields = ('anime_id','mal_id','name_english','name','synopsis','type_of','year','season','status','total_episodes','genres','tags',
+                  'studios','aggregate_score','aggregate_score_source','mal_score','mal_score_source','mal_scored_by','img_url','images',
+                  'thumbnail_url','image_alternatives','image_alt','image_availability','mal_url','rating','duration','source_material','trailer_url','recommendation_eligible')
+    write_json(OUT / 'frontend_data.json', [{field: r.get(field) for field in web_fields} for r in catalog])
     write_json(OUT / 'synopsis_keywords.json', [{'anime_id': r['anime_id'], 'name_english': r['name_english'],
         'synopsis_keywords': ' '.join(re.findall(r'[a-z]+', (r['synopsis'] or '').lower()))} for r in catalog])
     write_json(OUT / 'alphabetized_titles.json', sorted({r['name_english'] for r in catalog}, key=str.casefold))
     write_json(OUT / 'quality_report.json', report)
-    print(json.dumps({k:v for k,v in report.items() if k != 'jikan_inputs'}, indent=2))
+    print(json.dumps({k:v for k,v in report.items() if k not in ('jikan_inputs', 'additional_sources')}, indent=2))
 
 
 def main():
