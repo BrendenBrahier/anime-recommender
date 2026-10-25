@@ -1,0 +1,2686 @@
+{
+  "rubric": {
+    "0": "unrelated",
+    "1": "weak/partial or recap of liked seed",
+    "2": "plausible",
+    "3": "strong topical fit",
+    "null": "insufficient evidence"
+  },
+  "limitations": "Assistant-authored provisional labels, not independent human ground truth. Topic grades are shared across the five constraint variants; they do not measure personal enjoyment or soft-dislike satisfaction. Candidate model/rank hidden during review, but evaluator authored the prototype. No held-out tuning or statistical-generalization claim.",
+  "annotations": [
+    {
+      "case_id": "space-1",
+      "anime_id": "mal:400",
+      "grade": 3,
+      "reason": "Ship-owning adventurer and crew closely match the space-adventure request.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-1",
+      "anime_id": "mal:1867",
+      "grade": 2,
+      "reason": "Space exploration and resource-mining crisis fit the setting, less evidence for adult bounty-hunter tone.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-1",
+      "anime_id": "mal:820",
+      "grade": 2,
+      "reason": "Adult interstellar drama fits space interests; military politics differs from an adventurous bounty crew.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-1",
+      "anime_id": "mal:39198",
+      "grade": 2,
+      "reason": "Strong space-travel and crew-survival overlap, but a younger cast.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-1",
+      "anime_id": "mal:5",
+      "grade": 3,
+      "reason": "Bebop crew and bounty hunting directly match; same-franchise movie limits discovery.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-1",
+      "anime_id": "mal:61672",
+      "grade": 1,
+      "reason": "Galaxy-scale fantasy conflict, limited evidence of the requested adult crew dynamic.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-1",
+      "anime_id": "mal:18703",
+      "grade": 1,
+      "reason": "Space-travel setting is present; synopsis evidence for crew chemistry and bounty hunting is weak.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-1",
+      "anime_id": "mal:5032",
+      "grade": 3,
+      "reason": "Adult episodic space adventurer with friends and rescue missions.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-1",
+      "anime_id": "source:https://anilist.co/anime/124032",
+      "grade": null,
+      "reason": "No synopsis or category evidence; sequel title alone is insufficient to grade.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-2",
+      "anime_id": "mal:5",
+      "grade": 3,
+      "reason": "Bebop crew and bounty hunting directly match; same-franchise movie limits discovery.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-2",
+      "anime_id": "mal:820",
+      "grade": 2,
+      "reason": "Adult interstellar drama fits space interests; military politics differs from an adventurous bounty crew.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-2",
+      "anime_id": "mal:39198",
+      "grade": 2,
+      "reason": "Strong space-travel and crew-survival overlap, but a younger cast.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-2",
+      "anime_id": "mal:36000",
+      "grade": 1,
+      "reason": "Space fishery setting is a superficial match for adult bounty-hunter adventures.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-2",
+      "anime_id": "source:https://anilist.co/anime/124032",
+      "grade": null,
+      "reason": "No synopsis or category evidence; sequel title alone is insufficient to grade.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-2",
+      "anime_id": "mal:38707",
+      "grade": 2,
+      "reason": "Unlucky pair traveling through an advanced interplanetary society fits adventure and companionship.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-2",
+      "anime_id": "mal:2203",
+      "grade": 3,
+      "reason": "Space captain and exiled crew fit the request; requires franchise-context checking.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-2",
+      "anime_id": "mal:5032",
+      "grade": 3,
+      "reason": "Adult episodic space adventurer with friends and rescue missions.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-2",
+      "anime_id": "mal:32681",
+      "grade": 1,
+      "reason": "Schoolgirl space parody differs substantially in age and tone.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-2",
+      "anime_id": "mal:400",
+      "grade": 3,
+      "reason": "Ship-owning adventurer and crew closely match the space-adventure request.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-3",
+      "anime_id": "mal:820",
+      "grade": 2,
+      "reason": "Adult interstellar drama fits space interests; military politics differs from an adventurous bounty crew.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-3",
+      "anime_id": "mal:12799",
+      "grade": 2,
+      "reason": "Space pilot and companions facing alien threats plausibly fit adventure, less evidence for adult tone.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-3",
+      "anime_id": "mal:5032",
+      "grade": 3,
+      "reason": "Adult episodic space adventurer with friends and rescue missions.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-3",
+      "anime_id": "mal:400",
+      "grade": 3,
+      "reason": "Ship-owning adventurer and crew closely match the space-adventure request.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-3",
+      "anime_id": "mal:92",
+      "grade": 2,
+      "reason": "Postwar science-fiction journey fits adventure but emphasizes mecha conflict.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-3",
+      "anime_id": "source:https://anilist.co/anime/124032",
+      "grade": null,
+      "reason": "No synopsis or category evidence; sequel title alone is insufficient to grade.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-3",
+      "anime_id": "mal:5",
+      "grade": 3,
+      "reason": "Bebop crew and bounty hunting directly match; same-franchise movie limits discovery.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-3",
+      "anime_id": "mal:1490",
+      "grade": 2,
+      "reason": "Interplanetary travel and protective crew fit the setting, not bounty hunting.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-4",
+      "anime_id": "mal:6671",
+      "grade": 1,
+      "reason": "Child heroes and a happy space kingdom are a weak match for adult space adventure.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-4",
+      "anime_id": "source:https://anilist.co/anime/124032",
+      "grade": null,
+      "reason": "No synopsis or category evidence; sequel title alone is insufficient to grade.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-4",
+      "anime_id": "mal:2722",
+      "grade": 3,
+      "reason": "Paid intergalactic troubleshooters and a small crew strongly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-4",
+      "anime_id": "mal:5032",
+      "grade": 3,
+      "reason": "Adult episodic space adventurer with friends and rescue missions.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-4",
+      "anime_id": "mal:5",
+      "grade": 3,
+      "reason": "Bebop crew and bounty hunting directly match; same-franchise movie limits discovery.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-4",
+      "anime_id": "mal:2088",
+      "grade": 1,
+      "reason": "Space-resort incident is only a loose match for sustained crew adventure.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-4",
+      "anime_id": "mal:820",
+      "grade": 2,
+      "reason": "Adult interstellar drama fits space interests; military politics differs from an adventurous bounty crew.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-4",
+      "anime_id": "mal:432",
+      "grade": 3,
+      "reason": "Apprentice bounty hunter and dangerous alien jobs directly fit the premise.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-4",
+      "anime_id": "mal:400",
+      "grade": 3,
+      "reason": "Ship-owning adventurer and crew closely match the space-adventure request.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-5",
+      "anime_id": "mal:5289",
+      "grade": 1,
+      "reason": "Transforming robot battle has a space setting but weak adult-character alignment.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-5",
+      "anime_id": "mal:6671",
+      "grade": 1,
+      "reason": "Child heroes and a happy space kingdom are a weak match for adult space adventure.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-5",
+      "anime_id": "mal:12799",
+      "grade": 2,
+      "reason": "Space pilot and companions facing alien threats plausibly fit adventure, less evidence for adult tone.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-5",
+      "anime_id": "mal:7156",
+      "grade": 2,
+      "reason": "Spaceflight with a pilot and android fits crew adventure; adult tone not established.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "space-5",
+      "anime_id": "mal:14817",
+      "grade": 2,
+      "reason": "Space-pirate captain fits adventure, but school-age lead and franchise dependence limit fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-1",
+      "anime_id": "mal:40046",
+      "grade": 3,
+      "reason": "Investigating crime through human minds directly fits psychological mystery.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-1",
+      "anime_id": "mal:2596",
+      "grade": 2,
+      "reason": "Trauma and supernatural town mystery fit psychological tension; detective strategy is less central.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-1",
+      "anime_id": "mal:41619",
+      "grade": 2,
+      "reason": "Supernatural suspense and concealed threats plausibly fit mind games.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-1",
+      "anime_id": "mal:16498",
+      "grade": 1,
+      "reason": "Survival warfare and large mysteries are weaker matches for a focused clever-investigation request.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-1",
+      "anime_id": "source:https://anidb.net/anime/8146",
+      "grade": null,
+      "reason": "No synopsis/category evidence; apparent recap identity needs verification.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-1",
+      "anime_id": "mal:2994",
+      "grade": 1,
+      "reason": "Retells the seed story, offering little new discovery despite matching its themes.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-1",
+      "anime_id": "mal:1575",
+      "grade": 2,
+      "reason": "Strategic rebellion and moral dilemmas fit mind games, though not chiefly detective mystery.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-1",
+      "anime_id": "mal:2904",
+      "grade": 2,
+      "reason": "Strategic rebellion fits partially; second-season dependency is unresolved.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-1",
+      "anime_id": "source:https://anidb.net/anime/8147",
+      "grade": null,
+      "reason": "No synopsis/category evidence; apparent recap identity needs verification.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-1",
+      "anime_id": "mal:1520",
+      "grade": 2,
+      "reason": "Medical mysteries and ethical decisions fit dilemmas but differ from crime mind games.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-2",
+      "anime_id": "mal:40046",
+      "grade": 3,
+      "reason": "Investigating crime through human minds directly fits psychological mystery.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-2",
+      "anime_id": "mal:2904",
+      "grade": 2,
+      "reason": "Strategic rebellion fits partially; second-season dependency is unresolved.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-2",
+      "anime_id": "source:https://anidb.net/anime/8147",
+      "grade": null,
+      "reason": "No synopsis/category evidence; apparent recap identity needs verification.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-2",
+      "anime_id": "mal:41619",
+      "grade": 2,
+      "reason": "Supernatural suspense and concealed threats plausibly fit mind games.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-2",
+      "anime_id": "mal:1575",
+      "grade": 2,
+      "reason": "Strategic rebellion and moral dilemmas fit mind games, though not chiefly detective mystery.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-2",
+      "anime_id": "mal:43325",
+      "grade": 3,
+      "reason": "Criminal mastermind and investigations strongly fit; Part 2 needs prerequisite handling.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-2",
+      "anime_id": "source:https://anidb.net/anime/8146",
+      "grade": null,
+      "reason": "No synopsis/category evidence; apparent recap identity needs verification.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-2",
+      "anime_id": "mal:16498",
+      "grade": 1,
+      "reason": "Survival warfare and large mysteries are weaker matches for a focused clever-investigation request.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-2",
+      "anime_id": "mal:23283",
+      "grade": 3,
+      "reason": "Police puzzle around terrorism directly matches tense investigation.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-2",
+      "anime_id": "mal:2596",
+      "grade": 2,
+      "reason": "Trauma and supernatural town mystery fit psychological tension; detective strategy is less central.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-3",
+      "anime_id": "mal:23283",
+      "grade": 3,
+      "reason": "Police puzzle around terrorism directly matches tense investigation.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-3",
+      "anime_id": "mal:2246",
+      "grade": 3,
+      "reason": "Uncovering the truth and motives behind spirits strongly fits investigative mystery.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-3",
+      "anime_id": "mal:1575",
+      "grade": 2,
+      "reason": "Strategic rebellion and moral dilemmas fit mind games, though not chiefly detective mystery.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-3",
+      "anime_id": "mal:2904",
+      "grade": 2,
+      "reason": "Strategic rebellion fits partially; second-season dependency is unresolved.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-3",
+      "anime_id": "source:https://anidb.net/anime/8146",
+      "grade": null,
+      "reason": "No synopsis/category evidence; apparent recap identity needs verification.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-3",
+      "anime_id": "mal:1943",
+      "grade": 3,
+      "reason": "Psychological dream investigation and suspense strongly fit the request.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-3",
+      "anime_id": "mal:3420",
+      "grade": 2,
+      "reason": "Messages from the dead and emotional consequences offer plausible psychological mystery.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-3",
+      "anime_id": "mal:16498",
+      "grade": 1,
+      "reason": "Survival warfare and large mysteries are weaker matches for a focused clever-investigation request.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-3",
+      "anime_id": "mal:2596",
+      "grade": 2,
+      "reason": "Trauma and supernatural town mystery fit psychological tension; detective strategy is less central.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-3",
+      "anime_id": "source:https://anidb.net/anime/8147",
+      "grade": null,
+      "reason": "No synopsis/category evidence; apparent recap identity needs verification.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-4",
+      "anime_id": "mal:2994",
+      "grade": 1,
+      "reason": "Retells the seed story, offering little new discovery despite matching its themes.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-4",
+      "anime_id": "source:https://anidb.net/anime/8147",
+      "grade": null,
+      "reason": "No synopsis/category evidence; apparent recap identity needs verification.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-4",
+      "anime_id": "mal:23283",
+      "grade": 3,
+      "reason": "Police puzzle around terrorism directly matches tense investigation.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-4",
+      "anime_id": "mal:16498",
+      "grade": 1,
+      "reason": "Survival warfare and large mysteries are weaker matches for a focused clever-investigation request.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-4",
+      "anime_id": "mal:1575",
+      "grade": 2,
+      "reason": "Strategic rebellion and moral dilemmas fit mind games, though not chiefly detective mystery.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-4",
+      "anime_id": "mal:37177",
+      "grade": 2,
+      "reason": "Crime, theft and escalating consequences fit suspense, less direct clever investigation.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-4",
+      "anime_id": "source:https://anidb.net/anime/8146",
+      "grade": null,
+      "reason": "No synopsis/category evidence; apparent recap identity needs verification.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-4",
+      "anime_id": "mal:1943",
+      "grade": 3,
+      "reason": "Psychological dream investigation and suspense strongly fit the request.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-4",
+      "anime_id": "mal:2596",
+      "grade": 2,
+      "reason": "Trauma and supernatural town mystery fit psychological tension; detective strategy is less central.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-4",
+      "anime_id": "mal:2904",
+      "grade": 2,
+      "reason": "Strategic rebellion fits partially; second-season dependency is unresolved.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-5",
+      "anime_id": "mal:1943",
+      "grade": 3,
+      "reason": "Psychological dream investigation and suspense strongly fit the request.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-5",
+      "anime_id": "mal:7598",
+      "grade": 2,
+      "reason": "Surveillance society and mystery plausibly match tense investigation.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-5",
+      "anime_id": "mal:37365",
+      "grade": 2,
+      "reason": "Disappearance recounted by a stranger fits mystery, less evidence of moral cat-and-mouse stakes.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-5",
+      "anime_id": "mal:21557",
+      "grade": 1,
+      "reason": "Emotional identity mystery is a weak match for tense crime investigations.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "mystery-5",
+      "anime_id": "mal:37177",
+      "grade": 2,
+      "reason": "Crime, theft and escalating consequences fit suspense, less direct clever investigation.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-1",
+      "anime_id": "mal:4884",
+      "grade": 2,
+      "reason": "Fantasy journey and fate-driven drama fit, but reflective friendship tone is not clearly established.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-1",
+      "anime_id": "mal:439",
+      "grade": 1,
+      "reason": "Warriors confronting an oppressive ruler emphasize conflict more than reflective travel.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-1",
+      "anime_id": "mal:38000",
+      "grade": 2,
+      "reason": "Loss and an emotional supernatural journey fit partly; combat is much more central.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-1",
+      "anime_id": "mal:35079",
+      "grade": 3,
+      "reason": "Reflective travel through unfamiliar societies strongly fits discovery and contemplation.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-1",
+      "anime_id": "mal:35972",
+      "grade": 1,
+      "reason": "Late-series guild battle is a weak entry point and much more action focused.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-1",
+      "anime_id": "mal:59978",
+      "grade": 3,
+      "reason": "Continues the seed journey directly; needs confirmation of season availability and prerequisites.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-1",
+      "anime_id": "mal:56885",
+      "grade": 1,
+      "reason": "Short spell-based comedy shares characters but not the requested sustained reflective journey.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-1",
+      "anime_id": "mal:969",
+      "grade": 2,
+      "reason": "Traveling companions across magical worlds fit; second-season prerequisites unresolved.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-1",
+      "anime_id": "mal:63816",
+      "grade": null,
+      "reason": "Only a third-season description is available; too little standalone evidence to grade.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-2",
+      "anime_id": "mal:35079",
+      "grade": 3,
+      "reason": "Reflective travel through unfamiliar societies strongly fits discovery and contemplation.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-2",
+      "anime_id": "mal:35972",
+      "grade": 1,
+      "reason": "Late-series guild battle is a weak entry point and much more action focused.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-2",
+      "anime_id": "mal:59978",
+      "grade": 3,
+      "reason": "Continues the seed journey directly; needs confirmation of season availability and prerequisites.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-2",
+      "anime_id": "mal:360",
+      "grade": 1,
+      "reason": "Magical-world warfare fits fantasy but weak evidence for reflective friendship focus.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-2",
+      "anime_id": "mal:38000",
+      "grade": 2,
+      "reason": "Loss and an emotional supernatural journey fit partly; combat is much more central.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-2",
+      "anime_id": "mal:50864",
+      "grade": 2,
+      "reason": "Journey through an unfamiliar world and human connection fit discovery, with stronger survival stakes.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-2",
+      "anime_id": "mal:63816",
+      "grade": null,
+      "reason": "Only a third-season description is available; too little standalone evidence to grade.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-2",
+      "anime_id": "mal:56885",
+      "grade": 1,
+      "reason": "Short spell-based comedy shares characters but not the requested sustained reflective journey.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-2",
+      "anime_id": "mal:57907",
+      "grade": 1,
+      "reason": "Fourth-season political combat is a poor entry point and weak contemplative match.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-3",
+      "anime_id": "mal:35972",
+      "grade": 1,
+      "reason": "Late-series guild battle is a weak entry point and much more action focused.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-3",
+      "anime_id": "mal:56885",
+      "grade": 1,
+      "reason": "Short spell-based comedy shares characters but not the requested sustained reflective journey.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-3",
+      "anime_id": "mal:63816",
+      "grade": null,
+      "reason": "Only a third-season description is available; too little standalone evidence to grade.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-3",
+      "anime_id": "mal:57907",
+      "grade": 1,
+      "reason": "Fourth-season political combat is a poor entry point and weak contemplative match.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-3",
+      "anime_id": "mal:35079",
+      "grade": 3,
+      "reason": "Reflective travel through unfamiliar societies strongly fits discovery and contemplation.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-3",
+      "anime_id": "mal:54122",
+      "grade": 2,
+      "reason": "Meeting across a strange world fits discovery; sequel context needs checking.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-3",
+      "anime_id": "mal:59978",
+      "grade": 3,
+      "reason": "Continues the seed journey directly; needs confirmation of season availability and prerequisites.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-3",
+      "anime_id": "mal:38000",
+      "grade": 2,
+      "reason": "Loss and an emotional supernatural journey fit partly; combat is much more central.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-3",
+      "anime_id": "mal:40211",
+      "grade": 3,
+      "reason": "Displaced magical creature finding a home and companions fits belonging and discovery.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-4",
+      "anime_id": "mal:43387",
+      "grade": 2,
+      "reason": "New friends in a magical realm fit adventure, less evidence of reflection on loss.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-4",
+      "anime_id": "mal:59978",
+      "grade": 3,
+      "reason": "Continues the seed journey directly; needs confirmation of season availability and prerequisites.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-4",
+      "anime_id": "mal:56885",
+      "grade": 1,
+      "reason": "Short spell-based comedy shares characters but not the requested sustained reflective journey.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-4",
+      "anime_id": "mal:39191",
+      "grade": 1,
+      "reason": "Powerful-god cultivation premise weakly matches a reflective journey about loss.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-4",
+      "anime_id": "mal:2804",
+      "grade": 1,
+      "reason": "Helpful magical girl offers warmth but little evidence of reflective travel or loss.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-4",
+      "anime_id": "mal:38000",
+      "grade": 2,
+      "reason": "Loss and an emotional supernatural journey fit partly; combat is much more central.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-4",
+      "anime_id": "mal:63816",
+      "grade": null,
+      "reason": "Only a third-season description is available; too little standalone evidence to grade.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-4",
+      "anime_id": "mal:4884",
+      "grade": 2,
+      "reason": "Fantasy journey and fate-driven drama fit, but reflective friendship tone is not clearly established.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-4",
+      "anime_id": "mal:969",
+      "grade": 2,
+      "reason": "Traveling companions across magical worlds fit; second-season prerequisites unresolved.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-4",
+      "anime_id": "mal:35972",
+      "grade": 1,
+      "reason": "Late-series guild battle is a weak entry point and much more action focused.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-5",
+      "anime_id": "mal:49523",
+      "grade": 2,
+      "reason": "Friendship and emotional bonds fit, though franchise prerequisites remain.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-5",
+      "anime_id": "mal:43387",
+      "grade": 2,
+      "reason": "New friends in a magical realm fit adventure, less evidence of reflection on loss.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-5",
+      "anime_id": "mal:54122",
+      "grade": 2,
+      "reason": "Meeting across a strange world fits discovery; sequel context needs checking.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-5",
+      "anime_id": "mal:2672",
+      "grade": 1,
+      "reason": "Magic-world adventure fits broadly but reflective loss is not supported.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "fantasy-5",
+      "anime_id": "mal:50168",
+      "grade": 1,
+      "reason": "A curious child's magical adventure matches discovery only; sparse evidence for deeper themes.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-1",
+      "anime_id": "mal:2927",
+      "grade": 3,
+      "reason": "Friends navigating high-school relationships directly fit character-driven school romance.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-1",
+      "anime_id": "mal:11553",
+      "grade": 1,
+      "reason": "Bento competition with familiar characters is a weak romance-discovery match.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-1",
+      "anime_id": "mal:60852",
+      "grade": 3,
+      "reason": "Insecure schoolgirl building relationships strongly fits emotional growth.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-1",
+      "anime_id": "mal:4059",
+      "grade": 2,
+      "reason": "School relationship drama fits; alternate-story context may require the parent series.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-1",
+      "anime_id": "mal:42897",
+      "grade": 3,
+      "reason": "Schoolmates revealing hidden selves and building intimacy strongly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-1",
+      "anime_id": "mal:4181",
+      "grade": 2,
+      "reason": "Relationship growth fits, but post-school sequel differs from school comedy.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-1",
+      "anime_id": "mal:2167",
+      "grade": 3,
+      "reason": "School friendships and emotional romantic development strongly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-1",
+      "anime_id": "mal:669",
+      "grade": 2,
+      "reason": "School romance fits, but lottery-school premise and sparse growth evidence limit confidence.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-1",
+      "anime_id": "mal:1588",
+      "grade": 2,
+      "reason": "Magical-school romance fits broadly, supernatural mechanics may distract from character focus.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-1",
+      "anime_id": "mal:24",
+      "grade": 3,
+      "reason": "School crushes, friendships and romantic comedy directly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-2",
+      "anime_id": "mal:60852",
+      "grade": 3,
+      "reason": "Insecure schoolgirl building relationships strongly fits emotional growth.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-2",
+      "anime_id": "mal:2927",
+      "grade": 3,
+      "reason": "Friends navigating high-school relationships directly fit character-driven school romance.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-2",
+      "anime_id": "mal:42897",
+      "grade": 3,
+      "reason": "Schoolmates revealing hidden selves and building intimacy strongly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-2",
+      "anime_id": "mal:11553",
+      "grade": 1,
+      "reason": "Bento competition with familiar characters is a weak romance-discovery match.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-2",
+      "anime_id": "mal:2167",
+      "grade": 3,
+      "reason": "School friendships and emotional romantic development strongly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-2",
+      "anime_id": "mal:1588",
+      "grade": 2,
+      "reason": "Magical-school romance fits broadly, supernatural mechanics may distract from character focus.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-2",
+      "anime_id": "mal:52709",
+      "grade": 3,
+      "reason": "School friends negotiating romantic feelings directly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-2",
+      "anime_id": "mal:1591",
+      "grade": 2,
+      "reason": "School relationships fit broadly, lottery council premise is less clearly character driven.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-2",
+      "anime_id": "mal:60254",
+      "grade": 3,
+      "reason": "Classmates connecting through an injured boy's everyday life fits warm romance.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-2",
+      "anime_id": "mal:4181",
+      "grade": 2,
+      "reason": "Relationship growth fits, but post-school sequel differs from school comedy.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-3",
+      "anime_id": "mal:3731",
+      "grade": 3,
+      "reason": "School crush and cohabitation support romantic comedy and relationship development.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-3",
+      "anime_id": "mal:2167",
+      "grade": 3,
+      "reason": "School friendships and emotional romantic development strongly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-3",
+      "anime_id": "mal:4181",
+      "grade": 2,
+      "reason": "Relationship growth fits, but post-school sequel differs from school comedy.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-3",
+      "anime_id": "mal:2927",
+      "grade": 3,
+      "reason": "Friends navigating high-school relationships directly fit character-driven school romance.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-3",
+      "anime_id": "mal:6347",
+      "grade": 2,
+      "reason": "School comedy and romantic rivalry fit, exam-battle gimmick is a partial mismatch.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-3",
+      "anime_id": "mal:11553",
+      "grade": 1,
+      "reason": "Bento competition with familiar characters is a weak romance-discovery match.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-3",
+      "anime_id": "mal:42897",
+      "grade": 3,
+      "reason": "Schoolmates revealing hidden selves and building intimacy strongly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-3",
+      "anime_id": "mal:1588",
+      "grade": 2,
+      "reason": "Magical-school romance fits broadly, supernatural mechanics may distract from character focus.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-3",
+      "anime_id": "mal:1591",
+      "grade": 2,
+      "reason": "School relationships fit broadly, lottery council premise is less clearly character driven.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-3",
+      "anime_id": "mal:24",
+      "grade": 3,
+      "reason": "School crushes, friendships and romantic comedy directly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-4",
+      "anime_id": "mal:38272",
+      "grade": 3,
+      "reason": "Interlinked school love stories directly fit romance and friendships.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-4",
+      "anime_id": "mal:42897",
+      "grade": 3,
+      "reason": "Schoolmates revealing hidden selves and building intimacy strongly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-4",
+      "anime_id": "mal:24",
+      "grade": 3,
+      "reason": "School crushes, friendships and romantic comedy directly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-4",
+      "anime_id": "mal:2927",
+      "grade": 3,
+      "reason": "Friends navigating high-school relationships directly fit character-driven school romance.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-4",
+      "anime_id": "mal:669",
+      "grade": 2,
+      "reason": "School romance fits, but lottery-school premise and sparse growth evidence limit confidence.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-4",
+      "anime_id": "mal:4181",
+      "grade": 2,
+      "reason": "Relationship growth fits, but post-school sequel differs from school comedy.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-4",
+      "anime_id": "mal:2167",
+      "grade": 3,
+      "reason": "School friendships and emotional romantic development strongly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-4",
+      "anime_id": "mal:1588",
+      "grade": 2,
+      "reason": "Magical-school romance fits broadly, supernatural mechanics may distract from character focus.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-4",
+      "anime_id": "mal:1591",
+      "grade": 2,
+      "reason": "School relationships fit broadly, lottery council premise is less clearly character driven.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-4",
+      "anime_id": "mal:11553",
+      "grade": 1,
+      "reason": "Bento competition with familiar characters is a weak romance-discovery match.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-5",
+      "anime_id": "mal:35608",
+      "grade": 3,
+      "reason": "Established school couple navigating future plans fits; sequel context needs checking.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-5",
+      "anime_id": "mal:61367",
+      "grade": 2,
+      "reason": "School youth club and romantic comedy premise plausibly fit, limited emotional-growth evidence.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-5",
+      "anime_id": "mal:53129",
+      "grade": 1,
+      "reason": "Sister's school anxiety is predominantly family drama, weak central romance fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-5",
+      "anime_id": "mal:33036",
+      "grade": 3,
+      "reason": "School crushes and attempts to confess strongly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "romance-5",
+      "anime_id": "mal:5799",
+      "grade": 2,
+      "reason": "Shy school crush fits, but younger children differ from the seed's teenage relationships.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-1",
+      "anime_id": "mal:35110",
+      "grade": 2,
+      "reason": "Team training strongly fits, but compilation repeats franchise material.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-1",
+      "anime_id": "mal:29755",
+      "grade": 1,
+      "reason": "Retells the liked seed rather than providing much new discovery.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-1",
+      "anime_id": "source:https://anidb.net/anime/12982",
+      "grade": null,
+      "reason": "No synopsis/category evidence; likely compilation requires identity verification.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-1",
+      "anime_id": "mal:28891",
+      "grade": 3,
+      "reason": "Team training and competitive growth directly fit; continuation of the liked seed.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-1",
+      "anime_id": "mal:38883",
+      "grade": 3,
+      "reason": "Competitive volleyball and training fit; later-season prerequisites unresolved.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-1",
+      "anime_id": "source:https://anidb.net/anime/11040",
+      "grade": null,
+      "reason": "No synopsis/category evidence; likely recap requires identity verification.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-1",
+      "anime_id": "mal:52742",
+      "grade": 3,
+      "reason": "Team rivalry and strategic competitive match fit; later franchise entry.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-2",
+      "anime_id": "mal:39966",
+      "grade": 3,
+      "reason": "Childhood teammates returning to baseball directly fit teamwork and improvement.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-2",
+      "anime_id": "mal:32935",
+      "grade": 3,
+      "reason": "Volleyball team facing a stronger opponent strongly fits; third-season prerequisite.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-2",
+      "anime_id": "source:https://anidb.net/anime/12982",
+      "grade": null,
+      "reason": "No synopsis/category evidence; likely compilation requires identity verification.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-2",
+      "anime_id": "mal:29755",
+      "grade": 1,
+      "reason": "Retells the liked seed rather than providing much new discovery.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-2",
+      "anime_id": "source:https://anidb.net/anime/11040",
+      "grade": null,
+      "reason": "No synopsis/category evidence; likely recap requires identity verification.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-2",
+      "anime_id": "mal:38883",
+      "grade": 3,
+      "reason": "Competitive volleyball and training fit; later-season prerequisites unresolved.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-2",
+      "anime_id": "mal:40679",
+      "grade": 3,
+      "reason": "Volleyball teammates developing talent strongly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-2",
+      "anime_id": "mal:40776",
+      "grade": 3,
+      "reason": "National volleyball competition fits; multiple prerequisite seasons remain.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-2",
+      "anime_id": "mal:28891",
+      "grade": 3,
+      "reason": "Team training and competitive growth directly fit; continuation of the liked seed.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-3",
+      "anime_id": "mal:28891",
+      "grade": 3,
+      "reason": "Team training and competitive growth directly fit; continuation of the liked seed.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-3",
+      "anime_id": "mal:38883",
+      "grade": 3,
+      "reason": "Competitive volleyball and training fit; later-season prerequisites unresolved.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-3",
+      "anime_id": "mal:35110",
+      "grade": 2,
+      "reason": "Team training strongly fits, but compilation repeats franchise material.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-3",
+      "anime_id": "source:https://anidb.net/anime/12982",
+      "grade": null,
+      "reason": "No synopsis/category evidence; likely compilation requires identity verification.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-3",
+      "anime_id": "source:https://anidb.net/anime/11040",
+      "grade": null,
+      "reason": "No synopsis/category evidence; likely recap requires identity verification.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-3",
+      "anime_id": "mal:29755",
+      "grade": 1,
+      "reason": "Retells the liked seed rather than providing much new discovery.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-3",
+      "anime_id": "mal:52742",
+      "grade": 3,
+      "reason": "Team rivalry and strategic competitive match fit; later franchise entry.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-4",
+      "anime_id": "mal:28891",
+      "grade": 3,
+      "reason": "Team training and competitive growth directly fit; continuation of the liked seed.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-4",
+      "anime_id": "source:https://anidb.net/anime/11040",
+      "grade": null,
+      "reason": "No synopsis/category evidence; likely recap requires identity verification.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-4",
+      "anime_id": "mal:40679",
+      "grade": 3,
+      "reason": "Volleyball teammates developing talent strongly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-4",
+      "anime_id": "mal:35110",
+      "grade": 2,
+      "reason": "Team training strongly fits, but compilation repeats franchise material.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-4",
+      "anime_id": "mal:38883",
+      "grade": 3,
+      "reason": "Competitive volleyball and training fit; later-season prerequisites unresolved.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-4",
+      "anime_id": "source:https://anidb.net/anime/12982",
+      "grade": null,
+      "reason": "No synopsis/category evidence; likely compilation requires identity verification.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-4",
+      "anime_id": "mal:29755",
+      "grade": 1,
+      "reason": "Retells the liked seed rather than providing much new discovery.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-4",
+      "anime_id": "mal:32869",
+      "grade": 2,
+      "reason": "Basketball teamwork fits, but recap format reduces discovery value.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-5",
+      "anime_id": "mal:16572",
+      "grade": 3,
+      "reason": "Young baseball team learning skills and facing finals directly fits.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-5",
+      "anime_id": "mal:52742",
+      "grade": 3,
+      "reason": "Team rivalry and strategic competitive match fit; later franchise entry.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-5",
+      "anime_id": "mal:31658",
+      "grade": 3,
+      "reason": "Basketball teams facing formidable rivals fit; franchise prerequisites need checking.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-5",
+      "anime_id": "mal:2682",
+      "grade": 2,
+      "reason": "Soccer-team challenge fits competition, training growth less established.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "sports-5",
+      "anime_id": "mal:32869",
+      "grade": 2,
+      "reason": "Basketball teamwork fits, but recap format reduces discovery value.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-1",
+      "anime_id": "mal:32547",
+      "grade": 3,
+      "reason": "Rural friends enjoying everyday life strongly match; franchise special.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-1",
+      "anime_id": "mal:39808",
+      "grade": 3,
+      "reason": "Peaceful rural friendships strongly match; later season.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-1",
+      "anime_id": "mal:23623",
+      "grade": 3,
+      "reason": "Rural children exploring and enjoying everyday life directly match.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-1",
+      "anime_id": "mal:49363",
+      "grade": 1,
+      "reason": "Daily-life side stories fit loosely, but rural relaxing atmosphere is not established.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-1",
+      "anime_id": "mal:61782",
+      "grade": 3,
+      "reason": "Gentle seaside routine and community connections strongly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-1",
+      "anime_id": "mal:49521",
+      "grade": 3,
+      "reason": "Friends cooperating over everyday homework strongly fit; franchise special.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-1",
+      "anime_id": "mal:21667",
+      "grade": 2,
+      "reason": "Friends preparing a trip fit gentle companionship, less rural everyday focus.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-2",
+      "anime_id": "mal:21667",
+      "grade": 2,
+      "reason": "Friends preparing a trip fit gentle companionship, less rural everyday focus.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-2",
+      "anime_id": "mal:49521",
+      "grade": 3,
+      "reason": "Friends cooperating over everyday homework strongly fit; franchise special.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-2",
+      "anime_id": "mal:488",
+      "grade": 3,
+      "reason": "Heartwarming everyday friendships directly fit the relaxing request.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-2",
+      "anime_id": "mal:23623",
+      "grade": 3,
+      "reason": "Rural children exploring and enjoying everyday life directly match.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-2",
+      "anime_id": "mal:31771",
+      "grade": 3,
+      "reason": "Seaside setting and friendship through diving closely fit gentle everyday discovery.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-2",
+      "anime_id": "mal:39808",
+      "grade": 3,
+      "reason": "Peaceful rural friendships strongly match; later season.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-2",
+      "anime_id": "mal:32547",
+      "grade": 3,
+      "reason": "Rural friends enjoying everyday life strongly match; franchise special.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-2",
+      "anime_id": "mal:61782",
+      "grade": 3,
+      "reason": "Gentle seaside routine and community connections strongly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-3",
+      "anime_id": "mal:32547",
+      "grade": 3,
+      "reason": "Rural friends enjoying everyday life strongly match; franchise special.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-3",
+      "anime_id": "mal:49521",
+      "grade": 3,
+      "reason": "Friends cooperating over everyday homework strongly fit; franchise special.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-3",
+      "anime_id": "mal:38643",
+      "grade": 2,
+      "reason": "Nostalgic family routine plausibly fits; urban setting differs.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-3",
+      "anime_id": "mal:488",
+      "grade": 3,
+      "reason": "Heartwarming everyday friendships directly fit the relaxing request.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-3",
+      "anime_id": "mal:21483",
+      "grade": null,
+      "reason": "Synopsis identifies only a slice-of-life adaptation; insufficient evidence for tone and setting.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-3",
+      "anime_id": "mal:21667",
+      "grade": 2,
+      "reason": "Friends preparing a trip fit gentle companionship, less rural everyday focus.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-3",
+      "anime_id": "mal:457",
+      "grade": 2,
+      "reason": "Contemplative rural supernatural experiences fit atmosphere, less everyday friend-group comedy.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-3",
+      "anime_id": "mal:39808",
+      "grade": 3,
+      "reason": "Peaceful rural friendships strongly match; later season.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-3",
+      "anime_id": "mal:6525",
+      "grade": 1,
+      "reason": "Social-pitfall comedy is only a loose match for gentle rural friendship.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-3",
+      "anime_id": "mal:23623",
+      "grade": 3,
+      "reason": "Rural children exploring and enjoying everyday life directly match.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-4",
+      "anime_id": "mal:49363",
+      "grade": 1,
+      "reason": "Daily-life side stories fit loosely, but rural relaxing atmosphere is not established.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-4",
+      "anime_id": "mal:21667",
+      "grade": 2,
+      "reason": "Friends preparing a trip fit gentle companionship, less rural everyday focus.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-4",
+      "anime_id": "mal:32547",
+      "grade": 3,
+      "reason": "Rural friends enjoying everyday life strongly match; franchise special.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-4",
+      "anime_id": "mal:39808",
+      "grade": 3,
+      "reason": "Peaceful rural friendships strongly match; later season.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-4",
+      "anime_id": "mal:6525",
+      "grade": 1,
+      "reason": "Social-pitfall comedy is only a loose match for gentle rural friendship.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-4",
+      "anime_id": "mal:23623",
+      "grade": 3,
+      "reason": "Rural children exploring and enjoying everyday life directly match.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-4",
+      "anime_id": "mal:49521",
+      "grade": 3,
+      "reason": "Friends cooperating over everyday homework strongly fit; franchise special.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-4",
+      "anime_id": "mal:21483",
+      "grade": null,
+      "reason": "Synopsis identifies only a slice-of-life adaptation; insufficient evidence for tone and setting.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-5",
+      "anime_id": "mal:54541",
+      "grade": 1,
+      "reason": "Cafe routine overlaps everyday life, rural tone not supported.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-5",
+      "anime_id": "mal:27399",
+      "grade": null,
+      "reason": "Only the franchise movie label is available; insufficient content evidence.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-5",
+      "anime_id": "mal:6431",
+      "grade": 1,
+      "reason": "A child's daily routine overlaps, but little evidence for rural friendship tone.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-5",
+      "anime_id": "mal:22675",
+      "grade": 1,
+      "reason": "Theatrical comedy shorts give little evidence of gentle rural friendships.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "calm-5",
+      "anime_id": "mal:60486",
+      "grade": 1,
+      "reason": "Everyday interpersonal difficulty fits only broadly; rural relaxation not supported.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-1",
+      "anime_id": "mal:1943",
+      "grade": 2,
+      "reason": "Dream-based psychological suspense fits eeriness, less direct supernatural horror.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-1",
+      "anime_id": "mal:2596",
+      "grade": 3,
+      "reason": "Spirits, trauma and disturbing town events strongly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-1",
+      "anime_id": "mal:59408",
+      "grade": 3,
+      "reason": "Unsettling supernatural mystery and concealed motives fit strongly; sequel context unresolved.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-1",
+      "anime_id": "mal:369",
+      "grade": 3,
+      "reason": "Rumored death god and mysterious school events directly fit eerie suspense.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-1",
+      "anime_id": "mal:62913",
+      "grade": 1,
+      "reason": "Streamer isolation is psychological but weak evidence of eerie supernatural mystery.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-1",
+      "anime_id": "mal:36124",
+      "grade": 3,
+      "reason": "Unexplained supernatural horror tales directly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-1",
+      "anime_id": "mal:22535",
+      "grade": 2,
+      "reason": "Alien body horror fits unsettling tension but is science-fiction action rather than supernatural mystery.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-1",
+      "anime_id": "mal:32438",
+      "grade": 3,
+      "reason": "Mysterious village and unsettling hidden threats directly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-1",
+      "anime_id": "mal:1457",
+      "grade": 1,
+      "reason": "Robot aspiring to humanity has psychological strangeness, weaker supernatural mystery fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-1",
+      "anime_id": "mal:52034",
+      "grade": 1,
+      "reason": "Entertainment-industry drama has mystery elements but weak supernatural-horror tone.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-2",
+      "anime_id": "mal:52034",
+      "grade": 1,
+      "reason": "Entertainment-industry drama has mystery elements but weak supernatural-horror tone.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-2",
+      "anime_id": "mal:2596",
+      "grade": 3,
+      "reason": "Spirits, trauma and disturbing town events strongly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-2",
+      "anime_id": "mal:36124",
+      "grade": 3,
+      "reason": "Unexplained supernatural horror tales directly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-2",
+      "anime_id": "mal:22535",
+      "grade": 2,
+      "reason": "Alien body horror fits unsettling tension but is science-fiction action rather than supernatural mystery.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-2",
+      "anime_id": "mal:1943",
+      "grade": 2,
+      "reason": "Dream-based psychological suspense fits eeriness, less direct supernatural horror.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-2",
+      "anime_id": "mal:1457",
+      "grade": 1,
+      "reason": "Robot aspiring to humanity has psychological strangeness, weaker supernatural mystery fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-2",
+      "anime_id": "mal:2246",
+      "grade": 3,
+      "reason": "Occult investigations and malevolent spirits directly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-2",
+      "anime_id": "mal:32438",
+      "grade": 3,
+      "reason": "Mysterious village and unsettling hidden threats directly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-2",
+      "anime_id": "mal:62913",
+      "grade": 1,
+      "reason": "Streamer isolation is psychological but weak evidence of eerie supernatural mystery.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-2",
+      "anime_id": "mal:369",
+      "grade": 3,
+      "reason": "Rumored death god and mysterious school events directly fit eerie suspense.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-3",
+      "anime_id": "mal:22535",
+      "grade": 2,
+      "reason": "Alien body horror fits unsettling tension but is science-fiction action rather than supernatural mystery.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-3",
+      "anime_id": "mal:369",
+      "grade": 3,
+      "reason": "Rumored death god and mysterious school events directly fit eerie suspense.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-3",
+      "anime_id": "mal:2596",
+      "grade": 3,
+      "reason": "Spirits, trauma and disturbing town events strongly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-3",
+      "anime_id": "mal:62913",
+      "grade": 1,
+      "reason": "Streamer isolation is psychological but weak evidence of eerie supernatural mystery.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-3",
+      "anime_id": "mal:1943",
+      "grade": 2,
+      "reason": "Dream-based psychological suspense fits eeriness, less direct supernatural horror.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-3",
+      "anime_id": "mal:239",
+      "grade": 2,
+      "reason": "Mysterious revenge and sinister motives fit suspense, less emphasis on horror.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-3",
+      "anime_id": "mal:52034",
+      "grade": 1,
+      "reason": "Entertainment-industry drama has mystery elements but weak supernatural-horror tone.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-3",
+      "anime_id": "mal:2246",
+      "grade": 3,
+      "reason": "Occult investigations and malevolent spirits directly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-3",
+      "anime_id": "mal:339",
+      "grade": 3,
+      "reason": "Disturbing messages from a dead classmate and reality uncertainty closely fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-3",
+      "anime_id": "mal:1457",
+      "grade": 1,
+      "reason": "Robot aspiring to humanity has psychological strangeness, weaker supernatural mystery fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-4",
+      "anime_id": "mal:1457",
+      "grade": 1,
+      "reason": "Robot aspiring to humanity has psychological strangeness, weaker supernatural mystery fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-4",
+      "anime_id": "mal:62913",
+      "grade": 1,
+      "reason": "Streamer isolation is psychological but weak evidence of eerie supernatural mystery.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-4",
+      "anime_id": "mal:52034",
+      "grade": 1,
+      "reason": "Entertainment-industry drama has mystery elements but weak supernatural-horror tone.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-4",
+      "anime_id": "mal:1943",
+      "grade": 2,
+      "reason": "Dream-based psychological suspense fits eeriness, less direct supernatural horror.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-4",
+      "anime_id": "mal:2596",
+      "grade": 3,
+      "reason": "Spirits, trauma and disturbing town events strongly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-4",
+      "anime_id": "mal:36124",
+      "grade": 3,
+      "reason": "Unexplained supernatural horror tales directly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-4",
+      "anime_id": "mal:7724",
+      "grade": 3,
+      "reason": "Unexplained rural deaths and supernatural dread directly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-4",
+      "anime_id": "mal:22535",
+      "grade": 2,
+      "reason": "Alien body horror fits unsettling tension but is science-fiction action rather than supernatural mystery.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-4",
+      "anime_id": "mal:41006",
+      "grade": 3,
+      "reason": "Hidden village horrors and psychological mystery directly fit; franchise order needs checking.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-4",
+      "anime_id": "mal:1594",
+      "grade": 3,
+      "reason": "Supernatural revenge and sinister observers directly fit; second-season prerequisite.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-5",
+      "anime_id": "mal:61303",
+      "grade": 2,
+      "reason": "Mysterious violent alternate world fits suspense, combat-survival focus differs.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-5",
+      "anime_id": "mal:52107",
+      "grade": 3,
+      "reason": "Supernatural palace mystery and dread strongly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-5",
+      "anime_id": "mal:59408",
+      "grade": 3,
+      "reason": "Unsettling supernatural mystery and concealed motives fit strongly; sequel context unresolved.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-5",
+      "anime_id": "mal:34974",
+      "grade": 3,
+      "reason": "Haunted apartment, ghastly crimes and unsettling strangers strongly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "thriller-5",
+      "anime_id": "mal:34048",
+      "grade": 2,
+      "reason": "Unexplained corpse disappearance and outbreak fit horror, less occult investigation.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-1",
+      "anime_id": "mal:53077",
+      "grade": 1,
+      "reason": "Idol-club daily comedy overlaps friendships but weak band-practice evidence.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-1",
+      "anime_id": "mal:31665",
+      "grade": 2,
+      "reason": "Band members supporting competition peers fits, but is a side episode.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-1",
+      "anime_id": "mal:9617",
+      "grade": 3,
+      "reason": "Band friendships and graduation directly fit; franchise movie context matters.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-1",
+      "anime_id": "mal:55689",
+      "grade": 3,
+      "reason": "Shy singer finding confidence and musical peers strongly fits.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-1",
+      "anime_id": "mal:7791",
+      "grade": 3,
+      "reason": "Band friends preparing for graduation directly fit; continuation of liked seed.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-1",
+      "anime_id": "mal:18495",
+      "grade": 1,
+      "reason": "School club comedy lacks the requested music-performance focus.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-1",
+      "anime_id": "mal:54959",
+      "grade": 3,
+      "reason": "Band breakup and rebuilding relationships strongly fit music and growth.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-1",
+      "anime_id": "mal:15911",
+      "grade": 1,
+      "reason": "School club friendships overlap but club is data processing, not music.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-1",
+      "anime_id": "mal:41090",
+      "grade": 2,
+      "reason": "New band preparing a performance fits, short music format offers limited sustained character growth.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-2",
+      "anime_id": "mal:55689",
+      "grade": 3,
+      "reason": "Shy singer finding confidence and musical peers strongly fits.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-2",
+      "anime_id": "mal:31988",
+      "grade": 3,
+      "reason": "Band camp and competitive performance fit; sequel prerequisites unresolved.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-2",
+      "anime_id": "mal:27989",
+      "grade": 3,
+      "reason": "School concert-band practice and character growth directly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-2",
+      "anime_id": "mal:7791",
+      "grade": 3,
+      "reason": "Band friends preparing for graduation directly fit; continuation of liked seed.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-2",
+      "anime_id": "mal:53077",
+      "grade": 1,
+      "reason": "Idol-club daily comedy overlaps friendships but weak band-practice evidence.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-2",
+      "anime_id": "mal:9617",
+      "grade": 3,
+      "reason": "Band friendships and graduation directly fit; franchise movie context matters.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-2",
+      "anime_id": "mal:18495",
+      "grade": 1,
+      "reason": "School club comedy lacks the requested music-performance focus.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-2",
+      "anime_id": "mal:39894",
+      "grade": 3,
+      "reason": "Band leadership and national competition fit; third-season prerequisites unresolved.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-2",
+      "anime_id": "mal:15911",
+      "grade": 1,
+      "reason": "School club friendships overlap but club is data processing, not music.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-2",
+      "anime_id": "mal:54959",
+      "grade": 3,
+      "reason": "Band breakup and rebuilding relationships strongly fit music and growth.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-3",
+      "anime_id": "mal:31730",
+      "grade": 2,
+      "reason": "Musical prodigies coming together plausibly fit; limited growth evidence in synopsis.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-3",
+      "anime_id": "mal:18495",
+      "grade": 1,
+      "reason": "School club comedy lacks the requested music-performance focus.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-3",
+      "anime_id": "mal:15911",
+      "grade": 1,
+      "reason": "School club friendships overlap but club is data processing, not music.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-3",
+      "anime_id": "mal:53077",
+      "grade": 1,
+      "reason": "Idol-club daily comedy overlaps friendships but weak band-practice evidence.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-3",
+      "anime_id": "mal:7791",
+      "grade": 3,
+      "reason": "Band friends preparing for graduation directly fit; continuation of liked seed.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-3",
+      "anime_id": "mal:57",
+      "grade": 3,
+      "reason": "Aimless youth finding direction through a guitarist and band directly fits.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-3",
+      "anime_id": "mal:9617",
+      "grade": 3,
+      "reason": "Band friendships and graduation directly fit; franchise movie context matters.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-3",
+      "anime_id": "mal:18245",
+      "grade": 3,
+      "reason": "Students uniting to perform at a school festival strongly fit, with stronger romance drama.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-4",
+      "anime_id": "mal:62430",
+      "grade": 3,
+      "reason": "Talented but unprepared members learning to function as a band fit closely.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-4",
+      "anime_id": "mal:9617",
+      "grade": 3,
+      "reason": "Band friendships and graduation directly fit; franchise movie context matters.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-4",
+      "anime_id": "mal:15911",
+      "grade": 1,
+      "reason": "School club friendships overlap but club is data processing, not music.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-4",
+      "anime_id": "mal:7791",
+      "grade": 3,
+      "reason": "Band friends preparing for graduation directly fit; continuation of liked seed.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-4",
+      "anime_id": "mal:45731",
+      "grade": 3,
+      "reason": "Band conflict and possible breakup fit music relationships and growth.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-4",
+      "anime_id": "mal:32804",
+      "grade": 0,
+      "reason": "Music video alone provides no evidence of sustained band-character development.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-4",
+      "anime_id": "mal:53077",
+      "grade": 1,
+      "reason": "Idol-club daily comedy overlaps friendships but weak band-practice evidence.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-4",
+      "anime_id": "mal:54959",
+      "grade": 3,
+      "reason": "Band breakup and rebuilding relationships strongly fit music and growth.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-4",
+      "anime_id": "mal:18495",
+      "grade": 1,
+      "reason": "School club comedy lacks the requested music-performance focus.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-4",
+      "anime_id": "mal:39568",
+      "grade": 0,
+      "reason": "Music video alone provides no evidence of a story about band friendships and practice.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-5",
+      "anime_id": "mal:59817",
+      "grade": 2,
+      "reason": "Band-drama compilation plausibly fits; detailed standalone evidence is limited.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-5",
+      "anime_id": "mal:31730",
+      "grade": 2,
+      "reason": "Musical prodigies coming together plausibly fit; limited growth evidence in synopsis.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-5",
+      "anime_id": "mal:53747",
+      "grade": 3,
+      "reason": "Students forming a band and connecting directly fit.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-5",
+      "anime_id": "mal:35082",
+      "grade": 2,
+      "reason": "Concert-band growth fits, but compilation reduces discovery value.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    },
+    {
+      "case_id": "music-5",
+      "anime_id": "mal:45731",
+      "grade": 3,
+      "reason": "Band conflict and possible breakup fit music relationships and growth.",
+      "reviewer": "assistant_initial_review",
+      "basis": "catalog synopsis excerpt and categories; topical fit, constraints audited separately"
+    }
+  ],
+  "catalog_sha256": "fa2cfcb5679129c3a87cb137bc64106ea64c5ad00eea34d1e14bf3aeae8a47be",
+  "cases_sha256": "d6fd7a46a3675bdceb3696b4d13f0d118d5fe62d7bdc8d185d1ff175b669c519"
+}

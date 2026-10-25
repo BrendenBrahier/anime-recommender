@@ -1,0 +1,68 @@
+{
+  "all_supported": [
+    {
+      "model": "hybrid",
+      "requests": 40,
+      "returned": 200,
+      "judged": 197,
+      "unknown": 3,
+      "mean_known_grade": 2.34,
+      "plausible_or_strong_lower_bound": 0.82,
+      "constraint_compliant_relevant_lower_bound": 0.82
+    },
+    {
+      "model": "legacy_cosine",
+      "requests": 32,
+      "returned": 160,
+      "judged": 136,
+      "unknown": 24,
+      "mean_known_grade": 2.118,
+      "plausible_or_strong_lower_bound": 0.575,
+      "constraint_compliant_relevant_lower_bound": 0.4313
+    }
+  ],
+  "matched_32_seed_requests": [
+    {
+      "model": "hybrid",
+      "requests": 32,
+      "returned": 160,
+      "judged": 158,
+      "unknown": 2,
+      "mean_known_grade": 2.418,
+      "plausible_or_strong_lower_bound": 0.8438,
+      "constraint_compliant_relevant_lower_bound": 0.8438
+    },
+    {
+      "model": "legacy_cosine",
+      "requests": 32,
+      "returned": 160,
+      "judged": 136,
+      "unknown": 24,
+      "mean_known_grade": 2.118,
+      "plausible_or_strong_lower_bound": 0.575,
+      "constraint_compliant_relevant_lower_bound": 0.4313
+    }
+  ],
+  "cold_start_8": [
+    {
+      "model": "hybrid",
+      "requests": 8,
+      "returned": 40,
+      "judged": 39,
+      "unknown": 1,
+      "mean_known_grade": 2.026,
+      "plausible_or_strong_lower_bound": 0.725,
+      "constraint_compliant_relevant_lower_bound": 0.725
+    },
+    {
+      "model": "legacy_cosine",
+      "requests": 0,
+      "returned": 0,
+      "judged": 0,
+      "unknown": 0,
+      "mean_known_grade": null,
+      "plausible_or_strong_lower_bound": null,
+      "constraint_compliant_relevant_lower_bound": null
+    }
+  ]
+}
