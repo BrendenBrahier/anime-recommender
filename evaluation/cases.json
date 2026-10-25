@@ -1,0 +1,928 @@
+[
+  {
+    "id": "space-1",
+    "topic": "space",
+    "variant": "seed",
+    "prompt": "I enjoyed Cowboy Bebop. Space travel, adult characters, bounty hunters and an adventurous crew.",
+    "query": "Space travel, adult characters, bounty hunters and an adventurous crew.",
+    "likes": [
+      "mal:1"
+    ],
+    "dislikes": [],
+    "watched": [],
+    "preferred_categories": [
+      "sci-fi",
+      "space",
+      "adventure"
+    ],
+    "filters": {}
+  },
+  {
+    "id": "space-2",
+    "topic": "space",
+    "variant": "short_completed",
+    "prompt": "I enjoyed Cowboy Bebop. Space travel, adult characters, bounty hunters and an adventurous crew. Only finished TV series with at most 24 episodes. I already watched Outlaw Star.",
+    "query": "Space travel, adult characters, bounty hunters and an adventurous crew.",
+    "likes": [
+      "mal:1"
+    ],
+    "dislikes": [],
+    "watched": [
+      "mal:400"
+    ],
+    "preferred_categories": [
+      "sci-fi",
+      "space",
+      "adventure"
+    ],
+    "filters": {
+      "formats": [
+        "tv"
+      ],
+      "max_episodes": 24,
+      "finished": true
+    }
+  },
+  {
+    "id": "space-3",
+    "topic": "space",
+    "variant": "era",
+    "prompt": "I enjoyed Cowboy Bebop. Space travel, adult characters, bounty hunters and an adventurous crew. Choose TV series or movies released between 1990 and 2009.",
+    "query": "Space travel, adult characters, bounty hunters and an adventurous crew.",
+    "likes": [
+      "mal:1"
+    ],
+    "dislikes": [],
+    "watched": [],
+    "preferred_categories": [
+      "sci-fi",
+      "space",
+      "adventure"
+    ],
+    "filters": {
+      "year_min": 1990,
+      "year_max": 2009,
+      "formats": [
+        "tv",
+        "movie"
+      ]
+    }
+  },
+  {
+    "id": "space-4",
+    "topic": "space",
+    "variant": "preferences",
+    "prompt": "I enjoyed Cowboy Bebop. Space travel, adult characters, bounty hunters and an adventurous crew. I also liked Outlaw Star, but disliked Attack on Titan. Exclude romance.",
+    "query": "Space travel, adult characters, bounty hunters and an adventurous crew.",
+    "likes": [
+      "mal:1",
+      "mal:400"
+    ],
+    "dislikes": [
+      "mal:16498"
+    ],
+    "watched": [],
+    "preferred_categories": [
+      "sci-fi",
+      "space",
+      "adventure"
+    ],
+    "filters": {
+      "excluded_categories": [
+        "romance"
+      ]
+    }
+  },
+  {
+    "id": "space-5",
+    "topic": "space",
+    "variant": "cold_start",
+    "prompt": "Space travel, adult characters, bounty hunters and an adventurous crew. I have no favorite titles to give you. Recommend finished movies.",
+    "query": "Space travel, adult characters, bounty hunters and an adventurous crew.",
+    "likes": [],
+    "dislikes": [],
+    "watched": [],
+    "preferred_categories": [
+      "sci-fi",
+      "space",
+      "adventure"
+    ],
+    "filters": {
+      "formats": [
+        "movie"
+      ],
+      "finished": true
+    }
+  },
+  {
+    "id": "mystery-1",
+    "topic": "mystery",
+    "variant": "seed",
+    "prompt": "I enjoyed Death Note. A tense psychological mystery with clever investigations and moral dilemmas.",
+    "query": "A tense psychological mystery with clever investigations and moral dilemmas.",
+    "likes": [
+      "mal:1535"
+    ],
+    "dislikes": [],
+    "watched": [],
+    "preferred_categories": [
+      "mystery",
+      "psychological",
+      "suspense"
+    ],
+    "filters": {}
+  },
+  {
+    "id": "mystery-2",
+    "topic": "mystery",
+    "variant": "short_completed",
+    "prompt": "I enjoyed Death Note. A tense psychological mystery with clever investigations and moral dilemmas. Only finished TV series with at most 24 episodes. I already watched Monster.",
+    "query": "A tense psychological mystery with clever investigations and moral dilemmas.",
+    "likes": [
+      "mal:1535"
+    ],
+    "dislikes": [],
+    "watched": [
+      "mal:19"
+    ],
+    "preferred_categories": [
+      "mystery",
+      "psychological",
+      "suspense"
+    ],
+    "filters": {
+      "formats": [
+        "tv"
+      ],
+      "max_episodes": 24,
+      "finished": true
+    }
+  },
+  {
+    "id": "mystery-3",
+    "topic": "mystery",
+    "variant": "era",
+    "prompt": "I enjoyed Death Note. A tense psychological mystery with clever investigations and moral dilemmas. Choose TV series or movies released between 2000 and 2014.",
+    "query": "A tense psychological mystery with clever investigations and moral dilemmas.",
+    "likes": [
+      "mal:1535"
+    ],
+    "dislikes": [],
+    "watched": [],
+    "preferred_categories": [
+      "mystery",
+      "psychological",
+      "suspense"
+    ],
+    "filters": {
+      "year_min": 2000,
+      "year_max": 2014,
+      "formats": [
+        "tv",
+        "movie"
+      ]
+    }
+  },
+  {
+    "id": "mystery-4",
+    "topic": "mystery",
+    "variant": "preferences",
+    "prompt": "I enjoyed Death Note. A tense psychological mystery with clever investigations and moral dilemmas. I also liked Monster, but disliked Attack on Titan. Exclude comedy.",
+    "query": "A tense psychological mystery with clever investigations and moral dilemmas.",
+    "likes": [
+      "mal:1535",
+      "mal:19"
+    ],
+    "dislikes": [
+      "mal:16498"
+    ],
+    "watched": [],
+    "preferred_categories": [
+      "mystery",
+      "psychological",
+      "suspense"
+    ],
+    "filters": {
+      "excluded_categories": [
+        "comedy"
+      ]
+    }
+  },
+  {
+    "id": "mystery-5",
+    "topic": "mystery",
+    "variant": "cold_start",
+    "prompt": "A tense psychological mystery with clever investigations and moral dilemmas. I have no favorite titles to give you. Recommend finished movies.",
+    "query": "A tense psychological mystery with clever investigations and moral dilemmas.",
+    "likes": [],
+    "dislikes": [],
+    "watched": [],
+    "preferred_categories": [
+      "mystery",
+      "psychological",
+      "suspense"
+    ],
+    "filters": {
+      "formats": [
+        "movie"
+      ],
+      "finished": true
+    }
+  },
+  {
+    "id": "fantasy-1",
+    "topic": "fantasy",
+    "variant": "seed",
+    "prompt": "I enjoyed Frieren: Beyond Journey's End. A reflective fantasy journey about friendship, loss and discovering a magical world.",
+    "query": "A reflective fantasy journey about friendship, loss and discovering a magical world.",
+    "likes": [
+      "mal:52991"
+    ],
+    "dislikes": [],
+    "watched": [],
+    "preferred_categories": [
+      "fantasy",
+      "adventure",
+      "drama"
+    ],
+    "filters": {}
+  },
+  {
+    "id": "fantasy-2",
+    "topic": "fantasy",
+    "variant": "short_completed",
+    "prompt": "I enjoyed Frieren: Beyond Journey's End. A reflective fantasy journey about friendship, loss and discovering a magical world. Only finished TV series with at most 24 episodes. I already watched Mushi-Shi.",
+    "query": "A reflective fantasy journey about friendship, loss and discovering a magical world.",
+    "likes": [
+      "mal:52991"
+    ],
+    "dislikes": [],
+    "watched": [
+      "mal:457"
+    ],
+    "preferred_categories": [
+      "fantasy",
+      "adventure",
+      "drama"
+    ],
+    "filters": {
+      "formats": [
+        "tv"
+      ],
+      "max_episodes": 24,
+      "finished": true
+    }
+  },
+  {
+    "id": "fantasy-3",
+    "topic": "fantasy",
+    "variant": "era",
+    "prompt": "I enjoyed Frieren: Beyond Journey's End. A reflective fantasy journey about friendship, loss and discovering a magical world. Choose TV series or movies released between 2010 and 2026.",
+    "query": "A reflective fantasy journey about friendship, loss and discovering a magical world.",
+    "likes": [
+      "mal:52991"
+    ],
+    "dislikes": [],
+    "watched": [],
+    "preferred_categories": [
+      "fantasy",
+      "adventure",
+      "drama"
+    ],
+    "filters": {
+      "year_min": 2010,
+      "year_max": 2026,
+      "formats": [
+        "tv",
+        "movie"
+      ]
+    }
+  },
+  {
+    "id": "fantasy-4",
+    "topic": "fantasy",
+    "variant": "preferences",
+    "prompt": "I enjoyed Frieren: Beyond Journey's End. A reflective fantasy journey about friendship, loss and discovering a magical world. I also liked Mushi-Shi, but disliked Attack on Titan. Exclude ecchi.",
+    "query": "A reflective fantasy journey about friendship, loss and discovering a magical world.",
+    "likes": [
+      "mal:52991",
+      "mal:457"
+    ],
+    "dislikes": [
+      "mal:16498"
+    ],
+    "watched": [],
+    "preferred_categories": [
+      "fantasy",
+      "adventure",
+      "drama"
+    ],
+    "filters": {
+      "excluded_categories": [
+        "ecchi"
+      ]
+    }
+  },
+  {
+    "id": "fantasy-5",
+    "topic": "fantasy",
+    "variant": "cold_start",
+    "prompt": "A reflective fantasy journey about friendship, loss and discovering a magical world. I have no favorite titles to give you. Recommend finished movies.",
+    "query": "A reflective fantasy journey about friendship, loss and discovering a magical world.",
+    "likes": [],
+    "dislikes": [],
+    "watched": [],
+    "preferred_categories": [
+      "fantasy",
+      "adventure",
+      "drama"
+    ],
+    "filters": {
+      "formats": [
+        "movie"
+      ],
+      "finished": true
+    }
+  },
+  {
+    "id": "romance-1",
+    "topic": "romance",
+    "variant": "seed",
+    "prompt": "I enjoyed Toradora!. A character driven school romance with comedy, friendships and emotional growth.",
+    "query": "A character driven school romance with comedy, friendships and emotional growth.",
+    "likes": [
+      "mal:4224"
+    ],
+    "dislikes": [],
+    "watched": [],
+    "preferred_categories": [
+      "romance",
+      "school",
+      "comedy"
+    ],
+    "filters": {}
+  },
+  {
+    "id": "romance-2",
+    "topic": "romance",
+    "variant": "short_completed",
+    "prompt": "I enjoyed Toradora!. A character driven school romance with comedy, friendships and emotional growth. Only finished TV series with at most 24 episodes. I already watched The Tatami Galaxy.",
+    "query": "A character driven school romance with comedy, friendships and emotional growth.",
+    "likes": [
+      "mal:4224"
+    ],
+    "dislikes": [],
+    "watched": [
+      "mal:7785"
+    ],
+    "preferred_categories": [
+      "romance",
+      "school",
+      "comedy"
+    ],
+    "filters": {
+      "formats": [
+        "tv"
+      ],
+      "max_episodes": 24,
+      "finished": true
+    }
+  },
+  {
+    "id": "romance-3",
+    "topic": "romance",
+    "variant": "era",
+    "prompt": "I enjoyed Toradora!. A character driven school romance with comedy, friendships and emotional growth. Choose TV series or movies released between 2000 and 2014.",
+    "query": "A character driven school romance with comedy, friendships and emotional growth.",
+    "likes": [
+      "mal:4224"
+    ],
+    "dislikes": [],
+    "watched": [],
+    "preferred_categories": [
+      "romance",
+      "school",
+      "comedy"
+    ],
+    "filters": {
+      "year_min": 2000,
+      "year_max": 2014,
+      "formats": [
+        "tv",
+        "movie"
+      ]
+    }
+  },
+  {
+    "id": "romance-4",
+    "topic": "romance",
+    "variant": "preferences",
+    "prompt": "I enjoyed Toradora!. A character driven school romance with comedy, friendships and emotional growth. I also liked The Tatami Galaxy, but disliked Attack on Titan. Exclude horror.",
+    "query": "A character driven school romance with comedy, friendships and emotional growth.",
+    "likes": [
+      "mal:4224",
+      "mal:7785"
+    ],
+    "dislikes": [
+      "mal:16498"
+    ],
+    "watched": [],
+    "preferred_categories": [
+      "romance",
+      "school",
+      "comedy"
+    ],
+    "filters": {
+      "excluded_categories": [
+        "horror"
+      ]
+    }
+  },
+  {
+    "id": "romance-5",
+    "topic": "romance",
+    "variant": "cold_start",
+    "prompt": "A character driven school romance with comedy, friendships and emotional growth. I have no favorite titles to give you. Recommend finished movies.",
+    "query": "A character driven school romance with comedy, friendships and emotional growth.",
+    "likes": [],
+    "dislikes": [],
+    "watched": [],
+    "preferred_categories": [
+      "romance",
+      "school",
+      "comedy"
+    ],
+    "filters": {
+      "formats": [
+        "movie"
+      ],
+      "finished": true
+    }
+  },
+  {
+    "id": "sports-1",
+    "topic": "sports",
+    "variant": "seed",
+    "prompt": "I enjoyed Haikyu!!. A sports team improving through training, teamwork and competitive matches.",
+    "query": "A sports team improving through training, teamwork and competitive matches.",
+    "likes": [
+      "mal:20583"
+    ],
+    "dislikes": [],
+    "watched": [],
+    "preferred_categories": [
+      "sports",
+      "team sports",
+      "school"
+    ],
+    "filters": {}
+  },
+  {
+    "id": "sports-2",
+    "topic": "sports",
+    "variant": "short_completed",
+    "prompt": "I enjoyed Haikyu!!. A sports team improving through training, teamwork and competitive matches. Only finished TV series with at most 24 episodes. I already watched Kuroko's Basketball.",
+    "query": "A sports team improving through training, teamwork and competitive matches.",
+    "likes": [
+      "mal:20583"
+    ],
+    "dislikes": [],
+    "watched": [
+      "mal:11771"
+    ],
+    "preferred_categories": [
+      "sports",
+      "team sports",
+      "school"
+    ],
+    "filters": {
+      "formats": [
+        "tv"
+      ],
+      "max_episodes": 24,
+      "finished": true
+    }
+  },
+  {
+    "id": "sports-3",
+    "topic": "sports",
+    "variant": "era",
+    "prompt": "I enjoyed Haikyu!!. A sports team improving through training, teamwork and competitive matches. Choose TV series or movies released between 2010 and 2026.",
+    "query": "A sports team improving through training, teamwork and competitive matches.",
+    "likes": [
+      "mal:20583"
+    ],
+    "dislikes": [],
+    "watched": [],
+    "preferred_categories": [
+      "sports",
+      "team sports",
+      "school"
+    ],
+    "filters": {
+      "year_min": 2010,
+      "year_max": 2026,
+      "formats": [
+        "tv",
+        "movie"
+      ]
+    }
+  },
+  {
+    "id": "sports-4",
+    "topic": "sports",
+    "variant": "preferences",
+    "prompt": "I enjoyed Haikyu!!. A sports team improving through training, teamwork and competitive matches. I also liked Kuroko's Basketball, but disliked Attack on Titan. Exclude supernatural.",
+    "query": "A sports team improving through training, teamwork and competitive matches.",
+    "likes": [
+      "mal:20583",
+      "mal:11771"
+    ],
+    "dislikes": [
+      "mal:16498"
+    ],
+    "watched": [],
+    "preferred_categories": [
+      "sports",
+      "team sports",
+      "school"
+    ],
+    "filters": {
+      "excluded_categories": [
+        "supernatural"
+      ]
+    }
+  },
+  {
+    "id": "sports-5",
+    "topic": "sports",
+    "variant": "cold_start",
+    "prompt": "A sports team improving through training, teamwork and competitive matches. I have no favorite titles to give you. Recommend finished movies.",
+    "query": "A sports team improving through training, teamwork and competitive matches.",
+    "likes": [],
+    "dislikes": [],
+    "watched": [],
+    "preferred_categories": [
+      "sports",
+      "team sports",
+      "school"
+    ],
+    "filters": {
+      "formats": [
+        "movie"
+      ],
+      "finished": true
+    }
+  },
+  {
+    "id": "calm-1",
+    "topic": "calm",
+    "variant": "seed",
+    "prompt": "I enjoyed Non Non Biyori. A gentle rural slice of life about friendship and everyday experiences, with a relaxing atmosphere.",
+    "query": "A gentle rural slice of life about friendship and everyday experiences, with a relaxing atmosphere.",
+    "likes": [
+      "mal:17549"
+    ],
+    "dislikes": [],
+    "watched": [],
+    "preferred_categories": [
+      "slice of life",
+      "iyashikei",
+      "comedy"
+    ],
+    "filters": {}
+  },
+  {
+    "id": "calm-2",
+    "topic": "calm",
+    "variant": "short_completed",
+    "prompt": "I enjoyed Non Non Biyori. A gentle rural slice of life about friendship and everyday experiences, with a relaxing atmosphere. Only finished TV series with at most 24 episodes. I already watched Barakamon.",
+    "query": "A gentle rural slice of life about friendship and everyday experiences, with a relaxing atmosphere.",
+    "likes": [
+      "mal:17549"
+    ],
+    "dislikes": [],
+    "watched": [
+      "mal:22789"
+    ],
+    "preferred_categories": [
+      "slice of life",
+      "iyashikei",
+      "comedy"
+    ],
+    "filters": {
+      "formats": [
+        "tv"
+      ],
+      "max_episodes": 24,
+      "finished": true
+    }
+  },
+  {
+    "id": "calm-3",
+    "topic": "calm",
+    "variant": "era",
+    "prompt": "I enjoyed Non Non Biyori. A gentle rural slice of life about friendship and everyday experiences, with a relaxing atmosphere. Choose TV series or movies released between 1990 and 2009.",
+    "query": "A gentle rural slice of life about friendship and everyday experiences, with a relaxing atmosphere.",
+    "likes": [
+      "mal:17549"
+    ],
+    "dislikes": [],
+    "watched": [],
+    "preferred_categories": [
+      "slice of life",
+      "iyashikei",
+      "comedy"
+    ],
+    "filters": {
+      "year_min": 1990,
+      "year_max": 2009,
+      "formats": [
+        "tv",
+        "movie"
+      ]
+    }
+  },
+  {
+    "id": "calm-4",
+    "topic": "calm",
+    "variant": "preferences",
+    "prompt": "I enjoyed Non Non Biyori. A gentle rural slice of life about friendship and everyday experiences, with a relaxing atmosphere. I also liked Barakamon, but disliked Attack on Titan. Exclude action, horror.",
+    "query": "A gentle rural slice of life about friendship and everyday experiences, with a relaxing atmosphere.",
+    "likes": [
+      "mal:17549",
+      "mal:22789"
+    ],
+    "dislikes": [
+      "mal:16498"
+    ],
+    "watched": [],
+    "preferred_categories": [
+      "slice of life",
+      "iyashikei",
+      "comedy"
+    ],
+    "filters": {
+      "excluded_categories": [
+        "action",
+        "horror"
+      ]
+    }
+  },
+  {
+    "id": "calm-5",
+    "topic": "calm",
+    "variant": "cold_start",
+    "prompt": "A gentle rural slice of life about friendship and everyday experiences, with a relaxing atmosphere. I have no favorite titles to give you. Recommend finished movies.",
+    "query": "A gentle rural slice of life about friendship and everyday experiences, with a relaxing atmosphere.",
+    "likes": [],
+    "dislikes": [],
+    "watched": [],
+    "preferred_categories": [
+      "slice of life",
+      "iyashikei",
+      "comedy"
+    ],
+    "filters": {
+      "formats": [
+        "movie"
+      ],
+      "finished": true
+    }
+  },
+  {
+    "id": "thriller-1",
+    "topic": "thriller",
+    "variant": "seed",
+    "prompt": "I enjoyed Perfect Blue. An eerie supernatural thriller with unsettling mysteries and suspense.",
+    "query": "An eerie supernatural thriller with unsettling mysteries and suspense.",
+    "likes": [
+      "mal:437"
+    ],
+    "dislikes": [],
+    "watched": [],
+    "preferred_categories": [
+      "horror",
+      "mystery",
+      "supernatural",
+      "suspense"
+    ],
+    "filters": {}
+  },
+  {
+    "id": "thriller-2",
+    "topic": "thriller",
+    "variant": "short_completed",
+    "prompt": "I enjoyed Perfect Blue. An eerie supernatural thriller with unsettling mysteries and suspense. Only finished TV series with at most 24 episodes. I already watched Higurashi: When They Cry.",
+    "query": "An eerie supernatural thriller with unsettling mysteries and suspense.",
+    "likes": [
+      "mal:437"
+    ],
+    "dislikes": [],
+    "watched": [
+      "mal:934"
+    ],
+    "preferred_categories": [
+      "horror",
+      "mystery",
+      "supernatural",
+      "suspense"
+    ],
+    "filters": {
+      "formats": [
+        "tv"
+      ],
+      "max_episodes": 24,
+      "finished": true
+    }
+  },
+  {
+    "id": "thriller-3",
+    "topic": "thriller",
+    "variant": "era",
+    "prompt": "I enjoyed Perfect Blue. An eerie supernatural thriller with unsettling mysteries and suspense. Choose TV series or movies released between 1990 and 2009.",
+    "query": "An eerie supernatural thriller with unsettling mysteries and suspense.",
+    "likes": [
+      "mal:437"
+    ],
+    "dislikes": [],
+    "watched": [],
+    "preferred_categories": [
+      "horror",
+      "mystery",
+      "supernatural",
+      "suspense"
+    ],
+    "filters": {
+      "year_min": 1990,
+      "year_max": 2009,
+      "formats": [
+        "tv",
+        "movie"
+      ]
+    }
+  },
+  {
+    "id": "thriller-4",
+    "topic": "thriller",
+    "variant": "preferences",
+    "prompt": "I enjoyed Perfect Blue. An eerie supernatural thriller with unsettling mysteries and suspense. I also liked Higurashi: When They Cry, but disliked K-ON!. Exclude sports.",
+    "query": "An eerie supernatural thriller with unsettling mysteries and suspense.",
+    "likes": [
+      "mal:437",
+      "mal:934"
+    ],
+    "dislikes": [
+      "mal:5680"
+    ],
+    "watched": [],
+    "preferred_categories": [
+      "horror",
+      "mystery",
+      "supernatural",
+      "suspense"
+    ],
+    "filters": {
+      "excluded_categories": [
+        "sports"
+      ]
+    }
+  },
+  {
+    "id": "thriller-5",
+    "topic": "thriller",
+    "variant": "cold_start",
+    "prompt": "An eerie supernatural thriller with unsettling mysteries and suspense. I have no favorite titles to give you. Recommend finished movies.",
+    "query": "An eerie supernatural thriller with unsettling mysteries and suspense.",
+    "likes": [],
+    "dislikes": [],
+    "watched": [],
+    "preferred_categories": [
+      "horror",
+      "mystery",
+      "supernatural",
+      "suspense"
+    ],
+    "filters": {
+      "formats": [
+        "movie"
+      ],
+      "finished": true
+    }
+  },
+  {
+    "id": "music-1",
+    "topic": "music",
+    "variant": "seed",
+    "prompt": "I enjoyed K-ON!. Music performance, band friendships, practice and personal growth.",
+    "query": "Music performance, band friendships, practice and personal growth.",
+    "likes": [
+      "mal:5680"
+    ],
+    "dislikes": [],
+    "watched": [],
+    "preferred_categories": [
+      "music",
+      "slice of life",
+      "drama"
+    ],
+    "filters": {}
+  },
+  {
+    "id": "music-2",
+    "topic": "music",
+    "variant": "short_completed",
+    "prompt": "I enjoyed K-ON!. Music performance, band friendships, practice and personal growth. Only finished TV series with at most 24 episodes. I already watched Beck: Mongolian Chop Squad.",
+    "query": "Music performance, band friendships, practice and personal growth.",
+    "likes": [
+      "mal:5680"
+    ],
+    "dislikes": [],
+    "watched": [
+      "mal:57"
+    ],
+    "preferred_categories": [
+      "music",
+      "slice of life",
+      "drama"
+    ],
+    "filters": {
+      "formats": [
+        "tv"
+      ],
+      "max_episodes": 24,
+      "finished": true
+    }
+  },
+  {
+    "id": "music-3",
+    "topic": "music",
+    "variant": "era",
+    "prompt": "I enjoyed K-ON!. Music performance, band friendships, practice and personal growth. Choose TV series or movies released between 2000 and 2014.",
+    "query": "Music performance, band friendships, practice and personal growth.",
+    "likes": [
+      "mal:5680"
+    ],
+    "dislikes": [],
+    "watched": [],
+    "preferred_categories": [
+      "music",
+      "slice of life",
+      "drama"
+    ],
+    "filters": {
+      "year_min": 2000,
+      "year_max": 2014,
+      "formats": [
+        "tv",
+        "movie"
+      ]
+    }
+  },
+  {
+    "id": "music-4",
+    "topic": "music",
+    "variant": "preferences",
+    "prompt": "I enjoyed K-ON!. Music performance, band friendships, practice and personal growth. I also liked Beck: Mongolian Chop Squad, but disliked Attack on Titan. Exclude mecha.",
+    "query": "Music performance, band friendships, practice and personal growth.",
+    "likes": [
+      "mal:5680",
+      "mal:57"
+    ],
+    "dislikes": [
+      "mal:16498"
+    ],
+    "watched": [],
+    "preferred_categories": [
+      "music",
+      "slice of life",
+      "drama"
+    ],
+    "filters": {
+      "excluded_categories": [
+        "mecha"
+      ]
+    }
+  },
+  {
+    "id": "music-5",
+    "topic": "music",
+    "variant": "cold_start",
+    "prompt": "Music performance, band friendships, practice and personal growth. I have no favorite titles to give you. Recommend finished movies.",
+    "query": "Music performance, band friendships, practice and personal growth.",
+    "likes": [],
+    "dislikes": [],
+    "watched": [],
+    "preferred_categories": [
+      "music",
+      "slice of life",
+      "drama"
+    ],
+    "filters": {
+      "formats": [
+        "movie"
+      ],
+      "finished": true
+    }
+  }
+]
