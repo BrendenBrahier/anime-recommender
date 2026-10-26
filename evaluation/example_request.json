@@ -1,0 +1,10 @@
+{
+  "likes": ["mal:1"],
+  "completed": ["mal:1"],
+  "query": "Space adventures with an adult crew",
+  "filters": {"formats": ["tv", "movie"], "finished": true, "max_episodes": 26},
+  "limit": 5,
+  "max_per_franchise": 1,
+  "allow_sequels": true,
+  "allow_recaps": false
+}

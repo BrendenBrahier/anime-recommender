@@ -1,3 +1,7 @@
+## Recommendation service
+
+See [RECOMMENDER.md](RECOMMENDER.md) for filters, franchise/watch-order rules, MAL preference imports, and local usage. Browser login and optional persistent connections still need the website session layer and registered MAL application.
+
 ## Anime recommender data refresh (2026)
 
 See [DATA.md](DATA.md) for the October 2026 catalog, local SQLite database, source attribution, rebuild commands, quality checks, and integration notes.

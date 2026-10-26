@@ -168,3 +168,6 @@ data/current/
 # Local evaluation review aids include source synopses; publish bounded results only.
 evaluation/results/review_queue.json
 evaluation/results/review.html
+
+# Private user profiles and future local connection storage must never be published.
+data/private/
