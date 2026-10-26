@@ -49,7 +49,7 @@ def eligible_mask(frame, case):
     return mask.to_numpy()
 
 def legacy_features(compat, keywords):
-    """Same feature construction and scaling order as recommender_function.py."""
+    """Frozen pre-filter cosine features/scaling from the recommender evaluated in PR #34."""
     frame=pd.DataFrame(compat)
     numeric=MinMaxScaler().fit_transform(frame[['score','members']].fillna(0))*.5
     keep=~frame.genres.map(lambda g:'hentai' in g if g else False)

@@ -58,7 +58,7 @@ All catalog entries currently have cover URL strings; this does not mean all ima
 
 `anime.sqlite` has indexed anime/title/year/score fields, normalized tags and provider URLs, foreign keys and build provenance. `catalog.json` is canonical; `cleaned_anime_data.json` retains legacy field names; `synopsis_keywords.json` uses deterministic lowercase tokenization and IDs; `alphabetized_titles.json` is a distinct display list, not an ID lookup; `quality_report.json` contains counts and source hashes.
 
-The old recommender defaults to original data. `ANIME_DATA_DIR=data/current` opts into the refresh and its synopsis join uses IDs. Its dense similarity matrix and graph still need scaling work before full-catalog use. This task does not claim or test recommendation accuracy.
+The actual recommender now defaults to `data/current`, loads lazily, and uses sparse request-time ranking, explicit filters, MAL preference profiles, and relationship policies. See [RECOMMENDER.md](RECOMMENDER.md) for setup, partial relationship coverage, supported requests, and MAL login integration status. The prior evaluation baseline remains frozen in its own script. No personal recommendation-accuracy claim is made.
 
 ## Sources and redistribution
 
