@@ -40,13 +40,15 @@ def save(path, value):
     tmp.replace(path)
 
 
-def request(endpoint):
+def request(endpoint, before_request=None):
     path = RAW / 'tenrai' / (re.sub(r'[^a-zA-Z0-9]', '_', endpoint) + '.json')
     if path.exists():
         return json.loads(path.read_text(encoding='utf-8'))
     url = API + '/' + endpoint
     for attempt in range(4):
         try:
+            if before_request is not None:
+                before_request()
             with urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': 'anime-recommender-data/2.0'}), timeout=25) as response:
                 data = json.load(response)
             record = {'url': url, 'retrieved_at': datetime.now(timezone.utc).isoformat(), 'response': data}

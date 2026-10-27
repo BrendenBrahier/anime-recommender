@@ -171,3 +171,6 @@ evaluation/results/review.html
 
 # Private user profiles and future local connection storage must never be published.
 data/private/
+
+# Local before/after snapshots and temporary validation files.
+work/
