@@ -15,6 +15,23 @@ python src/main.py --request evaluation/example_request.json --profile data/priv
 
 `build_relationships.py` targets the evaluation candidates, the top 100 popular catalog titles, and their prequels. It caches responses with retrieval timestamps and URLs. Run it without `--download` to rebuild from the cache. A catalog hash mismatch stops the recommender until the relationship sidecar is rebuilt. Downloading this sidecar does not alter the canonical catalog or invalidate saved notebook outputs.
 
+### Expand popular-title and franchise coverage
+
+```powershell
+python scripts/expand_relationships.py --top 5000 --max-fetch 15000
+python scripts/check_recommendation_service.py
+```
+
+The expansion uses popularity ranks already present in the catalog and recursively follows all explicit anime family links: prequels, sequels, parent/side stories, summaries/full stories, alternate versions/settings, and spin-offs. It does not follow manga adaptations or unspecified “other” links. Related titles outside the catalog contribute relationship evidence but do not automatically become recommendation candidates.
+
+Three download workers share a limiter spacing network attempts by at least 0.55 seconds, below the [source's public limits](https://api.tenrai.org/documentation). Retries also pass through this limiter. Existing response caches do not consume the `--max-fetch` budget; the budget counts uncached titles attempted, not HTTP retry attempts. Run the same command to resume. Each successful response is saved immediately with provenance, and progress is written to `data/current/relationship_progress.json`. The final sidecar is replaced atomically after the batch ends.
+
+`evaluation/results/relationship_coverage.json` records targeted IDs, verified IDs, pending IDs, unavailable records, and errors. A missing/deleted response is not treated as verified evidence. Cached unavailable records remain visible; this command does not automatically refresh existing cache entries. `traversal_complete` is false when the budget leaves pending titles or any requested details are unavailable/failed. The default 15,000-title budget prevents an unexpectedly large connected graph from making an unbounded crawl.
+
+For a before/after comparison, save `evaluation/results/service_checks.json` before expanding, rerun the checks afterward, then run `python scripts/report_relationship_expansion.py --before <saved-checks.json>`. This writes `evaluation/RELATIONSHIP_EXPANSION.md` and a detailed JSON comparison. Changes in result availability do not establish improved personal relevance; that still needs independent grading.
+
+Optionally also save `data/current/relationships.json` before expansion and pass `--before-relationships <saved-relationships.json>` to compare how many titles pass default starting-point policies before and after. These pool counts assume no completed prerequisites and do not require a positive query match.
+
 ## Actual service behavior
 
 - Requests accept stable `anime_id` values, a description, likes, dislikes, watched IDs, **completed** IDs, filters, and a result limit. Formats, release years, maximum episodes, completion status, excluded categories, and allowed content ratings are enforced. Unknown constrained fields fail closed. Query text guides matching but is **not** automatically parsed into filters; the future form/API must supply explicit filter fields.
@@ -26,11 +43,13 @@ python src/main.py --request evaluation/example_request.json --profile data/priv
 - The service returns fewer results rather than silently relax constraints. Each result includes image URL, separate aggregate/MAL ratings, franchise ID, prerequisite IDs, recap status, and relationship-evidence status. Warnings explain insufficient coverage. Per-user profiles are processed per request and never cached in the shared catalog engine.
 - Ranking is sparse synopsis/category TF-IDF with a weighted liked-title profile and a dislike penalty. This intentionally starts with a simple runtime baseline; the previous experimental LSA prototype and its relevance scores are **not** claimed as this service's performance.
 
-### Validation snapshot (October 25, 2026, Eastern)
+### Validation snapshot (October 26, 2026, Eastern)
 
-The first evidence pass has explicit detail responses for **489 of 38,259 catalog entries**. The sidecar also contains inferred inverse links and unverified neighbor nodes. This is partial coverage, mainly popular titles and benchmark candidates; it is not full-catalog franchise coverage.
+Relationship coverage expanded from **489 to 7,871 of 38,259 catalog entries**, including **all 5,000 targeted popular titles** and their explicit anime family chains. The crawl finished with no pending IDs, failed requests, or unavailable records. The sidecar also retains earlier evidence, inferred inverse links, and unverified neighbors; this is not full-catalog coverage. The catalog includes anime across many decades.
 
-The actual service returned **196 of 200 requested slots across 40 requests**. Thirty-eight requests received five results. The independent checks found **zero recorded constraint, recap, uncompleted-prerequisite, or franchise-cap violations**. This measures policy compliance against source metadata, not factual verification of every source relation or personal recommendation quality. Relevance has not been regraded for this service. Results are in `evaluation/results/service_checks.json`.
+The actual service now returns **200 of 200 requested slots across 40 requests**, up from 196. All 40 requests receive five results, up from 38. Distinct recommended titles increased from 88 to 114, and the default policy-eligible starting pool grew from 231 to 3,298. The independent checks found **zero recorded constraint, recap, uncompleted-prerequisite, or franchise-cap violations**. This measures policy compliance against source metadata, not personal recommendation accuracy. The ranking algorithm is unchanged, and relevance has not been regraded. Results and the before/after comparison are in [evaluation/RELATIONSHIP_EXPANSION.md](evaluation/RELATIONSHIP_EXPANSION.md).
+
+The graph audit found **18 prerequisite cycle groups affecting 209 titles** under the current conservative rules. Chronological prequels and parent/side-story links do not always imply mandatory viewing order; these findings do not necessarily mean the source records are wrong. Affected titles remain blocked. The comparison JSON contains group members and supporting source relations for watch-order review. Eleven prerequisite IDs elsewhere in the combined evidence remain unverified. The canonical catalog, separate score fields, and saved notebook outputs were preserved.
 
 ```powershell
 python scripts/check_recommendation_service.py
@@ -62,4 +81,4 @@ Before a browser login can go live, we still need:
 
 Official references checked October 25, 2026: [MAL authorization](https://myanimelist.net/apiconfig/references/authorization), [MAL API v2](https://myanimelist.net/apiconfig/references/api/v2). MAL currently specifies plain PKCE; redirect/token requests still require HTTPS outside local development. Token lifetime examples differ in the documentation, so the client uses the response's `expires_in` rather than hardcoding a lifetime. The schema states that `is_rewatching=true` means prior completion, which is why it satisfies prerequisite checks.
 
-Next work: extend relationship coverage, review optional side-story restrictions, grade runtime relevance with actual user preferences, then build the website and complete MAL account integration.
+Next work: review the 18 prerequisite cycle groups and optional side-story restrictions, grade runtime relevance with actual user preferences, then build the website and complete MAL account integration. Further catalog coverage can follow the same resumable download process.
