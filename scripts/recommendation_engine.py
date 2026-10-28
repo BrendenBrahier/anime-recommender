@@ -10,8 +10,10 @@ from sklearn.preprocessing import normalize
 from scipy.sparse import csr_matrix
 try:
     from .mal_profile import preferences
+    from .watch_order import load_policy, apply_policy
 except ImportError:
     from mal_profile import preferences
+    from watch_order import load_policy, apply_policy
 
 ROOT=Path(__file__).resolve().parents[1]
 FORMATS={'tv','movie','ova','ona','special','music','tv_special'}
@@ -76,8 +78,11 @@ def relationship_reasons(key, records, completed, allow_sequels=True, allow_reca
     return reasons
 
 class Recommender:
-    def __init__(self,catalog,relationships):
+    def __init__(self,catalog,relationships,watch_order_policy=None):
         self.catalog=catalog;self.relationships=relationships.get('records',{})
+        self.source_relationships=self.relationships
+        if watch_order_policy is not None:
+            self.relationships=apply_policy(self.source_relationships,watch_order_policy)
         self.positions={r['anime_id']:i for i,r in enumerate(catalog)}
         if len(self.positions)!=len(catalog):raise ValueError('Duplicate catalog IDs')
         self.vectorizer=TfidfVectorizer(stop_words='english',max_features=40000,ngram_range=(1,2),dtype=np.float32)
@@ -94,7 +99,10 @@ class Recommender:
         expected=relationships.get('catalog_sha256')
         if expected and expected!=hashlib.sha256((data/'catalog.json').read_bytes()).hexdigest():
             raise ValueError('Catalog changed; rebuild relationships with scripts/build_relationships.py')
-        return cls(catalog,relationships)
+        policy,policy_hash=load_policy()
+        engine=cls(catalog,relationships,watch_order_policy=policy)
+        engine.watch_order_policy_sha256=policy_hash
+        return engine
 
     def recommend(self,request,profile=None):
         validate_request(request)
@@ -139,6 +147,9 @@ class Recommender:
             families[family]+=1
             selected.append({k:row.get(k) for k in ['anime_id','name_english','img_url','year','type_of','total_episodes','rating','aggregate_score','mal_score']})
             selected[-1].update({'match_score':round(float(scores[i]),6),'franchise_id':family,'relationship_verified':rel.get('verified_relations',False),'recap_status':rel.get('recap_status','unknown'),'prerequisites':rel.get('prerequisites',[]),'recommendation_reason':'Matches the supplied description and/or positively rated titles after request and viewing-order filters.'})
+            selected[-1].update({'optional_context':rel.get('optional_context',[]),
+                                'watch_order_decision':rel.get('watch_order_decision'),
+                                'reviewed_entry_point':rel.get('reviewed_entry_point',False)})
             if len(selected)==request.get('limit',10):break
         warnings=[]
         if len(selected)<request.get('limit',10):warnings.append('Fewer matches passed all filters; constraints were not relaxed.')

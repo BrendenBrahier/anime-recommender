@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "policy_sha256": "aa89ee41c4afa8f51759a54dcf33b516e68605f7f49dd1698bd0c0dd6037c472",
+  "case_count": 12,
+  "result_count": 36,
+  "rating_status": "Awaiting human review; no relevance scores have been assigned.",
+  "cases": [
+    {
+      "case_id": "space-1",
+      "prompt": "I enjoyed Cowboy Bebop. Space travel, adult characters, bounty hunters and an adventurous crew.",
+      "results": [
+        {
+          "anime_id": "mal:59848",
+          "title": "Virgin Punk: Clockwork Girl"
+        },
+        {
+          "anime_id": "mal:1295",
+          "title": "Project A-ko: Uncivil Wars"
+        },
+        {
+          "anime_id": "mal:400",
+          "title": "Outlaw Star"
+        }
+      ]
+    },
+    {
+      "case_id": "mystery-1",
+      "prompt": "I enjoyed Death Note. A tense psychological mystery with clever investigations and moral dilemmas.",
+      "results": [
+        {
+          "anime_id": "mal:60303",
+          "title": "My Gift Lvl 9999 Unlimited Gacha: Backstabbed in a Backwater Dungeon, I'm Out for Revenge!"
+        },
+        {
+          "anime_id": "mal:2596",
+          "title": "Ghost Hound"
+        },
+        {
+          "anime_id": "mal:40046",
+          "title": "ID: INVADED"
+        }
+      ]
+    },
+    {
+      "case_id": "fantasy-1",
+      "prompt": "I enjoyed Frieren: Beyond Journey's End. A reflective fantasy journey about friendship, loss and discovering a magical world.",
+      "results": [
+        {
+          "anime_id": "mal:61983",
+          "title": "There was a Cute Girl in the Hero's Party, so I Tried Confessing to Her"
+        },
+        {
+          "anime_id": "mal:2804",
+          "title": "Hana no Mahoutsukai Mary Bell"
+        },
+        {
+          "anime_id": "mal:38062",
+          "title": "ENDRO!"
+        }
+      ]
+    },
+    {
+      "case_id": "romance-1",
+      "prompt": "I enjoyed Toradora!. A character driven school romance with comedy, friendships and emotional growth.",
+      "results": [
+        {
+          "anime_id": "mal:24",
+          "title": "School Rumble"
+        },
+        {
+          "anime_id": "mal:2927",
+          "title": "KimiKiss: Pure Rouge"
+        },
+        {
+          "anime_id": "mal:53512",
+          "title": "April Showers Bring May Flowers"
+        }
+      ]
+    },
+    {
+      "case_id": "sports-1",
+      "prompt": "I enjoyed Haikyu!!. A sports team improving through training, teamwork and competitive matches.",
+      "results": [
+        {
+          "anime_id": "mal:4339",
+          "title": "Attack on Tomorrow"
+        },
+        {
+          "anime_id": "mal:40679",
+          "title": "2.43: Seiin High School Boys Volleyball Team"
+        },
+        {
+          "anime_id": "mal:42798",
+          "title": "Farewell, My Dear Cramer Movie: First Touch"
+        }
+      ]
+    },
+    {
+      "case_id": "calm-1",
+      "prompt": "I enjoyed Non Non Biyori. A gentle rural slice of life about friendship and everyday experiences, with a relaxing atmosphere.",
+      "results": [
+        {
+          "anime_id": "mal:21483",
+          "title": "Sanchoume no Yuuhi"
+        },
+        {
+          "anime_id": "mal:10460",
+          "title": "You and Me."
+        },
+        {
+          "anime_id": "mal:61782",
+          "title": "Wash It All Away"
+        }
+      ]
+    },
+    {
+      "case_id": "thriller-1",
+      "prompt": "I enjoyed Perfect Blue. An eerie supernatural thriller with unsettling mysteries and suspense.",
+      "results": [
+        {
+          "anime_id": "mal:1457",
+          "title": "Key the Metal Idol"
+        },
+        {
+          "anime_id": "mal:2596",
+          "title": "Ghost Hound"
+        },
+        {
+          "anime_id": "mal:51680",
+          "title": "Play It Cool, Guys"
+        }
+      ]
+    },
+    {
+      "case_id": "music-1",
+      "prompt": "I enjoyed K-ON!. Music performance, band friendships, practice and personal growth.",
+      "results": [
+        {
+          "anime_id": "mal:55689",
+          "title": "Harmony of Mille-Feuille"
+        },
+        {
+          "anime_id": "mal:14073",
+          "title": "Ebiten"
+        },
+        {
+          "anime_id": "mal:40879",
+          "title": "Love Live! Nijigasaki High School Idol Club"
+        }
+      ]
+    },
+    {
+      "case_id": "space-2",
+      "prompt": "I enjoyed Cowboy Bebop. Space travel, adult characters, bounty hunters and an adventurous crew. Only finished TV series with at most 24 episodes. I already watched Outlaw Star.",
+      "results": [
+        {
+          "anime_id": "mal:61217",
+          "title": "Scum of the Brave"
+        },
+        {
+          "anime_id": "mal:21843",
+          "title": "Rage of Bahamut: Genesis"
+        },
+        {
+          "anime_id": "mal:39198",
+          "title": "Astra Lost in Space"
+        }
+      ]
+    },
+    {
+      "case_id": "mystery-3",
+      "prompt": "I enjoyed Death Note. A tense psychological mystery with clever investigations and moral dilemmas. Choose TV series or movies released between 2000 and 2014.",
+      "results": [
+        {
+          "anime_id": "mal:2596",
+          "title": "Ghost Hound"
+        },
+        {
+          "anime_id": "mal:2985",
+          "title": "Neuro: Supernatural Detective"
+        },
+        {
+          "anime_id": "mal:335",
+          "title": "Mythical Detective Loki Ragnarok"
+        }
+      ]
+    },
+    {
+      "case_id": "romance-4",
+      "prompt": "I enjoyed Toradora!. A character driven school romance with comedy, friendships and emotional growth. I also liked The Tatami Galaxy, but disliked Attack on Titan. Exclude horror.",
+      "results": [
+        {
+          "anime_id": "mal:24",
+          "title": "School Rumble"
+        },
+        {
+          "anime_id": "mal:2927",
+          "title": "KimiKiss: Pure Rouge"
+        },
+        {
+          "anime_id": "mal:53512",
+          "title": "April Showers Bring May Flowers"
+        }
+      ]
+    },
+    {
+      "case_id": "fantasy-5",
+      "prompt": "A reflective fantasy journey about friendship, loss and discovering a magical world. I have no favorite titles to give you. Recommend finished movies.",
+      "results": [
+        {
+          "anime_id": "mal:50168",
+          "title": "A Tale From The Orient"
+        },
+        {
+          "anime_id": "mal:1829",
+          "title": "Tales from Earthsea"
+        },
+        {
+          "anime_id": "mal:61984",
+          "title": "Bâan: The Boundary of Adulthood"
+        }
+      ]
+    }
+  ]
+}
