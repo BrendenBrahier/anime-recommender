@@ -28,7 +28,7 @@ def main():
             if issues:problems.append({'case_id':case['id'],'anime_id':key,'issues':issues})
         runs.append({'case_id':case['id'],**response})
     summary={'requests':len(cases),'requested_slots':len(cases)*5,'returned':sum(len(r['results']) for r in runs),'requests_with_five_results':sum(len(r['results'])==5 for r in runs),'violating_results':len(problems),'verified_relationship_catalog_entries':sum(k in catalog and r.get('verified_relations',False) for k,r in engine.relationships.items()),'catalog_entries':len(catalog),'relevance':'Not graded; prior prototype relevance scores do not apply to this service.'}
-    result={'summary':summary,'violations':problems,'runs':runs}
+    result={'watch_order_policy_sha256':engine.watch_order_policy_sha256,'summary':summary,'violations':problems,'runs':runs}
     (ROOT/'evaluation/results/service_checks.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(summary,indent=2))
     if problems:raise SystemExit('Recommendation policy violations detected')

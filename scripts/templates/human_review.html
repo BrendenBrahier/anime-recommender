@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Anime recommendation review</title>
+<style>
+:root{color-scheme:light;font:16px/1.55 system-ui,sans-serif;color:#182b3a;background:#eef2f6}
+*{box-sizing:border-box}body{margin:0}header,main{max-width:1050px;margin:auto;padding:24px}h1{font-size:2rem;margin:0 0 12px}h2{font-size:1.25rem;margin:0 0 12px}h3{font-size:1.1rem;margin:0}p{margin:10px 0}header>p{max-width:850px}.toolbar{position:sticky;top:0;background:#123c50;color:white;padding:12px 24px;display:flex;gap:16px;align-items:center;justify-content:space-between;z-index:1}.toolbar>div{display:flex;gap:12px;align-items:center}button,select,textarea{font:inherit}button{background:#f7d47b;color:#182b3a;border:0;border-radius:8px;padding:10px 16px;cursor:pointer}button:hover{background:#ffe7ad}button:focus-visible,a:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #d66622;outline-offset:3px}.case{background:white;border:1px solid #d5dfe7;border-radius:12px;padding:24px;margin-bottom:26px}.prompt{background:#e8f1f4;border-left:4px solid #28718c;padding:14px}.results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.card{border-top:2px solid #cedde4;padding-top:14px;min-width:0}.meta{font-size:.85rem;color:#486171}.synopsis{font-size:.9rem}label{display:block;font-weight:600;margin:14px 0 5px}select,textarea{width:100%;border:1px solid #839ba9;border-radius:6px;padding:8px;background:#fff;color:#182b3a}textarea{resize:vertical;min-height:85px}.issues label{font-weight:400;font-size:.9rem;margin:5px 0}.issues input{margin-right:7px}summary{cursor:pointer;color:#1a5770}.fine{font-size:.9rem;color:#486171}a{color:#145f82}#status{font-size:.9rem}.count{font-size:.85rem;color:#486171;text-transform:uppercase;letter-spacing:.08em}footer{padding:0 24px 30px;max-width:1050px;margin:auto}@media(max-width:800px){.results{grid-template-columns:1fr}.toolbar{position:static;flex-wrap:wrap}.case{padding:18px}header,main{padding:18px}}
+</style></head><body>
+<header><p class="count">Human evaluation · 12 example requests</p><h1>Do these recommendations fit?</h1>
+<p>These are fictional taste profiles for testing. Rate each title against its request: <strong>0 = poor, 1 = partial, 2 = good, 3 = excellent</strong>. Choose “Cannot judge” when you lack enough information. A missing rating stays unanswered.</p>
+<p class="fine">Check tone, pacing, genre, and explicit constraints. Scores from the recommender are hidden. This page sends no ratings anywhere and does not save automatically. Export your review before closing it; you can review only a few requests at a time.</p></header>
+<div class="toolbar"><span id="progress" aria-live="polite"></span><div><span id="status" role="status"></span><button id="export" type="button">Export review JSON</button></div></div>
+<main id="cases"></main><footer class="fine">Send the exported JSON back for analysis, or reply in chat with the request number, title, rating, and reason. Unanswered items will stay unanswered.</footer>
+<script type="application/json" id="packet">__PAYLOAD__</script>
+<script>
+'use strict';
+const packet=JSON.parse(document.getElementById('packet').textContent);
+const issueOptions=['Tone mismatch','Pacing mismatch','Genre mismatch','Violates request','Poor starting point','Too similar to other results','Other'];
+function element(tag,text,className){const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(className)e.className=className;return e;}
+function update(){const all=packet.cases.flatMap(c=>c.results),rated=all.filter(r=>Number.isInteger(r.relevance)).length,unknown=all.filter(r=>r.relevance==='unknown').length;document.getElementById('progress').textContent=`${rated} / ${all.length} rated · ${unknown} cannot judge`;}
+packet.cases.forEach((c,index)=>{
+ const section=element('section',undefined,'case');section.append(element('h2',`${index+1}. ${c.case_id}`),element('p',c.prompt,'prompt'));
+ const details=element('details');details.append(element('summary','Exact filters and viewing assumptions'),element('pre',JSON.stringify(c.request,null,2)));details.style.overflowWrap='anywhere';details.lastChild.style.whiteSpace='pre-wrap';section.append(details);
+ const grid=element('div',undefined,'results');
+ c.results.forEach((r,j)=>{
+  const id=`case-${index}-result-${j}`,card=element('article',undefined,'card');card.append(element('h3',r.title),element('p',`${r.year??'Unknown year'} · ${r.format??'Unknown format'} · ${r.episodes??'?'} episodes`,'meta'),element('p',r.genres.join(', '),'meta'),element('p',r.synopsis||'No synopsis available.','synopsis'));
+  if(/^mal:\d+$/.test(r.anime_id)){const link=element('a','View on MyAnimeList');link.href='https://myanimelist.net/anime/'+r.anime_id.slice(4);link.target='_blank';link.rel='noopener noreferrer';card.append(link);}
+  const label=element('label','Fit to this request');label.htmlFor=id;const select=element('select');select.id=id;
+  [['','Not rated'],['0','0 — Poor'],['1','1 — Partial'],['2','2 — Good'],['3','3 — Excellent'],['unknown','Cannot judge']].forEach(([value,text])=>{const option=element('option',text);option.value=value;select.append(option);});
+  select.addEventListener('change',()=>{r.relevance=select.value===''?null:select.value==='unknown'?'unknown':Number(select.value);update();});card.append(label,select);
+  const issues=element('details',undefined,'issues');issues.append(element('summary','What missed? (optional)'));
+  issueOptions.forEach(issue=>{const l=element('label'),input=element('input');input.type='checkbox';input.addEventListener('change',()=>{r.issues=input.checked?[...r.issues,issue]:r.issues.filter(x=>x!==issue);});l.append(input,document.createTextNode(issue));issues.append(l);});card.append(issues);
+  const noteLabel=element('label','Notes (optional)');noteLabel.htmlFor=id+'-notes';const notes=element('textarea');notes.id=id+'-notes';notes.maxLength=2000;notes.placeholder='What would have been a better fit?';notes.addEventListener('input',()=>{r.notes=notes.value;});card.append(noteLabel,notes);grid.append(card);
+ });section.append(grid);document.getElementById('cases').append(section);
+});
+document.getElementById('export').addEventListener('click',()=>{
+ const output={...packet,exported_at:new Date().toISOString()};
+ const url=URL.createObjectURL(new Blob([JSON.stringify(output,null,2)],{type:'application/json'}));
+ const link=element('a');link.href=url;link.download='anime-recommendation-review.json';document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);document.getElementById('status').textContent='Review export requested';
+});update();
+</script></body></html>

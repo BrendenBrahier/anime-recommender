@@ -1,0 +1,1030 @@
+{
+  "schema_version": 1,
+  "policy_version": "2026-10-27.1",
+  "review_status": "assistant editorial review; user validation pending",
+  "principle": "Required means a conservative recommendation gate, not a universal claim about artistic viewing order. Unreviewed source dependencies keep their existing conservative behavior.",
+  "groups": [
+    {
+      "id": "keroro",
+      "title": "Sgt. Frog",
+      "entry_points": [
+        "mal:516"
+      ],
+      "decisions": [
+        {
+          "anime_id": "mal:516",
+          "title": "Sgt. Frog",
+          "expected_source_prerequisites": [
+            "mal:11299"
+          ],
+          "required_prerequisites": [],
+          "optional_context": [
+            "mal:11299"
+          ],
+          "rationale": "The 2004 television series is the entry point; the 2009 episode-zero short is optional backstory.",
+          "evidence": [
+            {
+              "anime_id": "mal:516",
+              "title": "Keroro Gunsou",
+              "source_url": "https://api.tenrai.org/v1/anime/516/full",
+              "retrieved_at": "2026-10-27T01:38:28.703443+00:00",
+              "aired_from": "2004-04-03T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/516"
+            },
+            {
+              "anime_id": "mal:11299",
+              "title": "Kero 0: Shuppatsu da yo! Zenin Shuugou!",
+              "source_url": "https://api.tenrai.org/v1/anime/11299/full",
+              "retrieved_at": "2026-10-27T02:08:36.055147+00:00",
+              "aired_from": "2009-03-07T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/11299"
+            }
+          ],
+          "additional_sources": []
+        },
+        {
+          "anime_id": "mal:11299",
+          "title": "Kero 0: Shuppatsu da yo! Zenin Shuugou!",
+          "expected_source_prerequisites": [
+            "mal:5710"
+          ],
+          "required_prerequisites": [
+            "mal:516"
+          ],
+          "optional_context": [
+            "mal:5710"
+          ],
+          "rationale": "The short screened alongside movie 4; co-screening is not a prerequisite. Use the main series as the conservative context gate for this bonus short.",
+          "evidence": [
+            {
+              "anime_id": "mal:11299",
+              "title": "Kero 0: Shuppatsu da yo! Zenin Shuugou!",
+              "source_url": "https://api.tenrai.org/v1/anime/11299/full",
+              "retrieved_at": "2026-10-27T02:08:36.055147+00:00",
+              "aired_from": "2009-03-07T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/11299"
+            },
+            {
+              "anime_id": "mal:5710",
+              "title": "Keroro Gunsou Movie 4: Gekishin Dragon Warriors de Arimasu!",
+              "source_url": "https://api.tenrai.org/v1/anime/5710/full",
+              "retrieved_at": "2026-10-27T02:08:34.962152+00:00",
+              "aired_from": "2009-03-07T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/5710"
+            },
+            {
+              "anime_id": "mal:516",
+              "title": "Keroro Gunsou",
+              "source_url": "https://api.tenrai.org/v1/anime/516/full",
+              "retrieved_at": "2026-10-27T01:38:28.703443+00:00",
+              "aired_from": "2004-04-03T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/516"
+            }
+          ],
+          "additional_sources": []
+        }
+      ]
+    },
+    {
+      "id": "galaxy-angel",
+      "title": "Galaxy Angel",
+      "entry_points": [
+        "mal:383"
+      ],
+      "decisions": [
+        {
+          "anime_id": "mal:383",
+          "title": "Galaxy Angel",
+          "expected_source_prerequisites": [
+            "mal:13287"
+          ],
+          "required_prerequisites": [],
+          "optional_context": [
+            "mal:13287"
+          ],
+          "rationale": "The two DVD-exclusive bonus episodes supplement the original series; they are not needed before starting it.",
+          "evidence": [
+            {
+              "anime_id": "mal:383",
+              "title": "Galaxy Angel",
+              "source_url": "https://api.tenrai.org/v1/anime/383/full",
+              "retrieved_at": "2026-10-27T01:54:46.974988+00:00",
+              "aired_from": "2001-04-08T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/383"
+            },
+            {
+              "anime_id": "mal:13287",
+              "title": "Galaxy Angel Specials",
+              "source_url": "https://api.tenrai.org/v1/anime/13287/full",
+              "retrieved_at": "2026-10-27T02:16:03.214758+00:00",
+              "aired_from": "2002-01-25T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/13287"
+            }
+          ],
+          "additional_sources": []
+        }
+      ]
+    },
+    {
+      "id": "lupin",
+      "title": "Lupin III",
+      "entry_points": [
+        "mal:1412"
+      ],
+      "decisions": [
+        {
+          "anime_id": "mal:1412",
+          "title": "Lupin III",
+          "expected_source_prerequisites": [
+            "mal:5225",
+            "mal:53414"
+          ],
+          "required_prerequisites": [],
+          "optional_context": [
+            "mal:5225",
+            "mal:53414"
+          ],
+          "rationale": "The pilot is a promotional proof of concept and Lupin Zero is later origin backstory. The 1971 series is a valid starting point without either.",
+          "evidence": [
+            {
+              "anime_id": "mal:1412",
+              "title": "Lupin III",
+              "source_url": "https://api.tenrai.org/v1/anime/1412/full",
+              "retrieved_at": "2026-10-27T01:34:11.592320+00:00",
+              "aired_from": "1971-10-24T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/1412"
+            },
+            {
+              "anime_id": "mal:5225",
+              "title": "Lupin III: Pilot Film",
+              "source_url": "https://api.tenrai.org/v1/anime/5225/full",
+              "retrieved_at": "2026-10-27T02:06:19.097428+00:00",
+              "aired_from": "1969",
+              "mal_url": "https://myanimelist.net/anime/5225"
+            },
+            {
+              "anime_id": "mal:53414",
+              "title": "Lupin Zero",
+              "source_url": "https://api.tenrai.org/v1/anime/53414/full",
+              "retrieved_at": "2026-10-27T02:06:24.006261+00:00",
+              "aired_from": "2022-12-16T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/53414"
+            }
+          ],
+          "additional_sources": [
+            "https://tmsanime.com/news/lupin-zero-release-and-premiere"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "garden-of-sinners",
+      "title": "The Garden of Sinners",
+      "entry_points": [
+        "mal:2593"
+      ],
+      "decisions": [
+        {
+          "anime_id": "mal:14807",
+          "title": "The Garden of Sinners: Future Gospel",
+          "expected_source_prerequisites": [
+            "mal:22763",
+            "mal:6954"
+          ],
+          "required_prerequisites": [
+            "mal:6954"
+          ],
+          "optional_context": [
+            "mal:22763"
+          ],
+          "rationale": "Extra Chorus is a companion set of vignettes, not a prerequisite for Future Gospel; retain the main-film prerequisite.",
+          "evidence": [
+            {
+              "anime_id": "mal:14807",
+              "title": "Kara no Kyoukai Movie: Mirai Fukuin",
+              "source_url": "https://api.tenrai.org/v1/anime/14807/full",
+              "retrieved_at": "2026-10-27T01:32:33.077193+00:00",
+              "aired_from": "2013-09-28T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/14807"
+            },
+            {
+              "anime_id": "mal:22763",
+              "title": "Kara no Kyoukai Movie: Mirai Fukuin - Extra Chorus",
+              "source_url": "https://api.tenrai.org/v1/anime/22763/full",
+              "retrieved_at": "2026-10-27T01:45:30.940452+00:00",
+              "aired_from": "2013-09-28T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/22763"
+            }
+          ],
+          "additional_sources": []
+        },
+        {
+          "anime_id": "mal:3783",
+          "title": "The Garden of Sinners Chapter 3: Remaining Sense of Pain",
+          "expected_source_prerequisites": [
+            "mal:22763",
+            "mal:3782"
+          ],
+          "required_prerequisites": [
+            "mal:3782"
+          ],
+          "optional_context": [
+            "mal:22763"
+          ],
+          "rationale": "A later companion short set across the timeline is optional context, not a prerequisite for chapter 3; retain chapter 2.",
+          "evidence": [
+            {
+              "anime_id": "mal:3783",
+              "title": "Kara no Kyoukai Movie 3: Tsuukaku Zanryuu",
+              "source_url": "https://api.tenrai.org/v1/anime/3783/full",
+              "retrieved_at": "2026-10-27T01:24:50.622248+00:00",
+              "aired_from": "2008-02-09T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/3783"
+            },
+            {
+              "anime_id": "mal:22763",
+              "title": "Kara no Kyoukai Movie: Mirai Fukuin - Extra Chorus",
+              "source_url": "https://api.tenrai.org/v1/anime/22763/full",
+              "retrieved_at": "2026-10-27T01:45:30.940452+00:00",
+              "aired_from": "2013-09-28T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/22763"
+            }
+          ],
+          "additional_sources": []
+        }
+      ]
+    },
+    {
+      "id": "fist-of-north-star",
+      "title": "Fist of the North Star",
+      "entry_points": [
+        "mal:967"
+      ],
+      "decisions": [
+        {
+          "anime_id": "mal:967",
+          "title": "Fist of the North Star",
+          "expected_source_prerequisites": [
+            "mal:2174",
+            "mal:37388"
+          ],
+          "required_prerequisites": [],
+          "optional_context": [
+            "mal:2174",
+            "mal:37388"
+          ],
+          "rationale": "The 1984 series introduces the main story. A later retelling film and a later historical prequel season are optional context, not required viewing before it.",
+          "evidence": [
+            {
+              "anime_id": "mal:967",
+              "title": "Hokuto no Ken",
+              "source_url": "https://api.tenrai.org/v1/anime/967/full",
+              "retrieved_at": "2026-10-27T01:30:48.450571+00:00",
+              "aired_from": "1984-10-11T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/967"
+            },
+            {
+              "anime_id": "mal:2174",
+              "title": "Hokuto no Ken: Raoh Gaiden Gekitou-hen",
+              "source_url": "https://api.tenrai.org/v1/anime/2174/full",
+              "retrieved_at": "2026-10-27T02:04:54.271721+00:00",
+              "aired_from": "2007-04-28T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/2174"
+            },
+            {
+              "anime_id": "mal:37388",
+              "title": "Souten no Ken: Regenesis 2nd Season",
+              "source_url": "https://api.tenrai.org/v1/anime/37388/full",
+              "retrieved_at": "2026-10-27T02:04:57.551152+00:00",
+              "aired_from": "2018-10-09T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/37388"
+            }
+          ],
+          "additional_sources": []
+        }
+      ]
+    },
+    {
+      "id": "code-geass-picture",
+      "title": "Code Geass picture dramas",
+      "entry_points": [
+        "mal:1575"
+      ],
+      "decisions": [
+        {
+          "anime_id": "mal:1953",
+          "title": "Code Geass: Lelouch of the Rebellion Picture Dramas",
+          "expected_source_prerequisites": [
+            "mal:1575",
+            "mal:33155"
+          ],
+          "required_prerequisites": [
+            "mal:1575"
+          ],
+          "optional_context": [
+            "mal:33155"
+          ],
+          "rationale": "A later Blu-ray bonus does not gate the original picture-drama collection. Retain the main television series as context.",
+          "evidence": [
+            {
+              "anime_id": "mal:1953",
+              "title": "Code Geass: Hangyaku no Lelouch Picture Drama",
+              "source_url": "https://api.tenrai.org/v1/anime/1953/full",
+              "retrieved_at": "2026-10-27T01:45:45.285365+00:00",
+              "aired_from": "2007-01-27T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/1953"
+            },
+            {
+              "anime_id": "mal:33155",
+              "title": "Code Geass: Hangyaku no Lelouch Picture Drama - Hajimari no Zenya",
+              "source_url": "https://api.tenrai.org/v1/anime/33155/full",
+              "retrieved_at": "2026-10-27T01:59:11.839398+00:00",
+              "aired_from": "2013-09-25T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/33155"
+            }
+          ],
+          "additional_sources": []
+        }
+      ]
+    },
+    {
+      "id": "sekaiichi",
+      "title": "Sekaiichi Hatsukoi",
+      "entry_points": [
+        "mal:9926"
+      ],
+      "decisions": [
+        {
+          "anime_id": "mal:20371",
+          "title": "Sekaiichi Hatsukoi Movie: Yokozawa Takafumi no Baai",
+          "expected_source_prerequisites": [
+            "mal:11123",
+            "mal:20815"
+          ],
+          "required_prerequisites": [
+            "mal:11123"
+          ],
+          "optional_context": [
+            "mal:20815"
+          ],
+          "rationale": "The Valentine short screened alongside the film; co-screening does not make it required. Retain the television-series prerequisite.",
+          "evidence": [
+            {
+              "anime_id": "mal:20371",
+              "title": "Sekaiichi Hatsukoi Movie: Yokozawa Takafumi no Baai",
+              "source_url": "https://api.tenrai.org/v1/anime/20371/full",
+              "retrieved_at": "2026-10-27T01:40:46.858356+00:00",
+              "aired_from": "2014-03-15T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/20371"
+            },
+            {
+              "anime_id": "mal:20815",
+              "title": "Sekaiichi Hatsukoi: Valentine-hen",
+              "source_url": "https://api.tenrai.org/v1/anime/20815/full",
+              "retrieved_at": "2026-10-27T01:49:19.429339+00:00",
+              "aired_from": "2014-03-15T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/20815"
+            }
+          ],
+          "additional_sources": []
+        }
+      ]
+    },
+    {
+      "id": "seitokai",
+      "title": "Seitokai Yakuindomo",
+      "entry_points": [
+        "mal:8675"
+      ],
+      "decisions": [
+        {
+          "anime_id": "mal:20847",
+          "title": "Student Council Staff Members Season 2",
+          "expected_source_prerequisites": [
+            "mal:10119",
+            "mal:34504"
+          ],
+          "required_prerequisites": [
+            "mal:10119"
+          ],
+          "optional_context": [
+            "mal:34504"
+          ],
+          "rationale": "The 2014 second season predates the 2017 movie; the movie is optional later material, not the season prerequisite.",
+          "evidence": [
+            {
+              "anime_id": "mal:20847",
+              "title": "Seitokai Yakuindomo*",
+              "source_url": "https://api.tenrai.org/v1/anime/20847/full",
+              "retrieved_at": "2026-10-27T01:23:39.589754+00:00",
+              "aired_from": "2014-01-04T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/20847"
+            },
+            {
+              "anime_id": "mal:34504",
+              "title": "Seitokai Yakuindomo Movie",
+              "source_url": "https://api.tenrai.org/v1/anime/34504/full",
+              "retrieved_at": "2026-10-27T01:42:03.960502+00:00",
+              "aired_from": "2017-07-21T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/34504"
+            }
+          ],
+          "additional_sources": []
+        },
+        {
+          "anime_id": "mal:26123",
+          "title": "Seitokai Yakuindomo* OVA",
+          "expected_source_prerequisites": [
+            "mal:20847",
+            "mal:34504"
+          ],
+          "required_prerequisites": [
+            "mal:20847"
+          ],
+          "optional_context": [
+            "mal:34504"
+          ],
+          "rationale": "The second-season OVAs begin in 2014 and supplement that season. Retain season 2; the later movie is optional context.",
+          "evidence": [
+            {
+              "anime_id": "mal:26123",
+              "title": "Seitokai Yakuindomo* OVA",
+              "source_url": "https://api.tenrai.org/v1/anime/26123/full",
+              "retrieved_at": "2026-10-27T01:38:12.715769+00:00",
+              "aired_from": "2014-05-16T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/26123"
+            },
+            {
+              "anime_id": "mal:34504",
+              "title": "Seitokai Yakuindomo Movie",
+              "source_url": "https://api.tenrai.org/v1/anime/34504/full",
+              "retrieved_at": "2026-10-27T01:42:03.960502+00:00",
+              "aired_from": "2017-07-21T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/34504"
+            }
+          ],
+          "additional_sources": []
+        },
+        {
+          "anime_id": "mal:34504",
+          "title": "Seitokai Yakuindomo Movie",
+          "expected_source_prerequisites": [
+            "mal:26123"
+          ],
+          "required_prerequisites": [
+            "mal:20847"
+          ],
+          "optional_context": [
+            "mal:26123"
+          ],
+          "rationale": "For movie recommendations use the second television season as the conservative core-story gate; the bundled OVA collection is optional supplementary viewing.",
+          "evidence": [
+            {
+              "anime_id": "mal:34504",
+              "title": "Seitokai Yakuindomo Movie",
+              "source_url": "https://api.tenrai.org/v1/anime/34504/full",
+              "retrieved_at": "2026-10-27T01:42:03.960502+00:00",
+              "aired_from": "2017-07-21T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/34504"
+            },
+            {
+              "anime_id": "mal:26123",
+              "title": "Seitokai Yakuindomo* OVA",
+              "source_url": "https://api.tenrai.org/v1/anime/26123/full",
+              "retrieved_at": "2026-10-27T01:38:12.715769+00:00",
+              "aired_from": "2014-05-16T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/26123"
+            },
+            {
+              "anime_id": "mal:20847",
+              "title": "Seitokai Yakuindomo*",
+              "source_url": "https://api.tenrai.org/v1/anime/20847/full",
+              "retrieved_at": "2026-10-27T01:23:39.589754+00:00",
+              "aired_from": "2014-01-04T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/20847"
+            }
+          ],
+          "additional_sources": []
+        }
+      ]
+    },
+    {
+      "id": "moomin",
+      "title": "Moomin",
+      "entry_points": [
+        "mal:2150"
+      ],
+      "decisions": [
+        {
+          "anime_id": "mal:2150",
+          "title": "Moomin",
+          "expected_source_prerequisites": [
+            "mal:2313"
+          ],
+          "required_prerequisites": [],
+          "optional_context": [
+            "mal:2313"
+          ],
+          "rationale": "The 1990 television series is an entry point; the 1992 comet film is optional chronological backstory.",
+          "evidence": [
+            {
+              "anime_id": "mal:2150",
+              "title": "Tanoshii Muumin Ikka",
+              "source_url": "https://api.tenrai.org/v1/anime/2150/full",
+              "retrieved_at": "2026-10-27T01:54:06.791546+00:00",
+              "aired_from": "1990-04-12T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/2150"
+            },
+            {
+              "anime_id": "mal:2313",
+              "title": "Muumindani no Suisei",
+              "source_url": "https://api.tenrai.org/v1/anime/2313/full",
+              "retrieved_at": "2026-10-27T02:15:37.811529+00:00",
+              "aired_from": "1992-08-08T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/2313"
+            }
+          ],
+          "additional_sources": []
+        }
+      ]
+    },
+    {
+      "id": "galactic-heroes",
+      "title": "Legend of the Galactic Heroes",
+      "entry_points": [
+        "mal:820",
+        "mal:3014"
+      ],
+      "decisions": [
+        {
+          "anime_id": "mal:3014",
+          "title": "Legend of the Galactic Heroes: My Conquest is the Sea of Stars",
+          "expected_source_prerequisites": [
+            "mal:3015",
+            "mal:3371",
+            "mal:3665"
+          ],
+          "required_prerequisites": [],
+          "optional_context": [
+            "mal:3015",
+            "mal:3371",
+            "mal:3665"
+          ],
+          "rationale": "The 1988 introductory film can be watched without later Golden Wings or Gaiden backstories. Their earlier fictional chronology does not make them mandatory.",
+          "evidence": [
+            {
+              "anime_id": "mal:3014",
+              "title": "Ginga Eiyuu Densetsu: Waga Yuku wa Hoshi no Taikai",
+              "source_url": "https://api.tenrai.org/v1/anime/3014/full",
+              "retrieved_at": "2026-10-26T02:19:09.757346+00:00",
+              "aired_from": "1988-02-06T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/3014"
+            },
+            {
+              "anime_id": "mal:3015",
+              "title": "Ginga Eiyuu Densetsu Gaiden: Ougon no Tsubasa",
+              "source_url": "https://api.tenrai.org/v1/anime/3015/full",
+              "retrieved_at": "2026-10-26T02:19:22.727278+00:00",
+              "aired_from": "1992-12-12T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/3015"
+            },
+            {
+              "anime_id": "mal:3371",
+              "title": "Ginga Eiyuu Densetsu Gaiden",
+              "source_url": "https://api.tenrai.org/v1/anime/3371/full",
+              "retrieved_at": "2026-10-27T01:58:10.727145+00:00",
+              "aired_from": "1998-02-09T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/3371"
+            },
+            {
+              "anime_id": "mal:3665",
+              "title": "Ginga Eiyuu Densetsu Gaiden (1999)",
+              "source_url": "https://api.tenrai.org/v1/anime/3665/full",
+              "retrieved_at": "2026-10-27T02:01:12.358456+00:00",
+              "aired_from": "1999-12-24T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/3665"
+            }
+          ],
+          "additional_sources": [
+            "https://news.hidive.com/2017/6/21/epic-space-opera-legend-of-the-galactic-heroes-to-stream-on-hidive"
+          ]
+        },
+        {
+          "anime_id": "mal:820",
+          "title": "Legend of the Galactic Heroes",
+          "expected_source_prerequisites": [
+            "mal:3016"
+          ],
+          "required_prerequisites": [],
+          "optional_context": [
+            "mal:3016"
+          ],
+          "rationale": "The original 1988 OVA is a valid entry point without the later 1993 Overture film. The film route remains available as optional context.",
+          "evidence": [
+            {
+              "anime_id": "mal:820",
+              "title": "Ginga Eiyuu Densetsu",
+              "source_url": "https://api.tenrai.org/v1/anime/820/full",
+              "retrieved_at": "2026-10-26T02:14:36.966030+00:00",
+              "aired_from": "1988-01-08T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/820"
+            },
+            {
+              "anime_id": "mal:3016",
+              "title": "Ginga Eiyuu Densetsu: Arata naru Tatakai no Overture",
+              "source_url": "https://api.tenrai.org/v1/anime/3016/full",
+              "retrieved_at": "2026-10-26T02:18:24.571292+00:00",
+              "aired_from": "1993-12-18T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/3016"
+            }
+          ],
+          "additional_sources": [
+            "https://news.hidive.com/2017/6/21/epic-space-opera-legend-of-the-galactic-heroes-to-stream-on-hidive"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nobunaga",
+      "title": "Ninja Girl & Samurai Master",
+      "entry_points": [
+        "mal:32829"
+      ],
+      "decisions": [
+        {
+          "anime_id": "mal:32829",
+          "title": "Ninja Girl & Samurai Master",
+          "expected_source_prerequisites": [
+            "mal:34283"
+          ],
+          "required_prerequisites": [],
+          "optional_context": [
+            "mal:34283"
+          ],
+          "rationale": "The introductory episode-zero short is optional; the main television series supplies its own introduction.",
+          "evidence": [
+            {
+              "anime_id": "mal:32829",
+              "title": "Nobunaga no Shinobi",
+              "source_url": "https://api.tenrai.org/v1/anime/32829/full",
+              "retrieved_at": "2026-10-27T01:56:29.383590+00:00",
+              "aired_from": "2016-10-04T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/32829"
+            },
+            {
+              "anime_id": "mal:34283",
+              "title": "Nobunaga no Shinobi: Nobunaga to Minarai Shinobi",
+              "source_url": "https://api.tenrai.org/v1/anime/34283/full",
+              "retrieved_at": "2026-10-27T02:16:58.760106+00:00",
+              "aired_from": "2016-03-25T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/34283"
+            }
+          ],
+          "additional_sources": []
+        }
+      ]
+    },
+    {
+      "id": "code-geass-r2-picture",
+      "title": "Code Geass R2 picture dramas",
+      "entry_points": [
+        "mal:1575"
+      ],
+      "decisions": [
+        {
+          "anime_id": "mal:5163",
+          "title": "Code Geass: Lelouch of the Rebellion R2 Picture Dramas",
+          "expected_source_prerequisites": [
+            "mal:2904",
+            "mal:33156"
+          ],
+          "required_prerequisites": [
+            "mal:2904"
+          ],
+          "optional_context": [
+            "mal:33156"
+          ],
+          "rationale": "The later Blu-ray picture-drama special is optional for the original R2 collection; retain the R2 television prerequisite.",
+          "evidence": [
+            {
+              "anime_id": "mal:5163",
+              "title": "Code Geass: Hangyaku no Lelouch R2 Picture Drama",
+              "source_url": "https://api.tenrai.org/v1/anime/5163/full",
+              "retrieved_at": "2026-10-27T01:51:09.526167+00:00",
+              "aired_from": "2008-08-22T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/5163"
+            },
+            {
+              "anime_id": "mal:33156",
+              "title": "Code Geass: Hangyaku no Lelouch R2 Picture Drama - Last Moratorium",
+              "source_url": "https://api.tenrai.org/v1/anime/33156/full",
+              "retrieved_at": "2026-10-27T01:59:17.521728+00:00",
+              "aired_from": "2014-03-26T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/33156"
+            }
+          ],
+          "additional_sources": []
+        }
+      ]
+    },
+    {
+      "id": "utawarerumono",
+      "title": "Utawarerumono",
+      "entry_points": [
+        "mal:856"
+      ],
+      "decisions": [
+        {
+          "anime_id": "mal:3593",
+          "title": "Utawarerumono OVA",
+          "expected_source_prerequisites": [
+            "mal:6743",
+            "mal:856"
+          ],
+          "required_prerequisites": [
+            "mal:856"
+          ],
+          "optional_context": [
+            "mal:6743"
+          ],
+          "rationale": "Bonus picture dramas accompany the OVA and do not gate it. Retain the main-series prerequisite.",
+          "evidence": [
+            {
+              "anime_id": "mal:3593",
+              "title": "Utawarerumono OVA",
+              "source_url": "https://api.tenrai.org/v1/anime/3593/full",
+              "retrieved_at": "2026-10-27T02:03:31.095155+00:00",
+              "aired_from": "2009-06-05T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/3593"
+            },
+            {
+              "anime_id": "mal:6743",
+              "title": "Utawarerumono OVA Picture Drama",
+              "source_url": "https://api.tenrai.org/v1/anime/6743/full",
+              "retrieved_at": "2026-10-27T02:18:09.764770+00:00",
+              "aired_from": "2009-06-24T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/6743"
+            }
+          ],
+          "additional_sources": []
+        }
+      ]
+    },
+    {
+      "id": "aika",
+      "title": "Agent AIKa",
+      "entry_points": [
+        "mal:366"
+      ],
+      "decisions": [
+        {
+          "anime_id": "mal:366",
+          "title": "Agent AIKa",
+          "expected_source_prerequisites": [
+            "mal:4718",
+            "mal:6443"
+          ],
+          "required_prerequisites": [],
+          "optional_context": [
+            "mal:4718",
+            "mal:6443"
+          ],
+          "rationale": "The original 1997 OVA is the entry point. Its bonus office episode and later young-Aika prequel are optional context. Content-rating filters still apply.",
+          "evidence": [
+            {
+              "anime_id": "mal:366",
+              "title": "AIKa",
+              "source_url": "https://api.tenrai.org/v1/anime/366/full",
+              "retrieved_at": "2026-10-27T01:49:49.675668+00:00",
+              "aired_from": "1997-04-25T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/366"
+            },
+            {
+              "anime_id": "mal:4718",
+              "title": "AIKa: Special Trial",
+              "source_url": "https://api.tenrai.org/v1/anime/4718/full",
+              "retrieved_at": "2026-10-27T02:13:45.564202+00:00",
+              "aired_from": "1998-05-25T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/4718"
+            },
+            {
+              "anime_id": "mal:6443",
+              "title": "AIKa Zero",
+              "source_url": "https://api.tenrai.org/v1/anime/6443/full",
+              "retrieved_at": "2026-10-27T02:13:46.059069+00:00",
+              "aired_from": "2009-07-06T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/6443"
+            }
+          ],
+          "additional_sources": []
+        }
+      ]
+    },
+    {
+      "id": "tenchi",
+      "title": "Tenchi Muyo! Ryo-Ohki",
+      "entry_points": [
+        "mal:539"
+      ],
+      "decisions": [
+        {
+          "anime_id": "mal:541",
+          "title": "Tenchi Muyo! Ryo-Ohki 3rd Season",
+          "expected_source_prerequisites": [
+            "mal:37789",
+            "mal:540"
+          ],
+          "required_prerequisites": [
+            "mal:540"
+          ],
+          "optional_context": [
+            "mal:37789"
+          ],
+          "rationale": "Picture dramas bundled with season 3 are supplementary, not prerequisites for that season. Retain season 2.",
+          "evidence": [
+            {
+              "anime_id": "mal:541",
+              "title": "Tenchi Muyou! Ryououki 3rd Season",
+              "source_url": "https://api.tenrai.org/v1/anime/541/full",
+              "retrieved_at": "2026-10-27T02:16:24.083978+00:00",
+              "aired_from": "2003-09-18T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/541"
+            },
+            {
+              "anime_id": "mal:37789",
+              "title": "Tenchi Muyou! Ryououki 3rd Season Picture Drama",
+              "source_url": "https://api.tenrai.org/v1/anime/37789/full",
+              "retrieved_at": "2026-10-27T02:20:36.727259+00:00",
+              "aired_from": "2003-09-18T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/37789"
+            }
+          ],
+          "additional_sources": []
+        }
+      ]
+    },
+    {
+      "id": "princess-principal",
+      "title": "Princess Principal",
+      "entry_points": [
+        "mal:35240"
+      ],
+      "decisions": [
+        {
+          "anime_id": "mal:41140",
+          "title": "Princess Principal: Crown Handler - Chapter 2",
+          "expected_source_prerequisites": [
+            "mal:37807",
+            "mal:50919"
+          ],
+          "required_prerequisites": [
+            "mal:37807"
+          ],
+          "optional_context": [
+            "mal:50919"
+          ],
+          "rationale": "The chapter-2 Blu-ray short is supplementary; retain chapter 1 as the movie sequel prerequisite.",
+          "evidence": [
+            {
+              "anime_id": "mal:41140",
+              "title": "Princess Principal: Crown Handler 2",
+              "source_url": "https://api.tenrai.org/v1/anime/41140/full",
+              "retrieved_at": "2026-10-27T02:13:09.764834+00:00",
+              "aired_from": "2021-09-23T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/41140"
+            },
+            {
+              "anime_id": "mal:50919",
+              "title": "Princess Principal: Crown Handler 2 - Revealing Reviews",
+              "source_url": "https://api.tenrai.org/v1/anime/50919/full",
+              "retrieved_at": "2026-10-27T02:19:45.034301+00:00",
+              "aired_from": "2022-03-29T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/50919"
+            }
+          ],
+          "additional_sources": []
+        }
+      ]
+    },
+    {
+      "id": "clamp-crossovers",
+      "title": "xxxHOLiC / Tsubasa",
+      "entry_points": [
+        "mal:861",
+        "mal:177"
+      ],
+      "decisions": [
+        {
+          "anime_id": "mal:4918",
+          "title": "xxxHOLiC Shunmuki",
+          "expected_source_prerequisites": [
+            "mal:3091",
+            "mal:4938"
+          ],
+          "required_prerequisites": [
+            "mal:3091"
+          ],
+          "optional_context": [
+            "mal:4938"
+          ],
+          "rationale": "The parallel crossover OVA is optional cross-series context, not a mutually blocking prerequisite. Retain the preceding xxxHOLiC installment.",
+          "evidence": [
+            {
+              "anime_id": "mal:4918",
+              "title": "xxxHOLiC Shunmuki",
+              "source_url": "https://api.tenrai.org/v1/anime/4918/full",
+              "retrieved_at": "2026-10-27T01:39:52.378007+00:00",
+              "aired_from": "2009-02-17T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/4918"
+            },
+            {
+              "anime_id": "mal:4938",
+              "title": "Tsubasa: Shunraiki",
+              "source_url": "https://api.tenrai.org/v1/anime/4938/full",
+              "retrieved_at": "2026-10-27T01:42:22.648371+00:00",
+              "aired_from": "2009-03-17T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/4938"
+            }
+          ],
+          "additional_sources": []
+        },
+        {
+          "anime_id": "mal:4938",
+          "title": "Tsubasa RESERVoir CHRoNiCLE: Spring Thunder Chronicle",
+          "expected_source_prerequisites": [
+            "mal:2685",
+            "mal:4918"
+          ],
+          "required_prerequisites": [
+            "mal:2685"
+          ],
+          "optional_context": [
+            "mal:4918"
+          ],
+          "rationale": "The parallel crossover OVA is optional cross-series context. Retain the preceding Tsubasa installment; this is not a new-franchise entry point.",
+          "evidence": [
+            {
+              "anime_id": "mal:4938",
+              "title": "Tsubasa: Shunraiki",
+              "source_url": "https://api.tenrai.org/v1/anime/4938/full",
+              "retrieved_at": "2026-10-27T01:42:22.648371+00:00",
+              "aired_from": "2009-03-17T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/4938"
+            },
+            {
+              "anime_id": "mal:4918",
+              "title": "xxxHOLiC Shunmuki",
+              "source_url": "https://api.tenrai.org/v1/anime/4918/full",
+              "retrieved_at": "2026-10-27T01:39:52.378007+00:00",
+              "aired_from": "2009-02-17T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/4918"
+            }
+          ],
+          "additional_sources": []
+        }
+      ]
+    },
+    {
+      "id": "gundam",
+      "title": "Mobile Suit Gundam",
+      "entry_points": [
+        "mal:80"
+      ],
+      "decisions": [
+        {
+          "anime_id": "mal:80",
+          "title": "Mobile Suit Gundam",
+          "expected_source_prerequisites": [
+            "mal:55845"
+          ],
+          "required_prerequisites": [],
+          "optional_context": [
+            "mal:55845"
+          ],
+          "rationale": "The original 1979 series is the entry point. Requiem for Vengeance is a later side story on another front of the same war, not required beforehand.",
+          "evidence": [
+            {
+              "anime_id": "mal:80",
+              "title": "Kidou Senshi Gundam",
+              "source_url": "https://api.tenrai.org/v1/anime/80/full",
+              "retrieved_at": "2026-10-27T01:29:57.790272+00:00",
+              "aired_from": "1979-04-07T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/80"
+            },
+            {
+              "anime_id": "mal:55845",
+              "title": "Kidou Senshi Gundam: Fukushuu no Requiem",
+              "source_url": "https://api.tenrai.org/v1/anime/55845/full",
+              "retrieved_at": "2026-10-27T02:04:32.764719+00:00",
+              "aired_from": "2024-10-17T00:00:00+00:00",
+              "mal_url": "https://myanimelist.net/anime/55845"
+            }
+          ],
+          "additional_sources": [
+            "https://en.gundam-official.com/requiem-for-vengeance/"
+          ]
+        }
+      ]
+    }
+  ]
+}

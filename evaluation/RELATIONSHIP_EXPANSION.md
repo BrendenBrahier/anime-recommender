@@ -1,5 +1,7 @@
 # Relationship coverage expansion
 
+Historical source-only snapshot. The subsequent [watch-order review](WATCH_ORDER_REVIEW.md) resolves the runtime cycle blocks through a separate editorial policy; raw source relationships remain unchanged.
+
 Generated 2026-10-27T02:27:23.653985+00:00 (UTC).
 
 The ranking algorithm and catalog are unchanged; only relationship evidence expanded.

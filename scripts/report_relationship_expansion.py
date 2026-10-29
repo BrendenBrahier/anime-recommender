@@ -21,6 +21,8 @@ def main():
     records = json.loads((ROOT / 'data/current/relationships.json').read_text(encoding='utf-8'))['records']
     before = json.loads(args.before.read_text(encoding='utf-8'))
     after = json.loads((ROOT / 'evaluation/results/service_checks.json').read_text(encoding='utf-8'))
+    if before.get('watch_order_policy_sha256') or after.get('watch_order_policy_sha256'):
+        raise SystemExit('This historical expansion comparison requires source-only checks. Use check_watch_order.py for the reviewed policy audit.')
     verified = {k for k, r in records.items() if r['verified_relations']}
     catalog_ids = {r['anime_id'] for r in catalog}
     def summary(check):

@@ -1,4 +1,5 @@
 {
+  "watch_order_policy_sha256": "aa89ee41c4afa8f51759a54dcf33b516e68605f7f49dd1698bd0c0dd6037c472",
   "summary": {
     "requests": 40,
     "requested_slots": 200,
@@ -29,7 +30,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:1295",
@@ -46,7 +50,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:400",
@@ -63,7 +70,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:432",
@@ -80,7 +90,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:329",
@@ -97,7 +110,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -105,13 +121,12 @@
       "excluded_counts": {
         "seen_or_disliked": 1,
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
         "no_positive_match": 183,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798
       }
     },
@@ -133,7 +148,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:21843",
@@ -150,7 +168,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:39198",
@@ -167,7 +188,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:52093",
@@ -184,7 +208,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:33889",
@@ -201,7 +228,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -211,14 +241,13 @@
         "max_episodes": 6191,
         "format": 28594,
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
         "no_positive_match": 34,
         "not_finished": 1641,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798
       }
     },
@@ -240,7 +269,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:329",
@@ -257,7 +289,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:285",
@@ -274,7 +309,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:136",
@@ -291,7 +329,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:152",
@@ -308,7 +349,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -319,12 +363,11 @@
         "format": 22125,
         "unknown_relationships": 30388,
         "year_max": 26734,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798,
         "no_positive_match": 21,
         "franchise_limit": 1
@@ -348,7 +391,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:59848",
@@ -365,7 +411,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:6671",
@@ -382,7 +431,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:61217",
@@ -399,7 +451,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:18703",
@@ -416,7 +471,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -425,13 +483,12 @@
         "seen_or_disliked": 3,
         "excluded_or_unknown_categories": 9886,
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
         "no_positive_match": 105,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798
       }
     },
@@ -453,7 +510,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:6671",
@@ -470,7 +530,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:7156",
@@ -487,7 +550,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:22583",
@@ -504,7 +570,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:1034",
@@ -521,7 +590,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -529,14 +601,13 @@
       "excluded_counts": {
         "format": 31790,
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "no_positive_match": 237,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
         "not_finished": 1641,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798
       }
     },
@@ -558,7 +629,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:2596",
@@ -575,7 +649,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:40046",
@@ -592,7 +669,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:10259",
@@ -609,7 +689,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:2985",
@@ -626,20 +709,22 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
       "unknown_profile_or_request_ids": [],
       "excluded_counts": {
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
-        "no_positive_match": 294,
-        "cyclic_prerequisites": 209,
+        "no_positive_match": 295,
         "ineligible": 1798,
         "seen_or_disliked": 1
       }
@@ -662,7 +747,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:2596",
@@ -679,7 +767,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:40046",
@@ -696,7 +787,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:369",
@@ -713,7 +807,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:37522",
@@ -730,7 +827,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -739,14 +839,13 @@
         "max_episodes": 6191,
         "format": 28594,
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
         "no_positive_match": 63,
         "not_finished": 1641,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798,
         "seen_or_disliked": 2
       }
@@ -769,7 +868,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:2985",
@@ -786,7 +888,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:335",
@@ -803,7 +908,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:369",
@@ -820,7 +928,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:586",
@@ -837,7 +948,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -846,14 +960,13 @@
         "year_min": 7273,
         "format": 22125,
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
         "year_max": 20811,
         "no_positive_match": 60,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798,
         "seen_or_disliked": 1
       }
@@ -876,7 +989,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:40046",
@@ -893,7 +1009,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:17959",
@@ -910,7 +1029,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:2808",
@@ -927,7 +1049,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:9000",
@@ -944,7 +1069,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -952,13 +1080,12 @@
       "excluded_counts": {
         "excluded_or_unknown_categories": 15616,
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
         "no_positive_match": 142,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798,
         "seen_or_disliked": 3
       }
@@ -981,7 +1108,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:37365",
@@ -998,7 +1128,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:11531",
@@ -1015,7 +1148,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:1943",
@@ -1032,7 +1168,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:7472",
@@ -1049,7 +1188,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -1057,14 +1199,13 @@
       "excluded_counts": {
         "format": 31790,
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
-        "no_positive_match": 263,
+        "unwatched_prerequisite": 3960,
+        "no_positive_match": 264,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
         "not_finished": 1641,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798
       }
     },
@@ -1086,7 +1227,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:2804",
@@ -1103,7 +1247,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:38062",
@@ -1120,7 +1267,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:61128",
@@ -1137,7 +1287,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:738",
@@ -1154,20 +1307,22 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
       "unknown_profile_or_request_ids": [],
       "excluded_counts": {
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "no_positive_match": 149,
         "unknown_recap_status": 166,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798,
         "seen_or_disliked": 1
       }
@@ -1190,7 +1345,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:38062",
@@ -1207,7 +1365,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:61128",
@@ -1224,7 +1385,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:52211",
@@ -1241,7 +1405,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:59424",
@@ -1258,7 +1425,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -1267,14 +1437,13 @@
         "max_episodes": 6191,
         "format": 28594,
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
         "no_positive_match": 30,
         "not_finished": 1641,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798,
         "seen_or_disliked": 2
       }
@@ -1297,7 +1466,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:38062",
@@ -1314,7 +1486,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:61128",
@@ -1331,7 +1506,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:52211",
@@ -1348,7 +1526,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:50168",
@@ -1365,7 +1546,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -1374,13 +1558,12 @@
         "year_min": 12825,
         "format": 22125,
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "no_positive_match": 27,
         "unknown_recap_status": 166,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798,
         "year_max": 1554,
         "seen_or_disliked": 1
@@ -1404,7 +1587,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:738",
@@ -1421,7 +1607,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:845",
@@ -1438,7 +1627,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:52211",
@@ -1455,7 +1647,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:1731",
@@ -1472,21 +1667,23 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
       "unknown_profile_or_request_ids": [],
       "excluded_counts": {
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "excluded_or_unknown_categories": 8389,
         "unknown_recap_status": 166,
-        "no_positive_match": 129,
-        "cyclic_prerequisites": 209,
+        "no_positive_match": 131,
         "ineligible": 1798,
         "seen_or_disliked": 3
       }
@@ -1509,7 +1706,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:1829",
@@ -1526,7 +1726,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:61984",
@@ -1543,7 +1746,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:39235",
@@ -1560,7 +1766,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:315",
@@ -1577,7 +1786,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -1585,14 +1797,13 @@
       "excluded_counts": {
         "format": 31790,
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
-        "no_positive_match": 161,
+        "unwatched_prerequisite": 3960,
+        "no_positive_match": 162,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
         "not_finished": 1641,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798
       }
     },
@@ -1614,7 +1825,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:2927",
@@ -1631,7 +1845,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:53512",
@@ -1648,7 +1865,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:61501",
@@ -1665,7 +1885,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:1591",
@@ -1682,20 +1905,22 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
       "unknown_profile_or_request_ids": [],
       "excluded_counts": {
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "no_positive_match": 183,
         "unknown_recap_status": 166,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798,
         "seen_or_disliked": 1
       }
@@ -1718,7 +1943,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:53512",
@@ -1735,7 +1963,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:61501",
@@ -1752,7 +1983,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:1591",
@@ -1769,7 +2003,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:8536",
@@ -1786,7 +2023,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -1795,13 +2035,12 @@
         "max_episodes": 6191,
         "format": 28594,
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
         "not_finished": 1641,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798,
         "no_positive_match": 22,
         "seen_or_disliked": 2
@@ -1825,7 +2064,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:2927",
@@ -1842,7 +2084,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:1591",
@@ -1859,7 +2104,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:8536",
@@ -1876,7 +2124,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:325",
@@ -1893,7 +2144,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -1902,14 +2156,13 @@
         "year_min": 7273,
         "format": 22125,
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "no_positive_match": 21,
         "unknown_recap_status": 166,
         "year_max": 20811,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798,
         "seen_or_disliked": 1
       }
@@ -1932,7 +2185,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:2927",
@@ -1949,7 +2205,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:53512",
@@ -1966,7 +2225,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:61501",
@@ -1983,7 +2245,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:30531",
@@ -2000,7 +2265,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -2008,13 +2276,12 @@
       "excluded_counts": {
         "unknown_relationships": 30388,
         "excluded_or_unknown_categories": 8175,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "no_positive_match": 107,
         "unknown_recap_status": 166,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798,
         "seen_or_disliked": 3
       }
@@ -2037,7 +2304,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:20903",
@@ -2054,7 +2324,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:61367",
@@ -2071,7 +2344,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:4983",
@@ -2088,7 +2364,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:33724",
@@ -2105,7 +2384,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -2113,14 +2395,13 @@
       "excluded_counts": {
         "format": 31790,
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
-        "no_positive_match": 181,
+        "no_positive_match": 182,
         "unknown_recap_status": 166,
         "not_finished": 1641,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798
       }
     },
@@ -2142,7 +2423,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:40679",
@@ -2159,7 +2443,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:42798",
@@ -2176,7 +2463,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:35983",
@@ -2193,7 +2483,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:12875",
@@ -2210,20 +2503,22 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
       "unknown_profile_or_request_ids": [],
       "excluded_counts": {
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
-        "no_positive_match": 412,
+        "no_positive_match": 414,
         "unknown_recap_status": 166,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798,
         "seen_or_disliked": 1
       }
@@ -2246,7 +2541,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:40679",
@@ -2263,7 +2561,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:35983",
@@ -2280,7 +2581,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:10572",
@@ -2297,7 +2601,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:44274",
@@ -2314,7 +2621,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -2323,14 +2633,13 @@
         "max_episodes": 6191,
         "format": 28594,
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
-        "no_positive_match": 90,
+        "no_positive_match": 91,
         "not_finished": 1641,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798,
         "seen_or_disliked": 2
       }
@@ -2353,7 +2662,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:42798",
@@ -2370,7 +2682,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:35983",
@@ -2387,7 +2702,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:12875",
@@ -2404,7 +2722,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:10572",
@@ -2421,7 +2742,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -2430,13 +2754,12 @@
         "year_min": 12825,
         "format": 22125,
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "no_positive_match": 87,
         "unknown_recap_status": 166,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798,
         "seen_or_disliked": 1,
         "year_max": 1554
@@ -2460,7 +2783,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:4339",
@@ -2477,7 +2803,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:10572",
@@ -2494,7 +2823,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:40679",
@@ -2511,7 +2843,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:42798",
@@ -2528,21 +2863,23 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
       "unknown_profile_or_request_ids": [],
       "excluded_counts": {
-        "no_positive_match": 420,
+        "no_positive_match": 423,
         "excluded_or_unknown_categories": 9170,
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798,
         "seen_or_disliked": 3
       }
@@ -2565,7 +2902,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:16572",
@@ -2582,7 +2922,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:45649",
@@ -2599,7 +2942,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:40080",
@@ -2616,7 +2962,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:33845",
@@ -2633,7 +2982,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -2641,14 +2993,13 @@
       "excluded_counts": {
         "format": 31790,
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
-        "no_positive_match": 300,
+        "unwatched_prerequisite": 3960,
+        "no_positive_match": 301,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
         "not_finished": 1641,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798
       }
     },
@@ -2670,7 +3021,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:10460",
@@ -2687,7 +3041,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:61782",
@@ -2704,7 +3061,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:31636",
@@ -2721,7 +3081,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:55597",
@@ -2738,20 +3101,22 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
       "unknown_profile_or_request_ids": [],
       "excluded_counts": {
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
-        "no_positive_match": 245,
-        "cyclic_prerequisites": 209,
+        "no_positive_match": 246,
         "ineligible": 1798,
         "seen_or_disliked": 1
       }
@@ -2774,7 +3139,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:61782",
@@ -2791,7 +3159,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:31636",
@@ -2808,7 +3179,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:55597",
@@ -2825,7 +3199,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:6525",
@@ -2842,7 +3219,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -2851,14 +3231,13 @@
         "max_episodes": 6191,
         "format": 28594,
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
-        "no_positive_match": 29,
+        "no_positive_match": 30,
         "not_finished": 1641,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798,
         "seen_or_disliked": 2
       }
@@ -2881,7 +3260,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:6525",
@@ -2898,7 +3280,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:488",
@@ -2915,7 +3300,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:1852",
@@ -2932,7 +3320,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:1029",
@@ -2949,7 +3340,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -2959,13 +3353,12 @@
         "format": 22125,
         "unknown_relationships": 30388,
         "year_max": 26734,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
-        "cyclic_prerequisites": 209,
-        "no_positive_match": 28,
+        "no_positive_match": 29,
         "ineligible": 1798,
         "seen_or_disliked": 1
       }
@@ -2988,7 +3381,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:10460",
@@ -3005,7 +3401,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:61782",
@@ -3022,7 +3421,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:37589",
@@ -3039,7 +3441,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:6525",
@@ -3056,7 +3461,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -3064,13 +3472,12 @@
       "excluded_counts": {
         "excluded_or_unknown_categories": 13054,
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
-        "no_positive_match": 170,
-        "cyclic_prerequisites": 209,
+        "no_positive_match": 171,
         "ineligible": 1798,
         "seen_or_disliked": 3
       }
@@ -3093,7 +3500,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:60486",
@@ -3110,7 +3520,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:61806",
@@ -3127,7 +3540,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:1029",
@@ -3144,7 +3560,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:62973",
@@ -3161,7 +3580,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -3169,14 +3591,13 @@
       "excluded_counts": {
         "format": 31790,
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "no_positive_match": 213,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
         "not_finished": 1641,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798
       }
     },
@@ -3198,7 +3619,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:2596",
@@ -3215,7 +3639,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:51680",
@@ -3232,7 +3659,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:52034",
@@ -3249,7 +3679,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:7724",
@@ -3266,20 +3699,22 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
       "unknown_profile_or_request_ids": [],
       "excluded_counts": {
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
-        "no_positive_match": 168,
-        "cyclic_prerequisites": 209,
+        "no_positive_match": 169,
         "ineligible": 1798,
         "seen_or_disliked": 1
       }
@@ -3302,7 +3737,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:51680",
@@ -3319,7 +3757,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:52034",
@@ -3336,7 +3777,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:7724",
@@ -3353,7 +3797,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:339",
@@ -3370,7 +3817,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -3379,14 +3829,13 @@
         "max_episodes": 6191,
         "format": 28594,
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
         "no_positive_match": 38,
         "not_finished": 1641,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798,
         "seen_or_disliked": 2
       }
@@ -3409,7 +3858,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:339",
@@ -3426,7 +3878,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:1033",
@@ -3443,7 +3898,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:2926",
@@ -3460,7 +3918,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:369",
@@ -3477,7 +3938,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -3487,12 +3951,11 @@
         "format": 22125,
         "unknown_relationships": 30388,
         "year_max": 26734,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
-        "cyclic_prerequisites": 209,
         "no_positive_match": 36,
         "ineligible": 1798,
         "seen_or_disliked": 1
@@ -3516,7 +3979,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:7724",
@@ -3533,7 +3999,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:1457",
@@ -3550,7 +4019,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:32438",
@@ -3567,7 +4039,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:339",
@@ -3584,7 +4059,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -3592,13 +4070,12 @@
       "excluded_counts": {
         "unknown_relationships": 30388,
         "excluded_or_unknown_categories": 8402,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
         "no_positive_match": 279,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798,
         "seen_or_disliked": 3
       }
@@ -3621,7 +4098,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:2154",
@@ -3638,7 +4118,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:32153",
@@ -3655,7 +4138,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:3089",
@@ -3672,7 +4158,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:2593",
@@ -3689,7 +4178,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": true
         }
       ],
       "warnings": [],
@@ -3697,14 +4189,13 @@
       "excluded_counts": {
         "format": 31790,
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
-        "no_positive_match": 258,
+        "unwatched_prerequisite": 3960,
+        "no_positive_match": 259,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
         "not_finished": 1641,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798
       }
     },
@@ -3726,7 +4217,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:14073",
@@ -3743,7 +4237,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:40879",
@@ -3760,7 +4257,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:18495",
@@ -3777,7 +4277,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:15911",
@@ -3794,20 +4297,22 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
       "unknown_profile_or_request_ids": [],
       "excluded_counts": {
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "no_positive_match": 256,
         "unknown_recap_status": 166,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798,
         "seen_or_disliked": 1
       }
@@ -3830,7 +4335,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:40879",
@@ -3847,7 +4355,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:18495",
@@ -3864,7 +4375,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:15911",
@@ -3881,7 +4395,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:24765",
@@ -3898,7 +4415,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -3907,13 +4427,12 @@
         "max_episodes": 6191,
         "format": 28594,
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
         "not_finished": 1641,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798,
         "no_positive_match": 46,
         "seen_or_disliked": 2
@@ -3937,7 +4456,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:15911",
@@ -3954,7 +4476,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:10495",
@@ -3971,7 +4496,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:18245",
@@ -3988,7 +4516,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:8424",
@@ -4005,7 +4536,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -4014,14 +4548,13 @@
         "year_min": 7273,
         "format": 22125,
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "no_positive_match": 48,
         "unknown_recap_status": 166,
         "year_max": 20811,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798,
         "seen_or_disliked": 1
       }
@@ -4044,7 +4577,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:55689",
@@ -4061,7 +4597,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:39568",
@@ -4078,7 +4617,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:31730",
@@ -4095,7 +4637,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:53747",
@@ -4112,7 +4657,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -4120,13 +4668,12 @@
       "excluded_counts": {
         "unknown_relationships": 30388,
         "excluded_or_unknown_categories": 8927,
-        "unwatched_prerequisite": 3970,
+        "unwatched_prerequisite": 3960,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
-        "no_positive_match": 173,
-        "cyclic_prerequisites": 209,
+        "no_positive_match": 174,
         "ineligible": 1798,
         "seen_or_disliked": 3
       }
@@ -4149,7 +4696,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:31730",
@@ -4166,7 +4716,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:34792",
@@ -4183,7 +4736,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:44585",
@@ -4200,7 +4756,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         },
         {
           "anime_id": "mal:731",
@@ -4217,7 +4776,10 @@
           "relationship_verified": true,
           "recap_status": "none_detected",
           "prerequisites": [],
-          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters."
+          "recommendation_reason": "Matches the supplied description and/or positively rated titles after request and viewing-order filters.",
+          "optional_context": [],
+          "watch_order_decision": null,
+          "reviewed_entry_point": false
         }
       ],
       "warnings": [],
@@ -4225,14 +4787,13 @@
       "excluded_counts": {
         "format": 31790,
         "unknown_relationships": 30388,
-        "unwatched_prerequisite": 3970,
-        "no_positive_match": 284,
+        "unwatched_prerequisite": 3960,
+        "no_positive_match": 285,
         "recap": 559,
         "explicit_content": 1652,
         "unknown_content_rating": 8031,
         "unknown_recap_status": 166,
         "not_finished": 1641,
-        "cyclic_prerequisites": 209,
         "ineligible": 1798
       }
     }
